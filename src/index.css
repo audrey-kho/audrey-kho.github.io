@@ -22,8 +22,20 @@ body {
   position: relative;
   height: 100%;
   background-color: #242629;
-  background-image: linear-gradient(#111e36, #777a9d);
+  background-image: linear-gradient(#111e36, #7d92b3);
   font-family: "Whyte Light", sans-serif;
   color: #d8dbdb !important;
   letter-spacing: 2px !important;
+  height: 2000px;
+}
+
+a {
+  color: #d8dbdb;
+  text-decoration: none;
+  transition: 0.3s opacity;
+}
+
+a:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
