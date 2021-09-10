@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: Whyte Book;
+  src: url("./assets/fonts/Whyte-Book.ttf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Whyte;
+  src: url("./assets/fonts/Whyte-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Whyte Medium;
+  src: url("./assets/fonts/Whyte-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Whyte Light;
+  src: url("./assets/fonts/Whyte-Light.ttf") format("truetype");
+}
+
+body {
+  position: relative;
+  height: 100%;
+  background-color: #242629;
+  background-image: linear-gradient(#111e36, #777a9d);
+  font-family: "Whyte Light", sans-serif;
+  color: #d8dbdb !important;
+  letter-spacing: 2px !important;
 }
