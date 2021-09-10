@@ -17,13 +17,13 @@ export default function About() {
 }
 
 const AboutStyles = styled.section`
-  margin-top: 180px;
+  margin-top: 120px;
   margin-bottom: 80px;
   display: flex;
   align-items: flex-start;
 
   h2, h5 {
-    margin: 2px 0;
+    margin: 0;
   }
 
   h2 {

@@ -16,15 +16,19 @@ export const SectionTitle = (...props) => {
 
 const SectionTitleStyles = styled.span`
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   position: sticky;
   top: 20px;
   left: 0;
-  margin: 0 !important;
+  margin: 2px 0 0 !important;
   display: inline;
   font-family: "Whyte Book", sans-serif;
   font-size: 12px;
   font-weight: 600;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const MainSection = (props) => {
@@ -32,5 +36,9 @@ export const MainSection = (props) => {
 };
 
 const MainStyles = styled.section`
-  margin-left: 80px;
+  margin-left: 60px;
+
+  @media (max-width: 768px) {
+    margin: 0;
+  }
 `;
