@@ -14,6 +14,11 @@
 }
 
 @font-face {
+  font-family: Whyte Bold;
+  src: url("./assets/fonts/Whyte-Black.otf") format("opentype");
+}
+
+@font-face {
   font-family: Whyte Light;
   src: url("./assets/fonts/Whyte-Light.ttf") format("truetype");
 }
@@ -26,7 +31,7 @@ body {
   font-family: "Whyte Light", sans-serif;
   color: #d8dbdb !important;
   letter-spacing: 2px !important;
-  height: 2000px;
+  height: 3000px;
 }
 
 a {

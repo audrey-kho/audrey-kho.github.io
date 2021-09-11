@@ -39,9 +39,14 @@ const NavStyles = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
+  padding: 0 18px;
   max-width: 1380px;
   margin: 0 auto;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(5px);
+  z-index: 999;
 
   h3 {
     font-weight: 400;

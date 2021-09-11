@@ -6,7 +6,7 @@ export const SectionTitle = (...props) => {
   const {href, children} = props[0];
   return (
     <SectionTitleStyles>
-      <Link to={href} smooth={true} offset={-50}>
+      <Link to={href} smooth={true} offset={-92}>
         {children}&nbsp;
         <ArrowForwardSharp color={"#fff"} width="12px" height="12px" />
       </Link>
@@ -14,17 +14,16 @@ export const SectionTitle = (...props) => {
   );
 };
 
-const SectionTitleStyles = styled.span`
+const SectionTitleStyles = styled.p`
   display: flex;
   align-items: flex-end;
   position: sticky;
-  top: 20px;
-  left: 0;
-  margin: 2px 0 0 !important;
-  display: inline;
+  top: 80px;
+  margin: 1px 0 0 !important;
   font-family: "Whyte Book", sans-serif;
   font-size: 12px;
   font-weight: 600;
+  min-width: 120px;
 
   @media (max-width: 768px) {
     display: none;
@@ -37,6 +36,7 @@ export const MainSection = (props) => {
 
 const MainStyles = styled.section`
   margin-left: 60px;
+  width: 100%;
 
   @media (max-width: 768px) {
     margin: 0;
