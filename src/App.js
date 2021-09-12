@@ -14,7 +14,7 @@ export default function App() {
             target="_blank"
             rel="noreferrer"
           >
-            RESUME <LinkArrow />
+            RESUME<LinkArrow />
           </a>
           <a href="mailto:audreyckho@gmail.com" target="_blank" rel="noreferrer">
             <Mail color="#d8dbdb" width="26px" height="24px"/>
@@ -45,16 +45,12 @@ const NavStyles = styled.nav`
   position: sticky;
   top: 0;
   background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2.5px);
   z-index: 999;
-
-  h3 {
-    font-weight: 400;
-    letter-spacing: 2px;
-  }
 
   a {
     font-size: 14px;
+    letter-spacing: 1px;
     display: flex;
     align-items: flex-start;
   }
@@ -75,7 +71,6 @@ const FooterStyles = styled.footer`
   padding: 0 24px;
 
   h5 {
-    letter-spacing: 2px;
     font-weight: 500;
   }
 `;

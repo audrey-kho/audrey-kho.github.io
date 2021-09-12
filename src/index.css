@@ -27,11 +27,11 @@ body {
   position: relative;
   height: 100%;
   background-color: #242629;
-  background-image: linear-gradient(#111e36, #7d92b3);
-  font-family: "Whyte Light", sans-serif;
+  background-image: linear-gradient(#111e36, #445575);
+  font-family: "Whyte", sans-serif;
   color: #d8dbdb !important;
   letter-spacing: 2px !important;
-  height: 3000px;
+  height: 100%;
 }
 
 a {

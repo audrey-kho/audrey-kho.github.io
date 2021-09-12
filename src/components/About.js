@@ -1,4 +1,4 @@
-import { School, SchoolOutline } from "react-ionicons";
+import { HeartOutline, SchoolOutline, TerminalOutline } from "react-ionicons";
 import styled from "styled-components";
 import { MainSection, SectionTitle } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
@@ -7,32 +7,31 @@ export default function About() {
   return (
     <ResponsiveContainer>
       <AboutStyles id="about">
-        <SectionTitle href="about">ABOUT ME</SectionTitle>
+        <SectionTitle href="about">ABOUT</SectionTitle>
         <MainSection>
           <h5>HELLO! MY NAME IS</h5>
           <h2>Audrey&mdash;</h2>
           <ul className="details__list">
             <li>
+              <TerminalOutline color="#d8dbdb" width="20px" height="20px" />
+              <p>
+                I'm a Seattle-based software developer who enjoys creating dynamic web applications.
+              </p>
+            </li>
+            <li>
               <SchoolOutline color="#d8dbdb" width="20px" height="20px" />
               <p>
-                I'm majoring in&nbsp;
-                <a href="https://ischool.uw.edu/" target="_blank" rel="noreferrer">
+                I'm studying <a href="https://ischool.uw.edu/" target="_blank" rel="noreferrer">
                   Informatics
                 </a>
-                &nbsp;with a focus in Software Development &amp; Human-Computer Interaction at the&nbsp;
-                <a href="https://www.washington.edu/" target="_blank" rel="noreferrer">
-                  University of Washington&ndash;Seattle.
-                </a>
+                &nbsp;with a focus in Software Development &amp; Human-Computer Interaction
+                at the <a href="https://www.washington.edu/" target="_blank" rel="noreferrer">University of Washington.</a>
               </p>
             </li>
             <li>
-              <School color="#d8dbdb" width="20px" height="20px" />
+              <HeartOutline color="#d8dbdb" width="20px" height="20px" />
               <p>
-              </p>
-            </li>
-            <li>
-              <School color="#d8dbdb" width="20px" height="20px" />
-              <p>
+                I love to cook and bake in my free time and have an (un)healthy obsession with ramen and everything vanilla!
               </p>
             </li>
           </ul>
@@ -51,25 +50,36 @@ const AboutStyles = styled.section`
 
   h2,
   h5 {
+    font-family: 'Whyte Light', sans-serif;
     margin: 0;
   }
 
   h2 {
-    font-size: 82px;
+    font-size: 74px;
     letter-spacing: 3px;
+
+    @media (max-width: 768px) {
+      font-size: 54px;
+    }
   }
 
   ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
+
+    li + li {
+      margin-left: 20px;
+    }
 
     li {
       display: flex;
       align-items: flex-start;
-      max-width: 312px;
+      max-width: 315px;
       letter-spacing: 1px;
+      margin: 14px 0;
       padding: 0;
       line-height: 1.5;
 
@@ -78,6 +88,7 @@ const AboutStyles = styled.section`
       }
 
       p {
+        font-family: 'Whyte Light', sans-serif;
         margin: 0;
       }
 
@@ -86,12 +97,14 @@ const AboutStyles = styled.section`
         // background: linear-gradient(to left, #2bad7c, #3581de)
         //   left bottom no-repeat;
         // background-size: 100% 1px;
-        border-bottom: solid 1px #35a66f;
+        border-bottom: solid 1px #7877F7;
       }
     }
 
-    > * + * {
-      padding-left: 20px !important;
+    @media (max-width: 1190px) {
+      li {
+        margin-left: 0 !important;
+      }
     }
   }
 `;
