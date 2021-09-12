@@ -3,7 +3,7 @@ import { ArrowForwardSharp } from "react-ionicons";
 import { Link } from "react-scroll";
 
 export const SectionTitle = (...props) => {
-  const {href, children} = props[0];
+  const { href, children } = props[0];
   return (
     <SectionTitleStyles>
       <Link to={href} smooth={true} offset={-92}>
@@ -29,6 +29,7 @@ const SectionTitleStyles = styled.p`
   }
 `;
 
+// provides spacing between main content and the clickable section title
 export const MainSection = (props) => {
   return <MainStyles>{props.children}</MainStyles>;
 };

@@ -14,24 +14,26 @@ export default function About() {
           <ul className="details__list">
             <li>
               <TerminalOutline color="#d8dbdb" width="20px" height="20px" />
-              <p>
-                I'm a Seattle-based software developer who enjoys creating dynamic web applications.
-              </p>
+              <p>I'm a Seattle-based software developer who enjoys creating dynamic web applications.</p>
             </li>
             <li>
               <SchoolOutline color="#d8dbdb" width="20px" height="20px" />
               <p>
-                I'm studying <a href="https://ischool.uw.edu/" target="_blank" rel="noreferrer">
+                I'm studying{" "}
+                <a href="https://ischool.uw.edu/" target="_blank" rel="noreferrer">
                   Informatics
                 </a>
-                &nbsp;with a focus in Software Development &amp; Human-Computer Interaction
-                at the <a href="https://www.washington.edu/" target="_blank" rel="noreferrer">University of Washington.</a>
+                &nbsp;with a focus in Software Development &amp; Human-Computer Interaction at the{" "}
+                <a href="https://www.washington.edu/" target="_blank" rel="noreferrer">
+                  University of Washington.
+                </a>
               </p>
             </li>
             <li>
               <HeartOutline color="#d8dbdb" width="20px" height="20px" />
               <p>
-                I love to cook and bake in my free time and have an (un)healthy obsession with ramen and everything vanilla!
+                I love to cook and bake in my free time and have an (un)healthy obsession with ramen and everything
+                vanilla!
               </p>
             </li>
           </ul>
@@ -50,7 +52,6 @@ const AboutStyles = styled.section`
 
   h2,
   h5 {
-    font-family: 'Whyte Light', sans-serif;
     margin: 0;
   }
 
@@ -88,7 +89,6 @@ const AboutStyles = styled.section`
       }
 
       p {
-        font-family: 'Whyte Light', sans-serif;
         margin: 0;
       }
 
@@ -97,7 +97,7 @@ const AboutStyles = styled.section`
         // background: linear-gradient(to left, #2bad7c, #3581de)
         //   left bottom no-repeat;
         // background-size: 100% 1px;
-        border-bottom: solid 1px #7877F7;
+        border-bottom: solid 1px #7877f7;
       }
     }
 

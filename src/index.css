@@ -34,6 +34,10 @@ body {
   height: 100%;
 }
 
+p {
+  font-family: "Whyte Light", sans-serif;
+}
+
 a {
   color: #d8dbdb;
   text-decoration: none;

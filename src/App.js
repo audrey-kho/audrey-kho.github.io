@@ -2,6 +2,7 @@ import { ReactComponent as LinkArrow } from "./assets/arrow-up-right.svg";
 import { Mail, LogoLinkedin, LogoGithub } from "react-ionicons";
 import About from "./components/About";
 import styled from "styled-components";
+import Skills from "./components/Skills";
 
 export default function App() {
   return (
@@ -14,20 +15,22 @@ export default function App() {
             target="_blank"
             rel="noreferrer"
           >
-            RESUME<LinkArrow />
+            RESUME
+            <LinkArrow />
           </a>
           <a href="mailto:audreyckho@gmail.com" target="_blank" rel="noreferrer">
-            <Mail color="#d8dbdb" width="26px" height="24px"/>
+            <Mail color="#d8dbdb" width="26px" height="24px" />
           </a>
           <a href="https://www.linkedin.com/in/audrey-kho/" target="_blank" rel="noreferrer">
-            <LogoLinkedin color="#d8dbdb" height="24px"/>
+            <LogoLinkedin color="#d8dbdb" height="24px" />
           </a>
           <a href="https://github.com/audrey-kho" target="_blank" rel="noreferrer">
-            <LogoGithub color="#d8dbdb"  width="24px" height="24px"/>
+            <LogoGithub color="#d8dbdb" width="24px" height="24px" />
           </a>
         </div>
       </NavStyles>
-      <About/>
+      <About />
+      <Skills/>
       <FooterStyles>
         <h5>&copy; AUDREY KHO 2021</h5>
       </FooterStyles>
@@ -66,11 +69,12 @@ const NavStyles = styled.nav`
 `;
 
 const FooterStyles = styled.footer`
-  position: absolute;
-  bottom: 0;
+  position: relative;
   padding: 0 24px;
 
   h5 {
+    position: absolute;
+    bottom: 24px;
     font-weight: 500;
   }
 `;
