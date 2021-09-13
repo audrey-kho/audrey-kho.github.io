@@ -1,6 +1,6 @@
 import { HeartOutline, SchoolOutline, TerminalOutline } from "react-ionicons";
 import styled from "styled-components";
-import { MainSection, SectionTitle } from "./Elements";
+import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
 
 export default function About() {
@@ -9,8 +9,8 @@ export default function About() {
       <AboutStyles id="about">
         <SectionTitle href="about">ABOUT</SectionTitle>
         <MainSection>
-          <h5>HELLO! MY NAME IS</h5>
-          <h2>Audrey&mdash;</h2>
+          <SectionHeading>HELLO! MY NAME IS</SectionHeading>
+          <h1>Audrey</h1>
           <ul className="details__list">
             <li>
               <TerminalOutline color="#d8dbdb" width="20px" height="20px" />
@@ -45,17 +45,15 @@ export default function About() {
 
 const AboutStyles = styled.section`
   margin-top: 120px;
-  margin-bottom: 80px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 
-  h2,
-  h5 {
+  h1 {
     margin: 0;
   }
 
-  h2 {
+  h1 {
     font-size: 74px;
     letter-spacing: 3px;
 

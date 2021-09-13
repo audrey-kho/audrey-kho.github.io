@@ -8,7 +8,7 @@ export default function App() {
   return (
     <>
       <NavStyles>
-        <h3>AUDREY KHO</h3>
+        <h2>AUDREY KHO</h2>
         <div className="external">
           <a
             href="https://drive.google.com/file/d/1K4P0W8m9sU6cNN-XS0x6gC4wB7RACUpC/view"
@@ -42,14 +42,19 @@ const NavStyles = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
   padding: 0 18px;
   max-width: 1380px;
-  margin: 0 auto;
   position: sticky;
   top: 0;
   background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(2.5px);
   z-index: 999;
+
+  h2 {
+    font-size: 16px;
+    margin: 30px 0;
+  }
 
   a {
     font-size: 14px;

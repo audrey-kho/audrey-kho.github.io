@@ -29,6 +29,10 @@ const SectionTitleStyles = styled.p`
   }
 `;
 
+export const SectionHeading = styled.h5`
+  margin: 0;
+`
+
 // provides spacing between main content and the clickable section title
 export const MainSection = (props) => {
   return <MainStyles>{props.children}</MainStyles>;
