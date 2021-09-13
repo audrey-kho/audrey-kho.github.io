@@ -2,7 +2,6 @@ import { ReactComponent as LinkArrow } from "./assets/arrow-up-right.svg";
 import { Mail, LogoLinkedin, LogoGithub } from "react-ionicons";
 import About from "./components/About";
 import styled from "styled-components";
-import Skills from "./components/Skills";
 
 export default function App() {
   return (
@@ -30,7 +29,6 @@ export default function App() {
         </div>
       </NavStyles>
       <About />
-      <Skills/>
       <FooterStyles>
         <h5>&copy; AUDREY KHO 2021</h5>
       </FooterStyles>

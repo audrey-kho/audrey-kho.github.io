@@ -27,11 +27,11 @@ body {
   position: relative;
   height: 100%;
   background-color: #242629;
-  background-image: linear-gradient(#111e36, #445575);
+  background-image: linear-gradient(#111e36, #50597a);
   font-family: "Whyte", sans-serif;
   color: #d8dbdb !important;
   letter-spacing: 2px !important;
-  height: 2000px;
+  height: 100%;
 }
 
 p {

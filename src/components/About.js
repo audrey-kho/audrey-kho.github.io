@@ -3,6 +3,20 @@ import styled from "styled-components";
 import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
 
+import {
+  CssThree,
+  Html5,
+  Java,
+  Javascript,
+  Nextdotjs,
+  Nodedotjs,
+  Python,
+  ReactJs,
+  Styledcomponents,
+  Swift,
+  Typescript,
+} from "@icons-pack/react-simple-icons";
+
 export default function About() {
   return (
     <ResponsiveContainer>
@@ -32,9 +46,52 @@ export default function About() {
             <li>
               <HeartOutline color="#d8dbdb" width="20px" height="20px" />
               <p>
-                I love to cook and bake in my free time and have an (un)healthy obsession with ramen and everything
-                vanilla!
+                I love to cook and bake in my free time and have an (un)healthy obsession with ramen and everything{" "}
+                <a
+                  href="https://vanleeuwenicecream.com/product/vanilla-bean-ice-cream/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  vanilla
+                </a>
+                !
               </p>
+            </li>
+          </ul>
+          <SectionHeading>RECENT LANGUAGES &amp; TECHNOLOGIES:</SectionHeading>
+          <ul className="skills__list">
+            <li>
+              <Html5 title="HTML" width="38" height="38" />
+            </li>
+            <li>
+              <CssThree title="CSS" width="38" height="38" />
+            </li>
+            <li>
+              <Javascript title="JavaScript" width="38" height="38" />
+            </li>
+            <li>
+              <Typescript title="Typescript" width="38" height="38" />
+            </li>
+            <li>
+              <ReactJs title="React.js" width="38" height="38" />
+            </li>
+            <li>
+              <Nextdotjs title="Next.js" width="38" height="38" />
+            </li>
+            <li>
+              <Styledcomponents title="styled-components" width="38" height="38" />
+            </li>
+            <li>
+              <Nodedotjs title="Node.js" width="38" height="38" />
+            </li>
+            <li>
+              <Java title="Java" width="38" height="38" />
+            </li>
+            <li>
+              <Python title="Python" width="38" height="38" />
+            </li>
+            <li>
+              <Swift title="Swift" width="38" height="38" />
             </li>
           </ul>
         </MainSection>
@@ -45,6 +102,7 @@ export default function About() {
 
 const AboutStyles = styled.section`
   margin-top: 120px;
+  margin-bottom: 180px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -62,7 +120,7 @@ const AboutStyles = styled.section`
     }
   }
 
-  ul {
+  .details__list {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -78,7 +136,7 @@ const AboutStyles = styled.section`
       align-items: flex-start;
       max-width: 315px;
       letter-spacing: 1px;
-      margin: 14px 0;
+      margin: 12px 0 20px;
       padding: 0;
       line-height: 1.5;
 
@@ -103,6 +161,20 @@ const AboutStyles = styled.section`
       li {
         margin-left: 0 !important;
       }
+    }
+  }
+
+  .skills__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 12px -20px;
+    padding: 0;
+    list-style: none;
+    overflow: auto;
+
+    li {
+      margin: 10px 22px;
     }
   }
 `;
