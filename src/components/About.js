@@ -61,37 +61,37 @@ export default function About() {
           <SectionHeading>RECENT LANGUAGES &amp; TECHNOLOGIES:</SectionHeading>
           <ul className="skills__list">
             <li>
-              <Html5 title="HTML" width="38" height="38" />
+              <Html5 title="HTML" width="36" height="36" />
             </li>
             <li>
-              <CssThree title="CSS" width="38" height="38" />
+              <CssThree title="CSS" width="36" height="36" />
             </li>
             <li>
-              <Javascript title="JavaScript" width="38" height="38" />
+              <Javascript title="JavaScript" width="36" height="36" />
             </li>
             <li>
-              <Typescript title="Typescript" width="38" height="38" />
+              <Typescript title="Typescript" width="36" height="36" />
             </li>
             <li>
-              <ReactJs title="React.js" width="38" height="38" />
+              <ReactJs title="React.js" width="36" height="36" />
             </li>
             <li>
-              <Nextdotjs title="Next.js" width="38" height="38" />
+              <Nextdotjs title="Next.js" width="36" height="36" />
             </li>
             <li>
-              <Styledcomponents title="styled-components" width="38" height="38" />
+              <Styledcomponents title="styled-components" width="36" height="36" />
             </li>
             <li>
-              <Nodedotjs title="Node.js" width="38" height="38" />
+              <Nodedotjs title="Node.js" width="36" height="36" />
             </li>
             <li>
-              <Java title="Java" width="38" height="38" />
+              <Java title="Java" width="36" height="36" />
             </li>
             <li>
-              <Python title="Python" width="38" height="38" />
+              <Python title="Python" width="36" height="36" />
             </li>
             <li>
-              <Swift title="Swift" width="38" height="38" />
+              <Swift title="Swift" width="36" height="36" />
             </li>
           </ul>
         </MainSection>
@@ -101,7 +101,7 @@ export default function About() {
 }
 
 const AboutStyles = styled.section`
-  margin-top: 120px;
+  margin-top: 140px;
   margin-bottom: 180px;
   display: flex;
   justify-content: center;
