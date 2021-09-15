@@ -153,7 +153,11 @@ const AboutStyles = styled.section`
         // background: linear-gradient(to left, #2bad7c, #3581de)
         //   left bottom no-repeat;
         // background-size: 100% 1px;
-        border-bottom: solid 1px #7877f7;
+        // border-bottom: solid 1px #7877f7;
+        background-image: linear-gradient(to left, #7877f7, #7877f7);
+        background-repeat: repeat-x;
+        background-position: 0 92%;
+        background-size: 1px 1px;
       }
     }
 

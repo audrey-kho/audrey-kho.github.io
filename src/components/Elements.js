@@ -24,6 +24,14 @@ const SectionTitleStyles = styled.p`
   font-weight: 600;
   min-width: 120px;
 
+  svg {
+    transition: 0.3s all;
+  }
+
+  a:hover svg {
+    transform: translateX(3px);
+  }
+
   @media (max-width: 768px) {
     display: none;
   }

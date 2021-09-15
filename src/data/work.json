@@ -1,8 +1,32 @@
 {
   "experience": [
-    { "name": "Ionic", "link": "https://ionic.io/", "description": "" },
-    { "name": "UW School of Medicine", "link": "https://www.uwmedicine.org/", "description": "" },
-    { "name": "ReThink @ UW", "link": "https://www.uwmedicine.org/", "description": "" }
+    { 
+      "name": "Ionic", 
+      "link": "https://ionic.io/", 
+      "position": "Frontend Developer Intern", 
+      "description": "" 
+    },
+    {
+      "name": "UW School of Medicine",
+      "link": "https://www.uwmedicine.org/",
+      "position": "Volunteer Software Developer",
+      "description": ""
+    }
   ],
-  "projects": []
+  "projects": [
+    { 
+      "name": "Health+", 
+      "link": "https://project-2-audrey-kho.web.app/", 
+      "type": "Team Project", 
+      "description": "",
+      "technologies": ["HTML", "CSS", "JavaScript", "React", "Firebase"]
+    },
+    {
+      "name": "Random Recipe Generator",
+      "link": "https://randomtastyrecipe.herokuapp.com/",
+      "type": "Personal Project",
+      "description": "",
+      "technologies": ["HTML", "CSS", "JavaScript", "Node.js"]
+    }
+  ]
 }

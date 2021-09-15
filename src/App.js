@@ -1,5 +1,5 @@
 import { ReactComponent as LinkArrow } from "./assets/arrow-up-right.svg";
-import { Mail, LogoLinkedin, LogoGithub } from "react-ionicons";
+import { Mail, LogoLinkedin, LogoGithub, ChevronDownSharp } from "react-ionicons";
 import About from "./components/About";
 import styled from "styled-components";
 import Work from "./components/Work";
@@ -28,6 +28,9 @@ export default function App() {
             <LogoGithub color="#d8dbdb" width="24px" height="24px" />
           </a>
         </div>
+        <a>
+          <ChevronDownSharp color="#d8dbdb" width="16px" height="16px"/>
+        </a>
       </NavStyles>
       <About />
       <Work/>
