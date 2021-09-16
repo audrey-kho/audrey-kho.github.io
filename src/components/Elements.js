@@ -8,7 +8,7 @@ export const SectionTitle = (...props) => {
     <SectionTitleStyles>
       <Link to={href} smooth={true} offset={-92}>
         {children}&nbsp;
-        <ArrowForwardSharp color={"#d8dbdb"} width="12px" height="12px" />
+        <ArrowForwardSharp color={"#d8dbdb"} width="10px" height="10px" />
       </Link>
     </SectionTitleStyles>
   );
@@ -20,7 +20,7 @@ const SectionTitleStyles = styled.p`
   top: 80px;
   margin: 1px 0 0 !important;
   font-family: "Whyte", sans-serif;
-  font-size: 12.5px;
+  font-size: 10.5px;
   font-weight: 600;
   min-width: 120px;
 

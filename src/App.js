@@ -1,4 +1,4 @@
-import { ReactComponent as LinkArrow } from "./assets/arrow-up-right.svg";
+import LinkArrow from "./assets/LinkArrow";
 import { Mail, LogoLinkedin, LogoGithub, ChevronDownSharp } from "react-ionicons";
 import About from "./components/About";
 import styled from "styled-components";
@@ -16,7 +16,7 @@ export default function App() {
             rel="noreferrer"
           >
             RESUME
-            <LinkArrow />
+            <LinkArrow width={15} height={15} stroke={2}/>
           </a>
           <a href="mailto:audreyckho@gmail.com" target="_blank" rel="noreferrer">
             <Mail color="#d8dbdb" width="26px" height="24px" />
@@ -60,8 +60,7 @@ const NavStyles = styled.nav`
   }
 
   a {
-    font-size: 14px;
-    letter-spacing: 1px;
+    font-size: 13px;
     display: flex;
     align-items: flex-start;
   }
