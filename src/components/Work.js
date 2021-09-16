@@ -18,7 +18,7 @@ export default function Work() {
                   <a href={link} target="_blank" rel="noreferrer">
                     <em dangerouslySetInnerHTML={{__html: time}}/>
                     <div>
-                      <h2>{name.toUpperCase()}<LinkArrow width={38} height={38} /></h2>
+                      <h2>{name.toUpperCase()}<LinkArrow width={34} height={34} /></h2>
                       <h6>{position}</h6>
                       <p>{description}</p>
                     </div>
@@ -68,13 +68,13 @@ const WorkStyles = styled.section`
     li {
       h2 {
         display: inline-block;
-        font-size: 32px;
+        font-size: 28px;
         letter-spacing: 3px;
         margin: -7px 0 4px;
 
         svg {
           margin-bottom: -5px;
-          margin-left: -4px;
+          margin-left: -3px;
           transition: 0.3s all;
         }
       }
@@ -149,7 +149,8 @@ const WorkStyles = styled.section`
       margin-bottom: 38px;
 
       &:hover {
-        box-shadow: 0 3px 18px #111e3675;
+        box-shadow: 0 3px 18px #1622385d;
+        transform: translateY(-2px);
       }
     }
   }
