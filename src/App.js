@@ -124,7 +124,7 @@ const NavStyles = styled.nav`
       margin-left: 22px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 475px) {
       display: none;
     }
   }
@@ -176,7 +176,7 @@ const NavStyles = styled.nav`
       // transform: translateY(-1px);
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 475px) {
       display: block;
     }
   }

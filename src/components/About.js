@@ -102,7 +102,7 @@ export default function About() {
 
 const AboutStyles = styled.section`
   margin-top: 140px;
-  margin-bottom: 180px;
+  margin-bottom: 160px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -125,6 +125,7 @@ const AboutStyles = styled.section`
     justify-content: flex-start;
     flex-wrap: wrap;
     list-style: none;
+    margin: 34px 0;
     padding: 0;
 
     li + li {

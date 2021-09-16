@@ -4,13 +4,22 @@
       "name": "Ionic", 
       "link": "https://ionic.io/", 
       "position": "Frontend Developer Intern", 
-      "description": "" 
+      "description": "",
+      "time": "06&ndash;09/21"
     },
     {
       "name": "UW School of Medicine",
       "link": "https://www.uwmedicine.org/",
       "position": "Volunteer Software Developer",
-      "description": ""
+      "description": "",
+      "time": "02/21&ndash;"
+    },
+    {
+      "name": "ReThink@UW",
+      "link": "https://github.com/ReThink-SUB",
+      "position": "Frontend Developer",
+      "description": "",
+      "time": "01/21&ndash;"
     }
   ],
   "projects": [

@@ -38,7 +38,8 @@ const SectionTitleStyles = styled.p`
 `;
 
 export const SectionHeading = styled.h5`
-  margin: 0;
+  margin: 0 0 14px;
+  font-size: 13px;
 `
 
 // provides spacing between main content and the clickable section title
