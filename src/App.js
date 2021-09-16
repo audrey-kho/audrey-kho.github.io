@@ -124,7 +124,7 @@ const NavStyles = styled.nav`
       margin-left: 22px;
     }
 
-    @media (max-width: 475px) {
+    @media (max-width: 750px) {
       display: none;
     }
   }
@@ -137,6 +137,8 @@ const NavStyles = styled.nav`
     padding: 0;
     border-radius: 3px;
     transition: 0.3s all;
+    backdrop-filter: blur(10px) !important;
+
 
     svg {
       padding: 4px 8px 2px;
@@ -152,18 +154,15 @@ const NavStyles = styled.nav`
       top: 50px;
       right: 0;
       padding: 6px 16px;
-      background: rgba(22, 38, 66, 0.5);
-      backdrop-filter: blur(4px);
+      background: rgba(22, 38, 66, 0.75);
       box-shadow: 0 0 2px rgba(102, 118, 146, 0.8);
       border-radius: 6px;
-      pointer-events: none;
       animation: ${dropdown} 0.2s ease;
 
       a {
         margin: 4px 0;
         padding: 2px;
         cursor: pointer !important;
-        pointer-events: auto;
       }
 
       &.hidden {
@@ -171,12 +170,11 @@ const NavStyles = styled.nav`
       }
     }
 
-    &:hover:not(.mobile-dropdown), &:active, &:focus {
+    &:hover, &:active, &:focus {
       box-shadow: 0 0 2px rgba(180, 180, 220, 0.8);
-      // transform: translateY(-1px);
     }
 
-    @media (max-width: 475px) {
+    @media (max-width: 750px) {
       display: block;
     }
   }
