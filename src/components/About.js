@@ -1,4 +1,4 @@
-import { HeartOutline, SchoolOutline, TerminalOutline } from "react-ionicons";
+import { Heart, School, Terminal } from "react-ionicons";
 import styled from "styled-components";
 import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
@@ -27,11 +27,11 @@ export default function About() {
           <h1>Audrey</h1>
           <ul className="details__list">
             <li>
-              <TerminalOutline color="#d8dbdb" width="20px" height="20px" />
+              <Terminal color="#d8dbdb" width="20px" height="20px" />
               <p>I'm a Seattle-based software developer who enjoys creating dynamic web applications.</p>
             </li>
             <li>
-              <SchoolOutline color="#d8dbdb" width="20px" height="20px" />
+              <School color="#d8dbdb" width="20px" height="20px" />
               <p>
                 I'm studying{" "}
                 <a href="https://ischool.uw.edu/" target="_blank" rel="noreferrer">
@@ -44,7 +44,7 @@ export default function About() {
               </p>
             </li>
             <li>
-              <HeartOutline color="#d8dbdb" width="20px" height="20px" />
+              <Heart color="#d8dbdb" width="20px" height="20px" />
               <p>
                 I love to cook and bake in my free time and have an (un)healthy obsession with ramen and everything{" "}
                 <a
@@ -155,7 +155,7 @@ const AboutStyles = styled.section`
         //   left bottom no-repeat;
         // background-size: 100% 1px;
         // border-bottom: solid 1px #7877f7;
-        background-image: linear-gradient(to left, #7877f7, #7877f7);
+        background-image: linear-gradient(to left, #8787ff, #8787ff);
         background-repeat: repeat-x;
         background-position: 0 92%;
         background-size: 1px 1px;

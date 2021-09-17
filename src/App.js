@@ -182,12 +182,8 @@ const NavStyles = styled.nav`
 
 const FooterStyles = styled.footer`
   position: relative;
-  margin-top: 500px;
-  padding: 0 24px;
-
-  h5 {
-    position: absolute;
-    bottom: 24px;
-    font-weight: 500;
-  }
+  // margin-top: 500px;
+  padding: 24px;
+  display: flex;
+  font-weight: 500;
 `;

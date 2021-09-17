@@ -15,14 +15,21 @@ export default function Work() {
             {experience.map(({ name, link, position, description, time }, index) => {
               return (
                 <li key={name}>
-                  <a href={link} target="_blank" rel="noreferrer">
-                    <em dangerouslySetInnerHTML={{__html: time}}/>
-                    <div>
-                      <h2>{name.toUpperCase()}<LinkArrow width={34} height={34} /></h2>
-                      <h6>{position}</h6>
-                      <p>{description}</p>
-                    </div>
-                  </a>
+                  <em dangerouslySetInnerHTML={{ __html: time }} />
+                  <div>
+                    <a href={link} target="_blank" rel="noreferrer">
+                      <h2>
+                        {name.toUpperCase()}
+                        <LinkArrow width={34} height={34} />
+                      </h2>
+                    </a>
+                    <h6>{position}</h6>
+                    <ul className="desc__list">
+                      {description.map((d) => {
+                        return <li>{d}</li>;
+                      })}
+                    </ul>
+                  </div>
                 </li>
               );
             })}
@@ -35,7 +42,7 @@ export default function Work() {
                   <a href={link} target="_blank" rel="noreferrer">
                     <span>{type}</span>
                     <h3>{name.toUpperCase()}</h3>
-                    <p>{description}</p>
+                    <p dangerouslySetInnerHTML={{ __html: description }} />
                   </a>
                 </li>
               );
@@ -58,14 +65,16 @@ const WorkStyles = styled.section`
     flex-direction: column;
     flex-wrap: wrap;
     list-style: none;
-    margin: 0 0 62px;
+    margin: 0 0 82px;
     padding: 0;
 
     > li + li {
-      margin-top: 48px;
+      margin-top: 68px;
     }
 
     li {
+      display: flex;
+
       h2 {
         display: inline-block;
         font-size: 28px;
@@ -79,7 +88,8 @@ const WorkStyles = styled.section`
         }
       }
 
-      span, h6 {
+      span,
+      h6 {
         font-family: "Whyte Light", sans-serif;
         font-size: 14px;
         margin: 0;
@@ -87,12 +97,10 @@ const WorkStyles = styled.section`
       }
 
       a {
-        display: flex;
-        align-items: flex-start;
-        padding: 2px 0;
+        padding: 2px;
 
         &:hover svg {
-          transform: translate(2px, -2px);
+          transform: translate(1px, -1px);
         }
       }
 
@@ -109,6 +117,23 @@ const WorkStyles = styled.section`
         letter-spacing: 1px;
         width: 60px;
         font-style: normal;
+      }
+
+      .desc__list {
+        margin: 6px 0;
+        padding-left: 24px;
+
+        li {
+          font-family: "Whyte Light", sans-serif;
+          font-size: 16px;
+          letter-spacing: 1px;
+
+          &::before {
+            position: absolute;
+            content: '-';
+            left: 1px;
+          }
+        }
       }
     }
   }
@@ -134,6 +159,16 @@ const WorkStyles = styled.section`
         font-size: 12px;
         margin: 0;
         text-transform: uppercase;
+      }
+    }
+
+    p {
+      letter-spacing: 1px;
+
+      a {
+        display: inline;
+        padding: 0;
+        color: #8787ff;
       }
     }
 
