@@ -20,7 +20,7 @@ export default function Work() {
                     <a href={link} target="_blank" rel="noreferrer">
                       <h2>
                         {name.toUpperCase()}
-                        <LinkArrow width={34} height={34} />
+                        <LinkArrow width={34} height={34} color={"#8787ff"} />
                       </h2>
                     </a>
                     <h6>{position}</h6>
@@ -125,7 +125,7 @@ const WorkStyles = styled.section`
       }
 
       .desc__list {
-        margin: 6px 0;
+        margin: 9px 0;
         padding-left: 24px;
 
         li {
@@ -175,6 +175,11 @@ const WorkStyles = styled.section`
       transition: 0.3s all;
       margin-right: 16px;
       margin-bottom: 38px;
+      position: relative;
+
+      a {
+        height: 84%;
+      }
 
       p {
         letter-spacing: 1px;
@@ -187,14 +192,6 @@ const WorkStyles = styled.section`
           background-size: 1px 1px;
           background-repeat: repeat-x;
           background-position: 0 92%;
-          // padding-right: 12.3px;
-
-          // &::after {
-          //   position: absolute;
-          //   bottom: -3.2px;
-          //   right: -3px;
-          //   content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYuNSIgaGVpZ2h0PSIxNi41IiB2aWV3Qm94PSIwIDAgMjUgMjUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik03LjMwMjggMTcuODk2MUwxNy4zMDI4IDcuODk2MTIiIHN0cm9rZT0iI2Q4ZGJkYiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWpvaW49ImFyY3MiLz4KPHBhdGggZD0iTTcuMzAyOCA3Ljg5NjEySDE3LjMwMjhWMTcuODk2MSIgc3Ryb2tlPSIjZDhkYmRiIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lam9pbj0iYXJjcyIvPgo8L3N2Zz4K");
-          // }
         }
       }
 

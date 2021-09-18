@@ -124,7 +124,7 @@ const NavStyles = styled.nav`
       margin-left: 22px;
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 425px) {
       display: none;
     }
   }
@@ -154,9 +154,10 @@ const NavStyles = styled.nav`
       top: 50px;
       right: 0;
       padding: 6px 16px;
-      background: rgba(22, 38, 66, 0.75);
-      box-shadow: 0 0 2px rgba(102, 118, 146, 0.8);
-      border-radius: 6px;
+      background: rgba(21, 29, 48, 0.75);
+      // box-shadow: inset 0 0 5px rgba(102, 118, 146, 0.4);
+      border: solid rgba(216, 219, 219, 0.2) 0.5px;
+      border-radius: 8px;
       animation: ${dropdown} 0.2s ease;
 
       a {
@@ -171,10 +172,10 @@ const NavStyles = styled.nav`
     }
 
     &:hover, &:active, &:focus {
-      box-shadow: 0 0 2px rgba(180, 180, 220, 0.8);
+      box-shadow: inset 0 0 3px rgba(180, 180, 220, 0.6);
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 425px) {
       display: block;
     }
   }

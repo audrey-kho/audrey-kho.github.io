@@ -1,19 +1,18 @@
-import { CodeSlashOutline, HeartOutline, SchoolOutline } from "react-ionicons";
+import { CodeSlashOutline, HeartOutline, LogoFigma, SchoolOutline } from "react-ionicons";
 import styled from "styled-components";
 import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
 
 import {
   CssThree,
+  Figma,
+  Firebase,
   Html5,
   Java,
   Javascript,
   Nextdotjs,
-  Nodedotjs,
-  Python,
   ReactJs,
   Styledcomponents,
-  Swift,
   Typescript,
 } from "@icons-pack/react-simple-icons";
 
@@ -40,7 +39,7 @@ export default function About() {
                 &nbsp;with a focus in Software Development &amp; Human-Computer Interaction at the{" "}
                 <a href="https://www.washington.edu/" target="_blank" rel="noreferrer">
                   University of Washington
-                </a>
+                </a>.
               </p>
             </li>
             <li>
@@ -53,7 +52,7 @@ export default function About() {
                   rel="noreferrer"
                 >
                   vanilla
-                </a>
+                </a>!
               </p>
             </li>
           </ul>
@@ -61,36 +60,43 @@ export default function About() {
           <ul className="skills__list">
             <li>
               <Html5 title="HTML" width="36" height="36" />
+              <h6>HTML</h6>
             </li>
             <li>
               <CssThree title="CSS" width="36" height="36" />
+              <h6>CSS</h6>
             </li>
             <li>
               <Javascript title="JavaScript" width="36" height="36" />
+              <h6>JavaScript</h6>
             </li>
             <li>
               <Typescript title="Typescript" width="36" height="36" />
+              <h6>Typescript</h6>
             </li>
             <li>
               <ReactJs title="React.js" width="36" height="36" />
+              <h6>React.js</h6>
             </li>
             <li>
               <Nextdotjs title="Next.js" width="36" height="36" />
+              <h6>Next.js</h6>
             </li>
             <li>
               <Styledcomponents title="styled-components" width="36" height="36" />
+              <h6>styled-components</h6>
             </li>
             <li>
-              <Nodedotjs title="Node.js" width="36" height="36" />
+              <Firebase title="Swift" width="36" height="36" />
+              <h6>Firebase</h6>
             </li>
             <li>
               <Java title="Java" width="36" height="36" />
+              <h6>Java</h6>
             </li>
             <li>
-              <Python title="Python" width="36" height="36" />
-            </li>
-            <li>
-              <Swift title="Swift" width="36" height="36" />
+              <Figma title="Figma" width="36" height="36" />
+              <h6>Figma</h6>
             </li>
           </ul>
         </MainSection>
@@ -100,7 +106,7 @@ export default function About() {
 }
 
 const AboutStyles = styled.section`
-  margin-top: 140px;
+  margin-top: 132px;
   margin-bottom: 160px;
   display: flex;
   justify-content: center;
@@ -124,7 +130,7 @@ const AboutStyles = styled.section`
     justify-content: flex-start;
     flex-wrap: wrap;
     list-style: none;
-    margin: 34px 0;
+    margin: 28px 0 42px;
     padding: 0;
 
     li + li {
@@ -154,14 +160,6 @@ const AboutStyles = styled.section`
         background-repeat: repeat-x;
         background-position: 0 92%;
         background-size: 1px 1px;
-        // padding-right: 12.3px;
-
-        // &::after {
-        //   position: absolute;
-        //   bottom: -3.8px;
-        //   right: -3px;
-        //   content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYuNSIgaGVpZ2h0PSIxNi41IiB2aWV3Qm94PSIwIDAgMjUgMjUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik03LjMwMjggMTcuODk2MUwxNy4zMDI4IDcuODk2MTIiIHN0cm9rZT0iI2Q4ZGJkYiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWpvaW49ImFyY3MiLz4KPHBhdGggZD0iTTcuMzAyOCA3Ljg5NjEySDE3LjMwMjhWMTcuODk2MSIgc3Ryb2tlPSIjZDhkYmRiIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lam9pbj0iYXJjcyIvPgo8L3N2Zz4K');
-        // }
       }
     }
 
@@ -175,14 +173,31 @@ const AboutStyles = styled.section`
   .skills__list {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
     flex-wrap: wrap;
-    margin: 12px -20px;
     padding: 0;
     list-style: none;
     overflow: auto;
+    margin: 16px -24px;
 
     li {
-      margin: 10px 22px;
+      max-width: 78px;
+      margin: 12px 24px;
+
+      svg {
+        display: block;
+        margin: 0 auto;
+      }
+
+      h6 {
+        margin: 0;
+        font-family: "Whyte Light", sans-serif;
+        font-size: 10px;
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 12px;
+      }
     }
   }
 `;
