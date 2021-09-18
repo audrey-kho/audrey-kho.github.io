@@ -182,7 +182,6 @@ const NavStyles = styled.nav`
 
 const FooterStyles = styled.footer`
   position: relative;
-  // margin-top: 500px;
   padding: 24px;
   display: flex;
   font-weight: 500;

@@ -1,4 +1,4 @@
-import { Heart, School, Terminal } from "react-ionicons";
+import { CodeSlashOutline, HeartOutline, SchoolOutline } from "react-ionicons";
 import styled from "styled-components";
 import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
@@ -27,24 +27,24 @@ export default function About() {
           <h1>Audrey</h1>
           <ul className="details__list">
             <li>
-              <Terminal color="#d8dbdb" width="20px" height="20px" />
+              <CodeSlashOutline color="#d8dbdb" width="20px" height="20px" />
               <p>I'm a Seattle-based software developer who enjoys creating dynamic web applications.</p>
             </li>
             <li>
-              <School color="#d8dbdb" width="20px" height="20px" />
+              <SchoolOutline color="#d8dbdb" width="20px" height="20px" />
               <p>
-                I'm studying{" "}
+                I'm majoring in{" "}
                 <a href="https://ischool.uw.edu/" target="_blank" rel="noreferrer">
                   Informatics
                 </a>
                 &nbsp;with a focus in Software Development &amp; Human-Computer Interaction at the{" "}
                 <a href="https://www.washington.edu/" target="_blank" rel="noreferrer">
-                  University of Washington.
+                  University of Washington
                 </a>
               </p>
             </li>
             <li>
-              <Heart color="#d8dbdb" width="20px" height="20px" />
+              <HeartOutline color="#d8dbdb" width="20px" height="20px" />
               <p>
                 I love to cook and bake in my free time and have an (un)healthy obsession with ramen and everything{" "}
                 <a
@@ -54,7 +54,6 @@ export default function About() {
                 >
                   vanilla
                 </a>
-                !
               </p>
             </li>
           </ul>
@@ -151,14 +150,18 @@ const AboutStyles = styled.section`
 
       a {
         position: relative;
-        // background: linear-gradient(to left, #2bad7c, #3581de)
-        //   left bottom no-repeat;
-        // background-size: 100% 1px;
-        // border-bottom: solid 1px #7877f7;
         background-image: linear-gradient(to left, #8787ff, #8787ff);
         background-repeat: repeat-x;
         background-position: 0 92%;
         background-size: 1px 1px;
+        padding-right: 12.3px;
+
+        &::after {
+          position: absolute;
+          bottom: -3.8px;
+          right: -3px;
+          content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYuNSIgaGVpZ2h0PSIxNi41IiB2aWV3Qm94PSIwIDAgMjUgMjUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik03LjMwMjggMTcuODk2MUwxNy4zMDI4IDcuODk2MTIiIHN0cm9rZT0iI2Q4ZGJkYiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWpvaW49ImFyY3MiLz4KPHBhdGggZD0iTTcuMzAyOCA3Ljg5NjEySDE3LjMwMjhWMTcuODk2MSIgc3Ryb2tlPSIjZDhkYmRiIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lam9pbj0iYXJjcyIvPgo8L3N2Zz4K');
+        }
       }
     }
 
