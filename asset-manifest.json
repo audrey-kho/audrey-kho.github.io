@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.b557bf8f.chunk.css",
-    "main.js": "/static/js/main.641929c9.chunk.js",
-    "main.js.map": "/static/js/main.641929c9.chunk.js.map",
+    "main.css": "/static/css/main.0319ec10.chunk.css",
+    "main.js": "/static/js/main.761eba79.chunk.js",
+    "main.js.map": "/static/js/main.761eba79.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.86174460.js",
     "runtime-main.js.map": "/static/js/runtime-main.86174460.js.map",
     "static/js/2.bb51355a.chunk.js": "/static/js/2.bb51355a.chunk.js",
     "static/js/2.bb51355a.chunk.js.map": "/static/js/2.bb51355a.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b557bf8f.chunk.css.map": "/static/css/main.b557bf8f.chunk.css.map",
+    "static/css/main.0319ec10.chunk.css.map": "/static/css/main.0319ec10.chunk.css.map",
     "static/js/2.bb51355a.chunk.js.LICENSE.txt": "/static/js/2.bb51355a.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/Whyte-Regular.e79fa214.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.86174460.js",
     "static/js/2.bb51355a.chunk.js",
-    "static/css/main.b557bf8f.chunk.css",
-    "static/js/main.641929c9.chunk.js"
+    "static/css/main.0319ec10.chunk.css",
+    "static/js/main.761eba79.chunk.js"
   ]
 }
