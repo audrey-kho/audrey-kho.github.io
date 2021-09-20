@@ -171,7 +171,6 @@ const WorkStyles = styled.section`
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin: 0 0 62px;
     padding: 0;
 
     .project__inner {
@@ -207,7 +206,7 @@ const WorkStyles = styled.section`
       border-radius: 12px;
       transition: 0.3s all;
       margin-right: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
       position: relative;
 
       @media (max-width: 800px) {
