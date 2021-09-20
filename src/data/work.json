@@ -3,38 +3,52 @@
     { 
       "name": "Ionic", 
       "link": "https://ionic.io/", 
-      "position": "Frontend Development Intern", 
-      "description": ["Built several pages on "],
+      "role": "Frontend Development Intern", 
+      "description": [],
       "time": "06&ndash;09/21"
     },
     {
       "name": "UW School of Medicine",
       "link": "https://www.uwmedicine.org/",
-      "position": "Volunteer Software Developer",
+      "role": "Volunteer Software Developer",
       "description": [],
       "time": "02/21&ndash;"
     },
     {
       "name": "ReThink @ UW",
       "link": "https://github.com/ReThink-SUB",
-      "position": "Frontend Developer",
+      "role": "Frontend Developer",
       "description": [],
       "time": "01/21&ndash;"
     }
   ],
   "projects": [
     { 
+      "name": "To-do List v.2", 
+      "link": "", 
+      "type": "Personal Project", 
+      "description": "Revisiting an <a href='/todo-list' target='_blank' rel='noreferrer'>old project</a> that I built when I started learning about web development and adding more complex features",
+      "technologies": ["React", "JavaScript", "styled-components"]
+    },
+    { 
+      "name": "Revamped Portfolio Website", 
+      "link": "", 
+      "type": "Personal Project", 
+      "description": "A redesign of my personal website (Huge thanks to <a href='https://www.jtiutan.com/' target='_blank' rel='noreferrer'>Jill</a> &amp; <a href='https://maxinekho.com/' target='_blank' rel='noreferrer'>Max</a> for helping me with the design!)",
+      "technologies": ["React", "JavaScript", "CSS", "styled-components"]
+    },
+    { 
       "name": "Health+", 
       "link": "https://project-2-audrey-kho.web.app/", 
       "type": "Team Project", 
-      "description": "",
+      "description": "A wellness web app that allows users to track progress towards their goals and to participate in a community",
       "technologies": ["React", "Firebase", "JavaScript", "CSS"]
     },
     {
       "name": "Random Recipe Generator",
       "link": "https://randomtastyrecipe.herokuapp.com/",
       "type": "Personal Project",
-      "description": "A generator interface that selects a random recipe from <a href='https://tasty.co/' target='_blank' rel='noreferrer'>Tasty</a> based on a chosen dish category",
+      "description": "A link generator that randomly selects a <a href='https://tasty.co/' target='_blank' rel='noreferrer'>Tasty</a> recipe from a chosen dish category",
       "technologies": ["HTML", "CSS", "JavaScript", "Node.js"]
     }
   ]

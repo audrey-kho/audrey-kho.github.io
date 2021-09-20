@@ -12,10 +12,10 @@ export default function Work() {
         <SectionTitle href="work">WORK</SectionTitle>
         <MainSection>
           <ul className="work__list">
-            {experience.map(({ name, link, position, description, time }, index) => {
+            {experience.map(({ name, link, role, description, time }, index) => {
               return (
                 <li key={name}>
-                  <em dangerouslySetInnerHTML={{ __html: time }} />
+                  <em className="timeframe" dangerouslySetInnerHTML={{ __html: time }} />
                   <div>
                     <a href={link} target="_blank" rel="noreferrer">
                       <h2>
@@ -23,7 +23,7 @@ export default function Work() {
                         <LinkArrow width={34} height={34} color={"#8787ff"} />
                       </h2>
                     </a>
-                    <h6>{position}</h6>
+                    <h6 className="work__role">{role}</h6>
                     <ul className="desc__list">
                       {description.map((d) => {
                         return <li key={d} dangerouslySetInnerHTML={{ __html: d }} />;
@@ -37,18 +37,41 @@ export default function Work() {
           <SectionHeading>SELECTED PROJECTS</SectionHeading>
           <ul className="project__list">
             {projects.map(({ name, link, type, description, technologies }) => {
+              let projectObj = undefined;
+              if (link !== "") {
+                projectObj = () => {
+                  return (
+                    <a className="project__inner" href={link} target="_blank" rel="noreferrer">
+                      <span className="project__type">{type}</span>
+                      <h3>{name.toUpperCase()}</h3>
+                      <p dangerouslySetInnerHTML={{ __html: description }} />
+                      <ul className="tech__list">
+                        {technologies.map((t) => {
+                          return <li key={name + "-" + t}>{t}</li>;
+                        })}
+                      </ul>
+                    </a>
+                  );
+                }
+              } else {
+                projectObj = () => {
+                  return (
+                    <div className="project__inner">
+                      <span className="project__type">{type}</span>
+                      <h3>{name.toUpperCase()}</h3>
+                      <p dangerouslySetInnerHTML={{ __html: description }} />
+                      <ul className="tech__list">
+                        {technologies.map((t) => {
+                          return <li key={name + "-" + t}>{t}</li>;
+                        })}
+                      </ul>
+                    </div>
+                  );
+                }
+              }
               return (
                 <li className="project" key={name}>
-                  <a href={link} target="_blank" rel="noreferrer">
-                    <span>{type}</span>
-                    <h3>{name.toUpperCase()}</h3>
-                    <p dangerouslySetInnerHTML={{ __html: description }} />
-                    <ul className="tech__list">
-                      {technologies.map((t) => {
-                        return <li key={name + "-" + t}>{t}</li>;
-                      })}
-                    </ul>
-                  </a>
+                  {projectObj()}
                 </li>
               );
             })}
@@ -70,11 +93,11 @@ const WorkStyles = styled.section`
     flex-direction: column;
     flex-wrap: wrap;
     list-style: none;
-    margin: 0 0 82px;
+    margin: 0 0 72px;
     padding: 0;
 
     > li + li {
-      margin-top: 68px;
+      margin-top: 32px;
     }
 
     li {
@@ -82,7 +105,7 @@ const WorkStyles = styled.section`
 
       h2 {
         display: inline-block;
-        font-size: 28px;
+        font-size: 29px;
         letter-spacing: 3px;
         margin: -7px 0 4px;
 
@@ -93,10 +116,10 @@ const WorkStyles = styled.section`
         }
       }
 
-      span,
-      h6 {
+      .work__role {
         font-family: "Whyte Light", sans-serif;
         font-size: 14px;
+        font-weight: 100;
         margin: 0;
         text-transform: uppercase;
       }
@@ -115,9 +138,10 @@ const WorkStyles = styled.section`
         margin-left: 12px;
       }
 
-      em {
+      .timeframe {
         font-family: "Whyte Light", sans-serif;
         font-size: 14px;
+        font-weight: 100;
         margin: 0;
         letter-spacing: 1px;
         width: 60px;
@@ -150,11 +174,11 @@ const WorkStyles = styled.section`
     margin: 0 0 62px;
     padding: 0;
 
-    a {
+    .project__inner {
       display: block;
       padding: 18px 32px;
+      height: 88%;
       opacity: 1;
-      height: auto;
 
       h3 {
         margin: 10px 0;
@@ -169,16 +193,17 @@ const WorkStyles = styled.section`
     }
 
     .project {
-      flex: 1 1 280px;
+      flex: 1 1 360px;
       border: solid 0.5px #d8dbdb;
       border-radius: 12px;
       transition: 0.3s all;
-      margin-right: 16px;
-      margin-bottom: 38px;
+      margin-right: 20px;
+      margin-bottom: 20px;
       position: relative;
 
-      a {
-        height: 84%;
+      @media (max-width: 800px) {
+        margin-right: 0;
+        margin-bottom: 34px;
       }
 
       p {
