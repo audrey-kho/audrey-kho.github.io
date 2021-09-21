@@ -11,14 +11,14 @@
       "name": "UW School of Medicine",
       "link": "https://www.uwmedicine.org/",
       "role": "Volunteer Software Developer",
-      "description": [],
+      "description": ["Assisting in the migration of the school's service learning website to Next.js with 5 other developers.", "Help provide a more straightforward onboarding process for student volunteers."],
       "time": "02/21&ndash;"
     },
     {
       "name": "ReThink @ UW",
       "link": "https://github.com/ReThink-SUB",
       "role": "Frontend Developer",
-      "description": [],
+      "description": ["Building a React web platform to promote small, sustainable businesses in Seattle.", "Working with 3 others to develop a fully responsive site that caters to both businesses and consumers."],
       "time": "01/21&ndash;"
     }
   ],
@@ -31,7 +31,7 @@
       "technologies": ["React", "JavaScript", "styled-components"]
     },
     { 
-      "name": "Revamped Portfolio Website", 
+      "name": "Redesigned Portfolio Website", 
       "link": "", 
       "type": "Personal Project", 
       "description": "A redesign of my personal website (Huge thanks to <a href='https://www.jtiutan.com/' target='_blank' rel='noreferrer'>Jill</a> &amp; <a href='https://maxinekho.com/' target='_blank' rel='noreferrer'>Max</a> for helping me with the design!)",

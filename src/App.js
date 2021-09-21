@@ -35,7 +35,7 @@ export default function App() {
             rel="noreferrer"
           >
             RESUME
-            <LinkArrow width={15} height={15} stroke={2} />
+            <LinkArrow width={16} height={16} stroke={2} color="#8787ff" position={-3.2}/>
           </a>
           <a href="mailto:audreyckho@gmail.com" target="_blank" rel="noreferrer">
             <Mail color="#d8dbdb" width="26px" height="24px" />
@@ -112,8 +112,6 @@ const NavStyles = styled.nav`
 
   a {
     font-size: 13px;
-    display: flex;
-    align-items: flex-start;
   }
 
   .main-menu {
