@@ -1,4 +1,4 @@
-import { CodeSlashOutline, HeartOutline, LogoFigma, SchoolOutline } from "react-ionicons";
+import { CodeSlashOutline, HeartOutline, SchoolOutline } from "react-ionicons";
 import styled from "styled-components";
 import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
