@@ -100,7 +100,7 @@ const WorkStyles = styled.section`
       margin-top: 38px;
     }
 
-    li {
+    > li {
       display: flex;
 
       h2 {
@@ -151,6 +151,7 @@ const WorkStyles = styled.section`
       .desc__list {
         margin: 9px 0;
         padding-left: 24px;
+        list-style: none;
 
         li {
           font-family: "Whyte Light", sans-serif;
