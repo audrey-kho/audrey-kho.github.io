@@ -17,7 +17,7 @@ export default function Work() {
                 <li key={name}>
                   <em className="timeframe" dangerouslySetInnerHTML={{ __html: time }} />
                   <div>
-                    <a href={link} target="_blank" rel="noreferrer">
+                    <a className="company__name" href={link} target="_blank" rel="noreferrer">
                       <h2>
                         {name.toUpperCase()}
                         <LinkArrow width={34} height={34} color={"#8787ff"} />
@@ -26,7 +26,7 @@ export default function Work() {
                     <h6 className="work__role">{role}</h6>
                     <ul className="desc__list">
                       {description.map((d) => {
-                        return <li key={d} dangerouslySetInnerHTML={{ __html: d }} />;
+                        return <li className="list__item" key={d} dangerouslySetInnerHTML={{ __html: d }} />;
                       })}
                     </ul>
                   </div>
@@ -93,14 +93,14 @@ const WorkStyles = styled.section`
     flex-direction: column;
     flex-wrap: wrap;
     list-style: none;
-    margin: 0 0 72px;
+    margin: 0 0 124px;
     padding: 0;
 
     > li + li {
-      margin-top: 32px;
+      margin-top: 38px;
     }
 
-    li {
+    > li {
       display: flex;
 
       h2 {
@@ -124,7 +124,7 @@ const WorkStyles = styled.section`
         text-transform: uppercase;
       }
 
-      a {
+      .company__name {
         padding: 2px;
 
         &:hover svg {
@@ -135,7 +135,7 @@ const WorkStyles = styled.section`
       div {
         position: relative;
         width: 100%;
-        margin-left: 12px;
+        margin-left: 16px;
       }
 
       .timeframe {
@@ -144,18 +144,26 @@ const WorkStyles = styled.section`
         font-weight: 100;
         margin: 0;
         letter-spacing: 1px;
-        width: 60px;
+        width: 54px;
         font-style: normal;
       }
 
       .desc__list {
         margin: 9px 0;
         padding-left: 24px;
+        list-style: none;
 
         li {
           font-family: "Whyte Light", sans-serif;
           font-size: 16px;
           letter-spacing: 1px;
+
+          a {
+            background-image: linear-gradient(#8787ff, #8787ff);
+            background-size: 1px 1px;
+            background-repeat: repeat-x;
+            background-position: 0 92%;
+          }
 
           &::before {
             position: absolute;
