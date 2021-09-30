@@ -1,4 +1,4 @@
-import { CodeSlashOutline, HeartOutline, LogoFigma, SchoolOutline } from "react-ionicons";
+import { CodeSlashOutline, HeartOutline, SchoolOutline } from "react-ionicons";
 import styled from "styled-components";
 import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
@@ -45,14 +45,14 @@ export default function About() {
             <li>
               <HeartOutline color="#d8dbdb" width="20px" height="20px" />
               <p>
-                I love to cook and bake in my free time and have an (un)healthy obsession with ramen and everything{" "}
+                I love to cook and bake in my free time and I'm always craving for ramen and{" "}
                 <a
                   href="https://vanleeuwenicecream.com/product/vanilla-bean-ice-cream/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  vanilla
-                </a>!
+                  vanilla-flavored
+                </a> desserts!
               </p>
             </li>
           </ul>
