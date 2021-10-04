@@ -11,29 +11,6 @@ export default function Work() {
       <WorkStyles id="work">
         <SectionTitle href="work">WORK</SectionTitle>
         <MainSection>
-          <ul className="work__list">
-            {experience.map(({ name, link, role, description, time }, index) => {
-              return (
-                <li key={name}>
-                  <em className="timeframe" dangerouslySetInnerHTML={{ __html: time }} />
-                  <div>
-                    <a className="company__name" href={link} target="_blank" rel="noreferrer">
-                      <h2>
-                        {name.toUpperCase()}
-                        <LinkArrow width={34} height={34} color={"#8787ff"} />
-                      </h2>
-                    </a>
-                    <h6 className="work__role">{role}</h6>
-                    <ul className="desc__list">
-                      {description.map((d) => {
-                        return <li className="list__item" key={d} dangerouslySetInnerHTML={{ __html: d }} />;
-                      })}
-                    </ul>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
           <SectionHeading>SELECTED PROJECTS</SectionHeading>
           <ul className="project__list">
             {projects.map(({ name, link, type, description, technologies }) => {
@@ -76,6 +53,30 @@ export default function Work() {
               );
             })}
           </ul>
+          <SectionHeading>EXPERIENCE</SectionHeading>
+          <ul className="work__list">
+            {experience.map(({ name, link, role, description, time }, index) => {
+              return (
+                <li key={name}>
+                  <em className="timeframe" dangerouslySetInnerHTML={{ __html: time }} />
+                  <div>
+                    <a className="company__name" href={link} target="_blank" rel="noreferrer">
+                      <h2>
+                        {name.toUpperCase()}
+                        <LinkArrow width={34} height={34} color={"#8787ff"} />
+                      </h2>
+                    </a>
+                    <h6 className="work__role">{role}</h6>
+                    <ul className="desc__list">
+                      {description.map((d) => {
+                        return <li className="list__item" key={d} dangerouslySetInnerHTML={{ __html: d }} />;
+                      })}
+                    </ul>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </MainSection>
       </WorkStyles>
     </ResponsiveContainer>
@@ -88,12 +89,15 @@ const WorkStyles = styled.section`
   align-items: flex-start;
   margin: 160px 0;
 
+  ul {
+    margin: 28px 0 72px;
+  }
+
   .work__list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     list-style: none;
-    margin: 0 0 124px;
     padding: 0;
 
     > li + li {
