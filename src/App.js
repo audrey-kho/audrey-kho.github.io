@@ -5,29 +5,42 @@ import styled, { keyframes } from "styled-components";
 import Work from "./components/Work";
 import { useState, useEffect, useRef } from "react";
 import clsx from "clsx";
+import Contact from "./components/Contact";
+import { Link } from "react-scroll";
 
 export default function App() {
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
 
   useEffect(() => {
-    const checkIfClickedOutside = e => {
+    const checkIfClickedOutside = (e) => {
       if (open && ref.current && !ref.current.contains(e.target)) {
-        setOpen(false)
+        setOpen(false);
       }
-    }
+    };
 
-    document.addEventListener("mousedown", checkIfClickedOutside)
+    document.addEventListener("mousedown", checkIfClickedOutside);
 
     return () => {
-      document.removeEventListener("mousedown", checkIfClickedOutside)
-    }
-  }, [open])
+      document.removeEventListener("mousedown", checkIfClickedOutside);
+    };
+  }, [open]);
 
   return (
     <>
       <NavStyles>
         <h2>AUDREY KHO</h2>
+        <div className="scroll-links">
+          <Link to={"about"} smooth={true} offset={-132}>
+            ABOUT
+          </Link>
+          <Link to={"work"} smooth={true} offset={-132}>
+            WORK
+          </Link>
+          {/* <Link to={"contact"} smooth={true} offset={-132}>
+            CONTACT
+          </Link> */}
+        </div>
         <div className="main-menu">
           <a
             href="https://drive.google.com/file/d/1K4P0W8m9sU6cNN-XS0x6gC4wB7RACUpC/view"
@@ -35,37 +48,116 @@ export default function App() {
             rel="noreferrer"
           >
             RESUME
-            <LinkArrow width={16} height={16} stroke={2} color="#8787ff" position={-3.2}/>
+            <LinkArrow
+              width={16}
+              height={16}
+              stroke={2}
+              color="#8787ff"
+              position={-3.2}
+            />
           </a>
-          <a href="mailto:audreyckho@gmail.com" target="_blank" rel="noreferrer">
+          <a
+            href="mailto:audreyckho@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Mail color="#d8dbdb" width="26px" height="24px" />
           </a>
-          <a href="https://www.linkedin.com/in/audrey-kho/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/audrey-kho/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <LogoLinkedin color="#d8dbdb" height="24px" />
           </a>
-          <a href="https://github.com/audrey-kho" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/audrey-kho"
+            target="_blank"
+            rel="noreferrer"
+          >
             <LogoGithub color="#d8dbdb" width="24px" height="24px" />
           </a>
         </div>
         <button className="mobile-menu" ref={ref}>
-          <MenuOutline color="#d8dbdb" width="22px" height="22px" onClick={() => {setOpen(!open)}}/>
+          <MenuOutline
+            color="#d8dbdb"
+            width="22px"
+            height="22px"
+            onClick={() => {
+              setOpen(!open);
+            }}
+          />
 
-          <div className={clsx({"mobile-dropdown": true, "hidden": !open})}>
+          <div className={clsx({ "mobile-dropdown": true, hidden: !open })}>
+            <Link
+              to={"about"}
+              smooth={true}
+              offset={-132}
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
+              ABOUT
+            </Link>
+            <Link
+              to={"work"}
+              smooth={true}
+              offset={-132}
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
+              WORK
+            </Link>
+            {/* <Link
+              to={"contact"}
+              smooth={true}
+              offset={-132}
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
+              CONTACT
+            </Link> */}
+            <hr />
             <a
               href="https://drive.google.com/file/d/1K4P0W8m9sU6cNN-XS0x6gC4wB7RACUpC/view"
               target="_blank"
               rel="noreferrer"
-              onClick={() => {setOpen(false)}}
+              onClick={() => {
+                setOpen(false);
+              }}
             >
               RESUME
             </a>
-            <a href="mailto:audreyckho@gmail.com" target="_blank" rel="noreferrer" onClick={() => {setOpen(false)}}>
+            <a
+              href="mailto:audreyckho@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
               E-MAIL
             </a>
-            <a href="https://www.linkedin.com/in/audrey-kho/" target="_blank" rel="noreferrer" onClick={() => {setOpen(false)}}>
+            <a
+              href="https://www.linkedin.com/in/audrey-kho/"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
               LINKEDIN
             </a>
-            <a href="https://github.com/audrey-kho" target="_blank" rel="noreferrer" onClick={() => {setOpen(false)}}>
+            <a
+              href="https://github.com/audrey-kho"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
               GITHUB
             </a>
           </div>
@@ -73,6 +165,7 @@ export default function App() {
       </NavStyles>
       <About />
       <Work />
+      {/* <Contact /> */}
       <FooterStyles>
         <h5>&copy; AUDREY KHO 2021</h5>
       </FooterStyles>
@@ -90,7 +183,7 @@ const dropdown = keyframes`
     transform: translateY(0px);
     opacity: 1;
   }
-`
+`;
 
 const NavStyles = styled.nav`
   display: flex;
@@ -114,6 +207,18 @@ const NavStyles = styled.nav`
     font-size: 13px;
   }
 
+  .scroll-links {
+    margin-left: 8.2vw;
+
+    > * {
+      margin: 0 18px;
+    }
+
+    @media (max-width: 850px) {
+      display: none;
+    }
+  }
+
   .main-menu {
     display: flex;
     align-items: center;
@@ -122,7 +227,7 @@ const NavStyles = styled.nav`
       margin-left: 22px;
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 850px) {
       display: none;
     }
   }
@@ -136,7 +241,6 @@ const NavStyles = styled.nav`
     border-radius: 3px;
     transition: 0.3s all;
     backdrop-filter: blur(10px) !important;
-
 
     svg {
       padding: 4px 8px 2px;
@@ -153,7 +257,6 @@ const NavStyles = styled.nav`
       right: 0;
       padding: 6px 16px;
       background: rgba(21, 29, 48, 0.75);
-      // box-shadow: inset 0 0 5px rgba(102, 118, 146, 0.4);
       border: solid rgba(216, 219, 219, 0.2) 0.5px;
       border-radius: 8px;
       animation: ${dropdown} 0.2s ease;
@@ -164,16 +267,27 @@ const NavStyles = styled.nav`
         cursor: pointer !important;
       }
 
+      hr {
+        border: 0;
+        display: block;
+        width: 96%;
+        background-color: #d8dbdb;
+        opacity: 0.4;
+        height: 0.6px;
+      }
+
       &.hidden {
         display: none;
       }
     }
 
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
       box-shadow: inset 0 0 3px rgba(180, 180, 220, 0.6);
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 850px) {
       display: block;
     }
   }

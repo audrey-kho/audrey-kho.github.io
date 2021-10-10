@@ -67,11 +67,11 @@ export default function Work() {
                       </h2>
                     </a>
                     <h6 className="work__role">{role}</h6>
-                    <ul className="desc__list">
+                    {/* <ul className="desc__list">
                       {description.map((d) => {
                         return <li className="list__item" key={d} dangerouslySetInnerHTML={{ __html: d }} />;
                       })}
-                    </ul>
+                    </ul> */}
                   </div>
                 </li>
               );
@@ -87,7 +87,7 @@ const WorkStyles = styled.section`
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin: 160px 0;
+  margin: 160px 0 120px;
 
   ul {
     margin: 28px 0 72px;

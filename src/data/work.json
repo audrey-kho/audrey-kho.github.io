@@ -1,6 +1,16 @@
 {
   "experience": [
     {
+      "name": "UW SUB Initiative",
+      "link": "https://github.com/ReThink-SUB",
+      "role": "Frontend Developer",
+      "description": [
+        "Working with other student developers to promote small, sustainable businesses in Seattle.",
+        "Developing a fully responsive site that caters to both businesses and consumers."
+      ],
+      "time": "01/21&ndash;<br/>"
+    },
+    {
       "name": "Ionic",
       "link": "https://ionic.io/",
       "role": "Frontend Development Intern",
@@ -17,17 +27,7 @@
         "Volunteered to build pages for the UW SOM service learning website with Next.js and React.",
         "Helped provide a more straightforward onboarding process for student volunteers."
       ],
-      "time": "02/21&ndash;<br/>"
-    },
-    {
-      "name": "ReThink @ UW",
-      "link": "https://github.com/ReThink-SUB",
-      "role": "Frontend Developer",
-      "description": [
-        "Working with other student developers to promote small, sustainable businesses in Seattle.",
-        "Developing a fully responsive site that caters to both businesses and consumers."
-      ],
-      "time": "01/21&ndash;<br/>"
+      "time": "02&ndash;06/21<br/>"
     }
   ],
   "projects": [
