@@ -37,9 +37,9 @@ export default function App() {
           <Link to={"work"} smooth={true} offset={-132}>
             WORK
           </Link>
-          {/* <Link to={"contact"} smooth={true} offset={-132}>
+          <Link to={"contact"} smooth={true} offset={-132}>
             CONTACT
-          </Link> */}
+          </Link>
         </div>
         <div className="main-menu">
           <a
@@ -109,7 +109,7 @@ export default function App() {
             >
               WORK
             </Link>
-            {/* <Link
+            <Link
               to={"contact"}
               smooth={true}
               offset={-132}
@@ -118,7 +118,7 @@ export default function App() {
               }}
             >
               CONTACT
-            </Link> */}
+            </Link>
             <hr />
             <a
               href="https://drive.google.com/file/d/1K4P0W8m9sU6cNN-XS0x6gC4wB7RACUpC/view"
@@ -165,7 +165,7 @@ export default function App() {
       </NavStyles>
       <About />
       <Work />
-      {/* <Contact /> */}
+      <Contact />
       <FooterStyles>
         <h5>&copy; AUDREY KHO 2021</h5>
       </FooterStyles>
@@ -256,7 +256,7 @@ const NavStyles = styled.nav`
       top: 50px;
       right: 0;
       padding: 6px 16px;
-      background: rgba(21, 29, 48, 0.75);
+      background: rgba(21, 29, 48, 0.8);
       border: solid rgba(216, 219, 219, 0.2) 0.5px;
       border-radius: 8px;
       animation: ${dropdown} 0.2s ease;
