@@ -7,6 +7,24 @@ import { useState, useEffect, useRef } from "react";
 import clsx from "clsx";
 import Contact from "./components/Contact";
 import { Link } from "react-scroll";
+import { initializeApp } from 'firebase/app';
+import { getDatabase } from "firebase/database";
+
+// TODO: Replace the following with your app's Firebase project configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDe1AnnQzKoIb2kmpig5FYj60h6isSFK8c",
+  authDomain: "audrey-kho.firebaseapp.com",
+  databaseURL: "https://audrey-kho-default-rtdb.firebaseio.com",
+  projectId: "audrey-kho",
+  storageBucket: "audrey-kho.appspot.com",
+  messagingSenderId: "306777134790",
+  appId: "1:306777134790:web:024444a1e5d426846369c7",
+  measurementId: "G-1WMJFHDP7Q"
+};
+
+const app = initializeApp(firebaseConfig);
+
+
 
 export default function App() {
   const [open, setOpen] = useState(false);
@@ -165,7 +183,7 @@ export default function App() {
       </NavStyles>
       <About />
       <Work />
-      <Contact />
+      <Contact firebaseConfig={app}/>
       <FooterStyles>
         <h5>&copy; AUDREY KHO 2021</h5>
       </FooterStyles>

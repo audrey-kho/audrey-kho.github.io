@@ -1,8 +1,27 @@
 import styled from "styled-components";
 import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
+import { getDatabase, ref, set, push } from "firebase/database";
+import { useRef } from "react";
 
-export default function Contact() {
+export default function Contact({ firebaseConfig }) {
+  const nameInput = useRef();
+  const emailInput = useRef();
+  const msgInput = useRef();
+
+  function writeUserData(name, email, msg) {
+    const db = getDatabase(firebaseConfig);
+
+    const postRef = push(ref(db));
+
+    if (name.current.value && email.current.value && msg.current.value) {
+      set(postRef, {
+        name: name.current.value,
+        email: email.current.value,
+        message: msg.current.value,
+      });
+    }
+  }
 
   return (
     <ResponsiveContainer>
@@ -10,13 +29,36 @@ export default function Contact() {
         <SectionTitle href="contact">CONTACT</SectionTitle>
         <MainSection>
           <SectionHeading>SAY HELLO!</SectionHeading>
+          <p style={{ fontSize: "0.85em" }}>
+            Feel free to leave a message here and I'll send back a reply as soon
+            as I can. If this is an urgent matter, shoot me an email via{" "}
+            <a href="mail:audreyckho@gmail.com">audreyckho@gmail.com</a> :)
+          </p>
           <form autoComplete="on">
             <div className="short-input">
-              <input type="text" autoComplete="name" placeholder="Name*" required></input>
-              <input type="email" autoComplete="email" placeholder="Email*" required></input>
+              <input
+                ref={nameInput}
+                type="text"
+                autoComplete="name"
+                placeholder="Name*"
+                required
+              ></input>
+              <input
+                ref={emailInput}
+                type="email"
+                autoComplete="email"
+                placeholder="Email*"
+                required
+              ></input>
             </div>
-            <textarea placeholder="Message*" required/>
-            <input type="submit" value="SEND MESSAGE"></input>
+            <textarea ref={msgInput} placeholder="Message*" required />
+            <input
+              type="submit"
+              value="SEND MESSAGE"
+              onClick={(e) => {
+                writeUserData(nameInput, emailInput, msgInput);
+              }}
+            ></input>
           </form>
         </MainSection>
       </ContactStyles>
@@ -31,15 +73,22 @@ const ContactStyles = styled.section`
   margin: 120px 0 180px;
   font-size: 1.16em;
 
+  section p {
+    width: 90%;
+  }
+
+  section a {
+    background-image: linear-gradient(to left, #8787ff, #8787ff);
+    background-repeat: repeat-x;
+    background-position: 0 92%;
+    background-size: 1px 1px;
+  }
+
   form {
     display: flex;
     flex-direction: column;
     margin: 2.2em 0;
     width: 88%;
-
-    // > * {
-    //   width: 96%;
-    // }
   }
 
   .short-input {
@@ -71,7 +120,8 @@ const ContactStyles = styled.section`
     padding: 8px;
   }
 
-  .short-input input, textarea {
+  .short-input input,
+  textarea {
     font-family: "Whyte Light", sans-serif;
     background: rgba(255, 255, 255, 0.1);
     outline: none;
@@ -103,5 +153,12 @@ const ContactStyles = styled.section`
     margin: 1.5em 0;
     padding: 4px 28px;
     max-width: 280px;
+    transition: all 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 3px 18px rgba(15, 22, 48, 0.18);
+      opacity: 0.8;
+    }
   }
-`
+`;
