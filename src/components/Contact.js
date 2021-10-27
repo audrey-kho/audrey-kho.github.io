@@ -54,7 +54,6 @@ export default function Contact({ firebaseConfig }) {
             <textarea ref={msgInput} placeholder="Message*" required />
             <button
               type="submit"
-              // value="SEND MESSAGE"
               onClick={(e) => {
                 writeUserData(nameInput, emailInput, msgInput);
               }}
@@ -110,13 +109,13 @@ const ContactStyles = styled.section`
 
   .short-input input {
     max-width: 600px;
-    height: 32px;
+    height: 42px;
     padding: 2px 8px;
   }
 
   textarea {
     width: 98.5% !important;
-    height: 98px;
+    height: 108px;
     padding: 8px;
   }
 
@@ -140,20 +139,20 @@ const ContactStyles = styled.section`
 
   button[type="submit"] {
     --webkit-appearance: none;
-    font-family: "Whyte", sans-serif;
+    font-family: "Whyte Medium", sans-serif;
     display: inline;
     height: 46px;
     color: #455d97;
     font-size: 0.86em;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     background: #d8dbdb;
     outline: none;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     margin: 1.5em 0;
     padding: 7px 28px;
-    max-width: 228px;
+    max-width: 220px;
     transition: all 0.3s;
 
     &:hover {
