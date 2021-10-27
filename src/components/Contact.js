@@ -139,6 +139,7 @@ const ContactStyles = styled.section`
   }
 
   input[type="submit"] {
+    --webkit-appearance: none;
     font-family: "Whyte", sans-serif;
     display: inline;
     height: 46px;
