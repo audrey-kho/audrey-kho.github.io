@@ -153,7 +153,7 @@ const ContactStyles = styled.section`
     border-radius: 4px;
     margin: 1.5em 0;
     padding: 7px 28px;
-    max-width: 220px;
+    max-width: 228px;
     transition: all 0.3s;
 
     &:hover {
