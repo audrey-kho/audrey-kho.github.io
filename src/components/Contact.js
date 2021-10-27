@@ -14,11 +14,13 @@ export default function Contact({ firebaseConfig }) {
 
     const postRef = push(ref(db));
 
-    if (name.current.value && email.current.value && msg.current.value) {
+    console.log(name);
+
+    if (name && email && msg) {
       set(postRef, {
-        name: name.current.value,
-        email: email.current.value,
-        message: msg.current.value,
+        name: name,
+        email: email,
+        message: msg,
       });
     }
   }
@@ -34,7 +36,16 @@ export default function Contact({ firebaseConfig }) {
             as I can. If this is an urgent matter, shoot me an email via{" "}
             <a href="mail:audreyckho@gmail.com">audreyckho@gmail.com</a> :)
           </p>
-          <form autoComplete="on">
+          <form
+            autoComplete="on"
+            onSubmit={(e) => {
+              e.preventDefault();
+              writeUserData(nameInput.current.value, emailInput.current.value, msgInput.current.value);
+              nameInput.current.value = "";
+              emailInput.current.value = "";
+              msgInput.current.value = "";
+            }}
+          >
             <div className="short-input">
               <input
                 ref={nameInput}
@@ -52,12 +63,7 @@ export default function Contact({ firebaseConfig }) {
               ></input>
             </div>
             <textarea ref={msgInput} placeholder="Message*" required />
-            <button
-              type="submit"
-              onClick={(e) => {
-                writeUserData(nameInput, emailInput, msgInput);
-              }}
-            >SEND MESSAGE</button>
+            <button type="submit">SEND MESSAGE</button>
           </form>
         </MainSection>
       </ContactStyles>
