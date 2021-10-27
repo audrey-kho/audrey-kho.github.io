@@ -8,7 +8,6 @@ import clsx from "clsx";
 import Contact from "./components/Contact";
 import { Link } from "react-scroll";
 import { initializeApp } from 'firebase/app';
-import { getDatabase } from "firebase/database";
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
@@ -23,8 +22,6 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-
-
 
 export default function App() {
   const [open, setOpen] = useState(false);

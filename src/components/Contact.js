@@ -74,7 +74,7 @@ const ContactStyles = styled.section`
   font-size: 1.16em;
 
   section p {
-    width: 90%;
+    width: 96%;
   }
 
   section a {
@@ -88,7 +88,7 @@ const ContactStyles = styled.section`
     display: flex;
     flex-direction: column;
     margin: 2.2em 0;
-    width: 88%;
+    width: 94%;
   }
 
   .short-input {
@@ -116,7 +116,7 @@ const ContactStyles = styled.section`
 
   textarea {
     width: 98.5% !important;
-    height: 88px;
+    height: 98px;
     padding: 8px;
   }
 
@@ -141,24 +141,28 @@ const ContactStyles = styled.section`
   input[type="submit"] {
     font-family: "Whyte", sans-serif;
     display: inline;
-    height: 36px;
+    height: 46px;
     color: #455d97;
-    font-size: 0.88em;
+    font-size: 0.86em;
     font-weight: 600;
     letter-spacing: 1px;
     background: #d8dbdb;
     outline: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     margin: 1.5em 0;
-    padding: 4px 28px;
-    max-width: 280px;
+    padding: 7px 28px;
+    max-width: 220px;
     transition: all 0.3s;
 
     &:hover {
       cursor: pointer;
       box-shadow: 0 3px 18px rgba(15, 22, 48, 0.18);
       opacity: 0.8;
+    }
+
+    @media (max-width: 425px) {
+      margin: 1.5em auto;
     }
   }
 `;
