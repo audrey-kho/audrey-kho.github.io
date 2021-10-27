@@ -52,13 +52,13 @@ export default function Contact({ firebaseConfig }) {
               ></input>
             </div>
             <textarea ref={msgInput} placeholder="Message*" required />
-            <input
+            <button
               type="submit"
-              value="SEND MESSAGE"
+              // value="SEND MESSAGE"
               onClick={(e) => {
                 writeUserData(nameInput, emailInput, msgInput);
               }}
-            ></input>
+            >SEND MESSAGE</button>
           </form>
         </MainSection>
       </ContactStyles>
@@ -138,7 +138,7 @@ const ContactStyles = styled.section`
     }
   }
 
-  input[type="submit"] {
+  button[type="submit"] {
     --webkit-appearance: none;
     font-family: "Whyte", sans-serif;
     display: inline;
