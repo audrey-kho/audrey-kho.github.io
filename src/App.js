@@ -8,6 +8,8 @@ import clsx from "clsx";
 import Contact from "./components/Contact";
 import { Link } from "react-scroll";
 import { initializeApp } from 'firebase/app';
+import { Suspense } from "react";
+import Load from "./components/Load";
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
@@ -42,7 +44,9 @@ export default function App() {
   }, [open]);
 
   return (
-    <>
+    <Suspense fallback={
+      <div></div>
+    }>
       <NavStyles>
         <h2>AUDREY KHO</h2>
         <div className="scroll-links">
@@ -184,7 +188,7 @@ export default function App() {
       <FooterStyles>
         <h5>&copy; AUDREY KHO 2021</h5>
       </FooterStyles>
-    </>
+    </Suspense>
   );
 }
 
