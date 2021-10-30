@@ -9,7 +9,6 @@ import Contact from "./components/Contact";
 import { Link } from "react-scroll";
 import { initializeApp } from 'firebase/app';
 import { Suspense } from "react";
-import Load from "./components/Load";
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
@@ -37,15 +36,11 @@ export default function App() {
     };
 
     document.addEventListener("mousedown", checkIfClickedOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", checkIfClickedOutside);
-    };
   }, [open]);
 
   return (
     <Suspense fallback={
-      <div style={{width: "100%", height: "100%", background: "#0f1625"}}></div>
+      <div style={{width: "100%", height: "80em", background: "#0f1625"}}></div>
     }>
       <NavStyles>
         <h2>AUDREY KHO</h2>

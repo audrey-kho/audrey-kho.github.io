@@ -44,7 +44,7 @@
       "name": "Portfolio Redesign",
       "link": "https://audrey-kho.github.io/",
       "type": "Personal Project",
-      "description": "A redesign of my personal website (Huge thanks to <a href='https://www.jtiutan.com/' target='_blank' rel='noreferrer'>Jill</a> &amp; <a href='https://maxinekho.com/' target='_blank' rel='noreferrer'>Max</a> for your help and critiques!)",
+      "description": "A redesign of this web portfolio (Huge thanks to <a href='https://www.jtiutan.com/' target='_blank' rel='noreferrer'>Jill</a> &amp; <a href='https://maxinekho.com/' target='_blank' rel='noreferrer'>Max</a> for your help and critiques!)",
       "technologies": ["React", "JavaScript", "CSS", "styled-components", "Figma"]
     },
     {
@@ -65,7 +65,7 @@
       "name": "Random Recipe Generator",
       "link": "https://randomtastyrecipe.herokuapp.com/",
       "type": "Personal Project",
-      "description": "A link generator that randomly selects a <a href='https://tasty.co/' target='_blank' rel='noreferrer'>Tasty</a> recipe from a chosen dish category",
+      "description": "A web app that randomly generates a <a href='https://tasty.co/' target='_blank' rel='noreferrer'>Tasty</a> recipe from the chosen dish category",
       "technologies": ["HTML", "CSS", "JavaScript", "Node.js"]
     }
   ]
