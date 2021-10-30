@@ -19,7 +19,12 @@ export default function Work() {
               if (!link.startsWith("/")) {
                 projectObj = () => {
                   return (
-                    <a className="project__inner" href={link} target="_blank" rel="noreferrer">
+                    <a
+                      className="project__inner"
+                      href={link}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <span className="project__type">{type}</span>
                       <h3>{name.toUpperCase()}</h3>
                       <p dangerouslySetInnerHTML={{ __html: description }} />
@@ -30,12 +35,11 @@ export default function Work() {
                       </ul>
                     </a>
                   );
-                }
+                };
               } else {
                 projectObj = () => {
                   return (
-                    <Link to={"about"} className="project__inner" smooth={true} offset={-192}>
-                     {/* <a className="project__inner" href={link}> */}
+                    <a className="project__inner" href={link}>
                       <span className="project__type">{type}</span>
                       <h3>{name.toUpperCase()}</h3>
                       <p dangerouslySetInnerHTML={{ __html: description }} />
@@ -44,10 +48,9 @@ export default function Work() {
                           return <li key={name + "-" + t}>{t}</li>;
                         })}
                       </ul>
-                     {/* </a> */}
-                    </Link>
+                    </a>
                   );
-                }
+                };
               }
               return (
                 <li className="project" key={name}>
@@ -58,27 +61,37 @@ export default function Work() {
           </ul>
           <SectionHeading>EXPERIENCE</SectionHeading>
           <ul className="work__list">
-            {experience.map(({ name, link, role, description, time }, index) => {
-              return (
-                <li key={name}>
-                  <em className="timeframe" dangerouslySetInnerHTML={{ __html: time }} />
-                  <div>
-                    <a className="company__name" href={link} target="_blank" rel="noreferrer">
-                      <h2>
-                        {name.toUpperCase()}
-                        <LinkArrow width={34} height={34} color={"#8787ff"} />
-                      </h2>
-                    </a>
-                    <h6 className="work__role">{role}</h6>
-                    {/* <ul className="desc__list">
+            {experience.map(
+              ({ name, link, role, description, time }, index) => {
+                return (
+                  <li key={name}>
+                    <em
+                      className="timeframe"
+                      dangerouslySetInnerHTML={{ __html: time }}
+                    />
+                    <div>
+                      <a
+                        className="company__name"
+                        href={link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <h2>
+                          {name.toUpperCase()}
+                          <LinkArrow width={34} height={34} color={"#8787ff"} />
+                        </h2>
+                      </a>
+                      <h6 className="work__role">{role}</h6>
+                      {/* <ul className="desc__list">
                       {description.map((d) => {
                         return <li className="list__item" key={d} dangerouslySetInnerHTML={{ __html: d }} />;
                       })}
                     </ul> */}
-                  </div>
-                </li>
-              );
-            })}
+                    </div>
+                  </li>
+                );
+              }
+            )}
           </ul>
         </MainSection>
       </WorkStyles>
