@@ -33,8 +33,7 @@ export default function Contact({ firebaseConfig }) {
           <SectionHeading>SAY HELLO!</SectionHeading>
           <p style={{ fontSize: "0.85em" }}>
             Feel free to leave a message here and I'll send back a reply as soon
-            as I can. If this is an urgent matter, shoot me an email via{" "}
-            <a href="mail:audreyckho@gmail.com">audreyckho@gmail.com</a> :)
+            as I can!
           </p>
           <form
             autoComplete="on"
