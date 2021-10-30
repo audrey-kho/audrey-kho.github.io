@@ -45,7 +45,7 @@ export default function App() {
 
   return (
     <Suspense fallback={
-      <div></div>
+      <div style={{width: "100%", height: "100%", background: "#0f1625"}}></div>
     }>
       <NavStyles>
         <h2>AUDREY KHO</h2>
