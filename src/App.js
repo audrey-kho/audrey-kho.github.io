@@ -1,14 +1,16 @@
 import LinkArrow from "./assets/LinkArrow";
 import { Mail, LogoLinkedin, LogoGithub, MenuOutline } from "react-ionicons";
-import About from "./components/About";
 import styled, { keyframes } from "styled-components";
-import Work from "./components/Work";
-import { useState, useEffect, useRef } from "react";
+import { React, useState, useEffect, useRef } from "react";
 import clsx from "clsx";
-import Contact from "./components/Contact";
 import { Link } from "react-scroll";
 import { initializeApp } from 'firebase/app';
 import { Suspense } from "react";
+
+const About = React.lazy(() => import("./components/About"));
+const Work = React.lazy(() => import("./components/Work"));
+const Contact = React.lazy(() => import("./components/Contact"));
+
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
