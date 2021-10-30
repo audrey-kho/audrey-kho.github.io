@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import LinkArrow from "../assets/LinkArrow";
+import { Link } from "react-scroll";
 import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
 
@@ -15,7 +16,7 @@ export default function Work() {
           <ul className="project__list">
             {projects.map(({ name, link, type, description, technologies }) => {
               let projectObj = undefined;
-              if (link !== "") {
+              if (!link.startsWith("/")) {
                 projectObj = () => {
                   return (
                     <a className="project__inner" href={link} target="_blank" rel="noreferrer">
@@ -33,7 +34,8 @@ export default function Work() {
               } else {
                 projectObj = () => {
                   return (
-                    <div className="project__inner">
+                    <Link to={"about"} className="project__inner" smooth={true} offset={-192}>
+                     {/* <a className="project__inner" href={link}> */}
                       <span className="project__type">{type}</span>
                       <h3>{name.toUpperCase()}</h3>
                       <p dangerouslySetInnerHTML={{ __html: description }} />
@@ -42,7 +44,8 @@ export default function Work() {
                           return <li key={name + "-" + t}>{t}</li>;
                         })}
                       </ul>
-                    </div>
+                     {/* </a> */}
+                    </Link>
                   );
                 }
               }

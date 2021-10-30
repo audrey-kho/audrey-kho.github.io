@@ -42,7 +42,7 @@
   "projects": [
     {
       "name": "Portfolio Redesign",
-      "link": "https://audrey-kho.github.io/",
+      "link": "/",
       "type": "Personal Project",
       "description": "A redesign of this web portfolio (Huge thanks to <a href='https://www.jtiutan.com/' target='_blank' rel='noreferrer'>Jill</a> &amp; <a href='https://maxinekho.com/' target='_blank' rel='noreferrer'>Max</a> for your help and critiques!)",
       "technologies": ["React", "JavaScript", "CSS", "styled-components", "Figma"]
