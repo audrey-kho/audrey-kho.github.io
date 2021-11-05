@@ -27,7 +27,7 @@ export default function About() {
           <ul className="details__list">
             <li>
               <CodeSlashOutline color="#d8dbdb" width="20px" height="20px" />
-              <p>I'm a Seattle-based software developer who enjoys creating dynamic web applications.</p>
+              <p>I'm a Seattle-based software developer who enjoys building dynamic web applications.</p>
             </li>
             <li>
               <SchoolOutline color="#d8dbdb" width="20px" height="20px" />
@@ -45,7 +45,7 @@ export default function About() {
             <li>
               <HeartOutline color="#d8dbdb" width="20px" height="20px" />
               <p>
-                I love to cook and bake in my free time and I'm always craving for ramen and{" "}
+                I love to cook and bake in my free time and I'm always craving for ramen &amp;{" "}
                 <a
                   href="https://vanleeuwenicecream.com/product/vanilla-bean-ice-cream/"
                   target="_blank"
@@ -156,7 +156,7 @@ const AboutStyles = styled.section`
 
       a {
         position: relative;
-        background-image: linear-gradient(to left, #8787ff, #8787ff);
+        background-image: linear-gradient(to left, #8fbaff, #8fbaff);
         background-repeat: repeat-x;
         background-position: 0 92%;
         background-size: 1px 1px;

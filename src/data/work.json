@@ -12,7 +12,7 @@
     {
       "name": "UW SUB Initiative",
       "link": "https://github.com/ReThink-SUB",
-      "role": "Frontend Developer",
+      "role": "Web Developer",
       "description": [
         "Working with other student developers to promote small, sustainable businesses in Seattle.",
         "Developing a fully responsive site that caters to both businesses and consumers."
@@ -22,7 +22,7 @@
     {
       "name": "Ionic",
       "link": "https://ionic.io/",
-      "role": "Frontend Development Intern",
+      "role": "Frontend Web Development Intern",
       "description": [
         "Migrated pages from the Ionic Framework site to Next.js at&nbsp;<a href='http://ionic.io' target='_blank' rel='noreferrer'>ionic.io</a>."
       ],
