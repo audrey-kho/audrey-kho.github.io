@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.cdc055a8.chunk.css",
-    "main.js": "/static/js/main.5bb25b39.chunk.js",
-    "main.js.map": "/static/js/main.5bb25b39.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.9930098a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.9930098a.js.map",
+    "main.js": "/static/js/main.7f3345d3.chunk.js",
+    "main.js.map": "/static/js/main.7f3345d3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9d7b07a9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9d7b07a9.js.map",
     "static/js/2.5cd3b147.chunk.js": "/static/js/2.5cd3b147.chunk.js",
     "static/js/2.5cd3b147.chunk.js.map": "/static/js/2.5cd3b147.chunk.js.map",
     "static/js/3.b4873bc6.chunk.js": "/static/js/3.b4873bc6.chunk.js",
     "static/js/3.b4873bc6.chunk.js.map": "/static/js/3.b4873bc6.chunk.js.map",
-    "static/js/4.fe806f23.chunk.js": "/static/js/4.fe806f23.chunk.js",
-    "static/js/4.fe806f23.chunk.js.map": "/static/js/4.fe806f23.chunk.js.map",
-    "static/js/5.af1ec10b.chunk.js": "/static/js/5.af1ec10b.chunk.js",
-    "static/js/5.af1ec10b.chunk.js.map": "/static/js/5.af1ec10b.chunk.js.map",
-    "static/js/6.cee8e3fd.chunk.js": "/static/js/6.cee8e3fd.chunk.js",
-    "static/js/6.cee8e3fd.chunk.js.map": "/static/js/6.cee8e3fd.chunk.js.map",
+    "static/js/4.ac737366.chunk.js": "/static/js/4.ac737366.chunk.js",
+    "static/js/4.ac737366.chunk.js.map": "/static/js/4.ac737366.chunk.js.map",
+    "static/js/5.9a0259a8.chunk.js": "/static/js/5.9a0259a8.chunk.js",
+    "static/js/5.9a0259a8.chunk.js.map": "/static/js/5.9a0259a8.chunk.js.map",
+    "static/js/6.e62cca28.chunk.js": "/static/js/6.e62cca28.chunk.js",
+    "static/js/6.e62cca28.chunk.js.map": "/static/js/6.e62cca28.chunk.js.map",
     "static/js/7.9750e631.chunk.js": "/static/js/7.9750e631.chunk.js",
     "static/js/7.9750e631.chunk.js.map": "/static/js/7.9750e631.chunk.js.map",
     "index.html": "/index.html",
@@ -24,9 +24,9 @@
     "static/media/index.css": "/static/media/Whyte-Regular.e79fa214.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.9930098a.js",
+    "static/js/runtime-main.9d7b07a9.js",
     "static/js/2.5cd3b147.chunk.js",
     "static/css/main.cdc055a8.chunk.css",
-    "static/js/main.5bb25b39.chunk.js"
+    "static/js/main.7f3345d3.chunk.js"
   ]
 }
