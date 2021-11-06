@@ -68,7 +68,7 @@ export default function App() {
               width={16}
               height={16}
               stroke={2}
-              color="#6eadff"
+              color="#8aa5ff"
               position={-3.2}
             />
           </a>

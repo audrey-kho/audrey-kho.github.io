@@ -82,7 +82,7 @@ const ContactStyles = styled.section`
   }
 
   section a {
-    background-image: linear-gradient(to left, #6eadff, #6eadff);
+    background-image: linear-gradient(to left, #8aa5ff, #8aa5ff);
     background-repeat: repeat-x;
     background-position: 0 92%;
     background-size: 1px 1px;
