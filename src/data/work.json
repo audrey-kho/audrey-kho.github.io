@@ -52,7 +52,7 @@
       "link": "https://ionic.io/appflow/live-updates",
       "type": "Internship Project",
       "description": "A fully responsive page that I built and animated during my internship at Ionic",
-      "technologies": ["React", "Next.js", "styled-components", "Animation"]
+      "technologies": ["React", "Typescript", "Next.js", "styled-components", "Animation"]
     },
     {
       "name": "Health+",
