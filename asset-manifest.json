@@ -3,14 +3,14 @@
     "main.css": "/static/css/main.cdc055a8.chunk.css",
     "main.js": "/static/js/main.f2368d17.chunk.js",
     "main.js.map": "/static/js/main.f2368d17.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.66a80e3b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.66a80e3b.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1f65df13.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1f65df13.js.map",
     "static/js/2.5cd3b147.chunk.js": "/static/js/2.5cd3b147.chunk.js",
     "static/js/2.5cd3b147.chunk.js.map": "/static/js/2.5cd3b147.chunk.js.map",
     "static/js/3.b4873bc6.chunk.js": "/static/js/3.b4873bc6.chunk.js",
     "static/js/3.b4873bc6.chunk.js.map": "/static/js/3.b4873bc6.chunk.js.map",
-    "static/js/4.b48f8168.chunk.js": "/static/js/4.b48f8168.chunk.js",
-    "static/js/4.b48f8168.chunk.js.map": "/static/js/4.b48f8168.chunk.js.map",
+    "static/js/4.d501f300.chunk.js": "/static/js/4.d501f300.chunk.js",
+    "static/js/4.d501f300.chunk.js.map": "/static/js/4.d501f300.chunk.js.map",
     "static/js/5.c1b1569a.chunk.js": "/static/js/5.c1b1569a.chunk.js",
     "static/js/5.c1b1569a.chunk.js.map": "/static/js/5.c1b1569a.chunk.js.map",
     "static/js/6.a9a0b7b4.chunk.js": "/static/js/6.a9a0b7b4.chunk.js",
@@ -24,7 +24,7 @@
     "static/media/index.css": "/static/media/Whyte-Regular.e79fa214.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.66a80e3b.js",
+    "static/js/runtime-main.1f65df13.js",
     "static/js/2.5cd3b147.chunk.js",
     "static/css/main.cdc055a8.chunk.css",
     "static/js/main.f2368d17.chunk.js"
