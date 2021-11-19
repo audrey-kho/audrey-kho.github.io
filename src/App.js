@@ -97,8 +97,8 @@ export default function App() {
         <button className="mobile-menu" ref={ref}>
           <MenuOutline
             color="#d8dbdb"
-            width="22px"
-            height="22px"
+            width="25px"
+            height="25px"
             onClick={() => {
               setOpen(!open);
             }}
