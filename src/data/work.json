@@ -52,7 +52,7 @@
       "link": "/",
       "type": "Personal Project",
       "description": "A redesign of this web portfolio (Huge thanks to <a href='https://www.jtiutan.com/' target='_blank' rel='noreferrer'>Jill</a> &amp; <a href='https://maxinekho.com/' target='_blank' rel='noreferrer'>Max</a> for your help and critiques!)",
-      "technologies": ["React", "JavaScript", "CSS", "styled-components", "Figma"]
+      "technologies": ["React", "JavaScript", "CSS", "Figma", "Firebase", "styled-components", "Google Search Console"]
     },
     {
       "name": "Ionic: Appflow Live Updates",
@@ -66,7 +66,7 @@
       "link": "https://project-2-audrey-kho.web.app/",
       "type": "Team Project",
       "description": "A wellness web app that allows users to track progress towards their goals and to participate in a community",
-      "technologies": ["React", "Firebase", "JavaScript", "CSS", "Figma"]
+      "technologies": ["React", "JavaScript", "CSS", "Firebase", "Figma"]
     }
   ]
 }
