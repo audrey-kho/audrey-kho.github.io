@@ -41,6 +41,13 @@
   ],
   "projects": [
     {
+      "name": "HuskyReads",
+      "link": "https://github.com/Husky-Coding-Project/huskyreads",
+      "type": "Club Project",
+      "description": "A full stack book cataloguing web application inspired by GoodReads (a project of the Husky Coding Club)",
+      "technologies": ["React", "JavaScript", "Axios", "CSS", "Figma"]
+    },
+    {
       "name": "Portfolio Redesign",
       "link": "/",
       "type": "Personal Project",
@@ -60,13 +67,6 @@
       "type": "Team Project",
       "description": "A wellness web app that allows users to track progress towards their goals and to participate in a community",
       "technologies": ["React", "Firebase", "JavaScript", "CSS", "Figma"]
-    },
-    {
-      "name": "Random Recipe Generator",
-      "link": "https://randomtastyrecipe.herokuapp.com/",
-      "type": "Personal Project",
-      "description": "A web app that randomly generates a <a href='https://tasty.co/' target='_blank' rel='noreferrer'>Tasty</a> recipe from the chosen dish category",
-      "technologies": ["HTML", "CSS", "JavaScript", "Node.js"]
     }
   ]
 }
