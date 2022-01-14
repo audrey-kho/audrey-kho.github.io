@@ -183,7 +183,7 @@ export default function App() {
       <Work />
       <Contact firebaseConfig={app}/>
       <FooterStyles>
-        <h5>&copy; AUDREY KHO 2021</h5>
+        <h5>&copy; AUDREY KHO 2022</h5>
       </FooterStyles>
     </Suspense>
   );
