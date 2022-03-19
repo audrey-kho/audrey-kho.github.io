@@ -184,6 +184,7 @@ export default function App() {
       <Contact firebaseConfig={app}/>
       <FooterStyles>
         <h5>&copy; AUDREY KHO 2022</h5>
+        <h5>Huge thanks to <a href='https://www.jtiutan.com/' target='_blank' rel='noreferrer'>Jill</a> &amp; <a href='https://maxinekho.com/' target='_blank' rel='noreferrer'>Max</a> for the design help!</h5>
       </FooterStyles>
     </Suspense>
   );
@@ -272,7 +273,7 @@ const NavStyles = styled.nav`
       top: 50px;
       right: 0;
       padding: 6px 16px;
-      background: rgba(21, 29, 48, 0.8);
+      background: rgba(0, 0, 0, 0.3);
       border: solid rgba(216, 219, 219, 0.2) 0.5px;
       border-radius: 8px;
       animation: ${dropdown} 0.2s ease;
@@ -316,4 +317,15 @@ const FooterStyles = styled.footer`
   padding: 24px;
   display: flex;
   font-weight: 500;
+  justify-content: space-between;
+
+  a {
+    position: relative;
+    display: inline;
+    padding: 0;
+    background-image: linear-gradient(#8aa5ff, #8aa5ff);
+    background-size: 1px 1px;
+    background-repeat: repeat-x;
+    background-position: 0 92%;
+  }
 `;

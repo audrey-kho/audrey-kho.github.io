@@ -218,7 +218,7 @@ const WorkStyles = styled.section`
       }
     }
 
-    .project:first-child {
+    .project:nth-child(2), .project:nth-child(3) {
       &::before {
         position: absolute;
         top: 16px;
@@ -277,7 +277,7 @@ const WorkStyles = styled.section`
       }
 
       &:hover {
-        box-shadow: 0 6px 28px rgba(22, 34, 56, 0.4);
+        box-shadow: 0 6px 28px rgba(0, 0, 0, 0.4);
         transform: translateY(-2px);
       }
     }

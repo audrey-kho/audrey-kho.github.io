@@ -5,15 +5,15 @@ import { ResponsiveContainer } from "./ResponsiveContainer";
 
 import {
   CssThree,
+  Express,
   Figma,
-  Firebase,
   Html5,
   Java,
   Javascript,
-  Nextdotjs,
+  Mongodb,
+  Nodedotjs,
   ReactJs,
   Styledcomponents,
-  Typescript,
 } from "@icons-pack/react-simple-icons";
 
 export default function About() {
@@ -59,6 +59,10 @@ export default function About() {
           <SectionHeading>RECENT LANGUAGES &amp; TECHNOLOGIES:</SectionHeading>
           <ul className="skills__list">
             <li>
+              <Java title="Java" width="36" height="36" />
+              <h6>Java</h6>
+            </li>
+            <li>
               <Html5 title="HTML" width="36" height="36" />
               <h6>HTML</h6>
             </li>
@@ -71,28 +75,24 @@ export default function About() {
               <h6>JavaScript</h6>
             </li>
             <li>
-              <Typescript title="Typescript" width="36" height="36" />
-              <h6>Typescript</h6>
-            </li>
-            <li>
               <ReactJs title="React.js" width="36" height="36" />
               <h6>React.js</h6>
-            </li>
-            <li>
-              <Nextdotjs title="Next.js" width="36" height="36" />
-              <h6>Next.js</h6>
             </li>
             <li>
               <Styledcomponents title="styled-components" width="36" height="36" />
               <h6>styled-components</h6>
             </li>
             <li>
-              <Firebase title="Swift" width="36" height="36" />
-              <h6>Firebase</h6>
+              <Nodedotjs title="Node.js" width="36" height="36" />
+              <h6>Node.js</h6>
             </li>
             <li>
-              <Java title="Java" width="36" height="36" />
-              <h6>Java</h6>
+              <Express title="Express" width="36" height="36" />
+              <h6>Express</h6>
+            </li>
+            <li>
+              <Mongodb title="MongoDB" width="36" height="36" />
+              <h6>MongoDB</h6>
             </li>
             <li>
               <Figma title="Figma" width="36" height="36" />

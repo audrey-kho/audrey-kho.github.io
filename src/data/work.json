@@ -1,23 +1,22 @@
 {
   "experience": [
     {
+      "name": "UW Information School",
+      "link": "https://ischool.uw.edu/",
+      "role": "Client-side Web Development Teaching Assistant",
+      "description": [
+        ""
+      ],
+      "time": "03/22&ndash;<br/>"
+    },
+    {
       "name": "Center for an Informed Public",
       "link": "https://www.cip.uw.edu/research/#projects",
       "role": "Frontend Developer",
       "description": [
         ""
       ],
-      "time": "10/21&ndash;<br/>"
-    },
-    {
-      "name": "UW SUB Initiative",
-      "link": "https://github.com/ReThink-SUB",
-      "role": "Web Developer",
-      "description": [
-        "Working with other student developers to promote small, sustainable businesses in Seattle.",
-        "Developing a fully responsive site that caters to both businesses and consumers."
-      ],
-      "time": "01/21&ndash;<br/>"
+      "time": "10/21&ndash;03/22<br/>"
     },
     {
       "name": "Ionic",
@@ -41,6 +40,13 @@
   ],
   "projects": [
     {
+      "name": "UW Course Review Forum",
+      "link": "https://info441-final-project.azurewebsites.net/",
+      "type": "Class Project",
+      "description": "A full stack forum web application for UW students to leave anonymous course reviews",
+      "technologies": ["React", "JavaScript", "Node.js", "Express.js", "CSS", "Azure", "Figma"]
+    },
+    {
       "name": "HuskyReads",
       "link": "https://github.com/Husky-Coding-Project/huskyreads",
       "type": "Club Project",
@@ -48,11 +54,11 @@
       "technologies": ["React", "JavaScript", "Axios", "CSS", "Figma"]
     },
     {
-      "name": "Portfolio Redesign",
-      "link": "/",
-      "type": "Personal Project",
-      "description": "A redesign of this web portfolio (Huge thanks to <a href='https://www.jtiutan.com/' target='_blank' rel='noreferrer'>Jill</a> &amp; <a href='https://maxinekho.com/' target='_blank' rel='noreferrer'>Max</a> for your help and critiques!)",
-      "technologies": ["React", "JavaScript", "CSS", "Figma", "Firebase", "styled-components", "Google Search Console"]
+      "name": "ReThink",
+      "link": "https://www.rethinkuw.org/",
+      "type": "Club Project",
+      "description": "A web platform that identifies and promotes small, sustainable businesses in Seattle",
+      "technologies": ["React", "JavaScript", "styled-components", "Firebase"]
     },
     {
       "name": "Ionic: Appflow Live Updates",
@@ -60,13 +66,6 @@
       "type": "Internship Project",
       "description": "A fully responsive page that I built and animated during my internship at Ionic",
       "technologies": ["React", "Typescript", "Next.js", "styled-components", "Animation"]
-    },
-    {
-      "name": "Health+",
-      "link": "https://project-2-audrey-kho.web.app/",
-      "type": "Team Project",
-      "description": "A wellness web app that allows users to track progress towards their goals and to participate in a community",
-      "technologies": ["React", "JavaScript", "CSS", "Firebase", "Figma"]
     }
   ]
 }
