@@ -82,7 +82,7 @@ const ContactStyles = styled.section`
   }
 
   section a {
-    background-image: linear-gradient(to left, #8aa5ff, #8aa5ff);
+    background-image: linear-gradient(to left, #5cffc0, #5cffc0);
     background-repeat: repeat-x;
     background-position: 0 92%;
     background-size: 1px 1px;
@@ -147,7 +147,7 @@ const ContactStyles = styled.section`
     font-family: "Whyte Medium", sans-serif;
     display: inline;
     height: 46px;
-    color: #309194;
+    color: #438e91;
     font-size: 0.86em;
     font-weight: 600;
     letter-spacing: 1.5px;

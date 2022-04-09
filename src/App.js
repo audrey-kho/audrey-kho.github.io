@@ -11,6 +11,10 @@ const About = React.lazy(() => import("./components/About"));
 const Work = React.lazy(() => import("./components/Work"));
 const Contact = React.lazy(() => import("./components/Contact"));
 
+/*
+Old colors:
+- hyperlink purple: #8aa5ff
+*/
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
@@ -68,7 +72,7 @@ export default function App() {
               width={16}
               height={16}
               stroke={2}
-              color="#8aa5ff"
+              color="#5cffc0"
               position={-3.2}
             />
           </a>
@@ -323,7 +327,7 @@ const FooterStyles = styled.footer`
     position: relative;
     display: inline;
     padding: 0;
-    background-image: linear-gradient(#8aa5ff, #8aa5ff);
+    background-image: linear-gradient(#5cffc0, #5cffc0);
     background-size: 1px 1px;
     background-repeat: repeat-x;
     background-position: 0 92%;
