@@ -72,7 +72,7 @@ export default function App() {
               width={16}
               height={16}
               stroke={2}
-              color="#5cffc0"
+              color="#C2E9C8"
               position={-3.2}
             />
           </a>
@@ -327,7 +327,7 @@ const FooterStyles = styled.footer`
     position: relative;
     display: inline;
     padding: 0;
-    background-image: linear-gradient(#5cffc0, #5cffc0);
+    background-image: linear-gradient(#C2E9C8, #C2E9C8);
     background-size: 1px 1px;
     background-repeat: repeat-x;
     background-position: 0 92%;

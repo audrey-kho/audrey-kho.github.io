@@ -77,7 +77,7 @@ export default function Work() {
                       >
                         <h2>
                           {name.toUpperCase()}
-                          <LinkArrow width={34} height={34} color={"#5cffc0"} />
+                          <LinkArrow width={34} height={34} color={"#C2E9C8"} />
                         </h2>
                       </a>
                       <h6 className="work__role">{role}</h6>
@@ -178,7 +178,7 @@ const WorkStyles = styled.section`
           letter-spacing: 1px;
 
           a {
-            background-image: linear-gradient(#5cffc0, #5cffc0);
+            background-image: linear-gradient(#C2E9C8, #C2E9C8);
             background-size: 1px 1px;
             background-repeat: repeat-x;
             background-position: 0 92%;
@@ -248,7 +248,7 @@ const WorkStyles = styled.section`
           position: relative;
           display: inline;
           padding: 0;
-          background-image: linear-gradient(#5cffc0, #5cffc0);
+          background-image: linear-gradient(#C2E9C8, #C2E9C8);
           background-size: 1px 1px;
           background-repeat: repeat-x;
           background-position: 0 92%;
