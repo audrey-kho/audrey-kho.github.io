@@ -30,8 +30,8 @@ html {
 body {
   position: relative;
   height: 100%;
-  background-color: #242629;
-  background-image: linear-gradient(#0c1831, #438e91);
+  background-color: #3b5144;
+  /* background-image: linear-gradient(#0c1831, #438e91); */
   min-height: 80em;
   font-family: "Whyte", sans-serif;
   color: #d8dbdb !important;
