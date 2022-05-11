@@ -72,7 +72,7 @@ export default function App() {
               width={16}
               height={16}
               stroke={2}
-              color="#C2E9C8"
+              color="#B6F1BF"
               position={-3.2}
             />
           </a>
@@ -273,17 +273,18 @@ const NavStyles = styled.nav`
       align-items: flex-end;
       font-family: "Whyte", sans-serif;
       letter-spacing: 1px;
+      line-height: 1.85em;
       position: absolute;
-      top: 50px;
+      top: 48px;
       right: 0;
-      padding: 6px 16px;
+      padding: 12px 16px;
       background: rgba(0, 0, 0, 0.3);
       border: solid rgba(216, 219, 219, 0.2) 0.5px;
       border-radius: 8px;
       animation: ${dropdown} 0.2s ease;
 
       a {
-        margin: 4px 0;
+        margin: 4px 6px;
         padding: 2px;
         cursor: pointer !important;
       }
@@ -291,9 +292,10 @@ const NavStyles = styled.nav`
       hr {
         border: 0;
         display: block;
-        width: 96%;
+        width: 100%;
         background-color: #d8dbdb;
         opacity: 0.4;
+        margin: 8px 0;
         height: 0.6px;
       }
 
@@ -327,7 +329,7 @@ const FooterStyles = styled.footer`
     position: relative;
     display: inline;
     padding: 0;
-    background-image: linear-gradient(#C2E9C8, #C2E9C8);
+    background-image: linear-gradient(#B6F1BF, #B6F1BF);
     background-size: 1px 1px;
     background-repeat: repeat-x;
     background-position: 0 92%;
