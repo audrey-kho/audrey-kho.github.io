@@ -156,7 +156,7 @@ const AboutStyles = styled.section`
 
       a {
         position: relative;
-        background-image: linear-gradient(to left, #B6F1BF, #B6F1BF);
+        background-image: linear-gradient(to left, #889c80, #889c80);
         background-repeat: repeat-x;
         background-position: 0 92%;
         background-size: 1px 1px;

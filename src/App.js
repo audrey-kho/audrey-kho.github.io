@@ -46,7 +46,7 @@ export default function App() {
 
   return (
     <Suspense fallback={
-      <div style={{width: "100%", height: "80em", background: "#3c4e41"}}></div>
+      <div style={{width: "100%", height: "80em", background: "#cedad2"}}></div>
     }>
       <NavStyles>
         <h2>AUDREY KHO</h2>
@@ -72,7 +72,7 @@ export default function App() {
               width={16}
               height={16}
               stroke={2}
-              color="#B6F1BF"
+              color="#889c80"
               position={-3.2}
             />
           </a>
@@ -330,7 +330,7 @@ const FooterStyles = styled.footer`
     position: relative;
     display: inline;
     padding: 0;
-    background-image: linear-gradient(#B6F1BF, #B6F1BF);
+    background-image: linear-gradient(#889c80, #889c80);
     background-size: 1px 1px;
     background-repeat: repeat-x;
     background-position: 0 92%;
