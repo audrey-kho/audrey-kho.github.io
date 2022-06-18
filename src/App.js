@@ -14,6 +14,7 @@ const Contact = React.lazy(() => import("./components/Contact"));
 /*
 Old colors:
 - hyperlink purple: #8aa5ff
+- bg blue: 242629
 */
 
 // TODO: Replace the following with your app's Firebase project configuration
