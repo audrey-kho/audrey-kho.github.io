@@ -147,7 +147,7 @@ const ContactStyles = styled.section`
     font-family: "Whyte Medium", sans-serif;
     display: inline;
     height: 46px;
-    color: #cedad2;
+    color: #DBE9DD;
     font-size: 0.82em;
     letter-spacing: 2px;
     background: #485A3D;
