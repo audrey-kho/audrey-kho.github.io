@@ -148,7 +148,7 @@ const ContactStyles = styled.section`
     display: inline;
     height: 46px;
     color: #cedad2;
-    font-size: 0.86em;
+    font-size: 0.82em;
     letter-spacing: 2px;
     background: #485A3D;
     outline: none;
@@ -156,7 +156,7 @@ const ContactStyles = styled.section`
     border-radius: 5px;
     margin: 1.5em 0;
     padding: 7px 28px;
-    max-width: 220px;
+    max-width: 240px;
     transition: all 0.3s;
 
     &:hover {

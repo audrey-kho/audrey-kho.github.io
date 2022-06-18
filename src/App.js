@@ -286,7 +286,7 @@ const NavStyles = styled.nav`
       a {
         margin: 4px 6px;
         padding: 2px;
-        font-size: 1.2em;
+        font-size: 18px;
         cursor: pointer !important;
       }
 
