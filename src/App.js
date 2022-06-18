@@ -273,12 +273,12 @@ const NavStyles = styled.nav`
       align-items: flex-end;
       font-family: "Whyte", sans-serif;
       letter-spacing: 1px;
-      line-height: 1.9em;
+      line-height: 2.6em;
       position: absolute;
       top: 48px;
       right: 0;
       padding: 12px 18px;
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(206, 218, 210, 0.7);
       border: solid rgba(0, 0, 0, 0.2) 0.5px;
       border-radius: 8px;
       animation: ${dropdown} 0.2s ease;
