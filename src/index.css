@@ -30,21 +30,21 @@ html {
 body {
   position: relative;
   height: 100%;
-  background-color: #3c4e41;
+  background-color: #cedad2;
   /* background-image: linear-gradient(#0c1831, #438e91); */
   min-height: 80em;
   font-family: "Whyte", sans-serif;
-  color: #d8dbdb !important;
+  color: #485A3D !important;
   letter-spacing: 2px !important;
   height: 100%;
 }
 
 p {
-  font-family: "Whyte Light", sans-serif;
+  font-family: "Whyte Book", sans-serif;
 }
 
 a {
-  color: #d8dbdb;
+  color: #485A3D;
   text-decoration: none;
   transition: 0.3s opacity;
 }

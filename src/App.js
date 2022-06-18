@@ -81,28 +81,28 @@ export default function App() {
             target="_blank"
             rel="noreferrer"
           >
-            <Mail color="#d8dbdb" width="26px" height="24px" />
+            <Mail color="#485A3D" width="26px" height="24px" />
           </a>
           <a
             href="https://www.linkedin.com/in/audrey-kho/"
             target="_blank"
             rel="noreferrer"
           >
-            <LogoLinkedin color="#d8dbdb" height="24px" />
+            <LogoLinkedin color="#485A3D" height="24px" />
           </a>
           <a
             href="https://github.com/audrey-kho"
             target="_blank"
             rel="noreferrer"
           >
-            <LogoGithub color="#d8dbdb" width="24px" height="24px" />
+            <LogoGithub color="#485A3D" width="24px" height="24px" />
           </a>
         </div>
         <button className="mobile-menu" ref={ref}>
           <MenuOutline
-            color="#d8dbdb"
-            width="25px"
-            height="25px"
+            color="#485A3D"
+            width="28px"
+            height="28px"
             onClick={() => {
               setOpen(!open);
             }}
@@ -273,19 +273,20 @@ const NavStyles = styled.nav`
       align-items: flex-end;
       font-family: "Whyte", sans-serif;
       letter-spacing: 1px;
-      line-height: 1.85em;
+      line-height: 1.9em;
       position: absolute;
       top: 48px;
       right: 0;
-      padding: 12px 16px;
-      background: rgba(0, 0, 0, 0.3);
-      border: solid rgba(216, 219, 219, 0.2) 0.5px;
+      padding: 12px 18px;
+      background: rgba(255, 255, 255, 0.2);
+      border: solid rgba(0, 0, 0, 0.2) 0.5px;
       border-radius: 8px;
       animation: ${dropdown} 0.2s ease;
 
       a {
         margin: 4px 6px;
         padding: 2px;
+        font-size: 1.2em;
         cursor: pointer !important;
       }
 
@@ -293,7 +294,7 @@ const NavStyles = styled.nav`
         border: 0;
         display: block;
         width: 100%;
-        background-color: #d8dbdb;
+        background-color: #485A3D;
         opacity: 0.4;
         margin: 8px 0;
         height: 0.6px;
@@ -307,7 +308,7 @@ const NavStyles = styled.nav`
     &:hover,
     &:active,
     &:focus {
-      box-shadow: inset 0 0 3px rgba(180, 180, 220, 0.6);
+      box-shadow: inset 0 0 3px rgba(95, 112, 83, 0.5);
     }
 
     @media (max-width: 850px) {

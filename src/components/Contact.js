@@ -126,19 +126,19 @@ const ContactStyles = styled.section`
 
   .short-input input,
   textarea {
-    font-family: "Whyte Light", sans-serif;
+    font-family: "Whyte Book", sans-serif;
     background: rgba(255, 255, 255, 0.1);
     outline: none;
-    border: #d8dbdb solid 1px;
+    border: #485A3D solid 1px;
     border-radius: 5px;
     margin-bottom: 16px;
-    color: #fff;
+    color: #485A3D;
     font-size: 0.85em;
     letter-spacing: 1px;
     width: inherit;
 
     &::placeholder {
-      color: #c0c0c0;
+      color: #8fa381;
     }
   }
 
@@ -147,11 +147,10 @@ const ContactStyles = styled.section`
     font-family: "Whyte Medium", sans-serif;
     display: inline;
     height: 46px;
-    color: #3b444a;
+    color: #cedad2;
     font-size: 0.86em;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    background: #d8dbdb;
+    letter-spacing: 2px;
+    background: #485A3D;
     outline: none;
     border: none;
     border-radius: 5px;

@@ -26,11 +26,11 @@ export default function About() {
           <h1>Audrey</h1>
           <ul className="details__list">
             <li>
-              <CodeSlashOutline color="#d8dbdb" width="20px" height="20px" />
+              <CodeSlashOutline color="#485A3D" width="20px" height="20px" />
               <p>I'm a Seattle-based software developer who enjoys building dynamic web applications.</p>
             </li>
             <li>
-              <SchoolOutline color="#d8dbdb" width="20px" height="20px" />
+              <SchoolOutline color="#485A3D" width="20px" height="20px" />
               <p>
                 I'm majoring in{" "}
                 <a href="https://ischool.uw.edu/" target="_blank" rel="noreferrer">
@@ -43,7 +43,7 @@ export default function About() {
               </p>
             </li>
             <li>
-              <HeartOutline color="#d8dbdb" width="20px" height="20px" />
+              <HeartOutline color="#485A3D" width="20px" height="20px" />
               <p>
                 I love to cook and bake in my free time and I'm always craving for ramen &amp;{" "}
                 <a
@@ -191,7 +191,7 @@ const AboutStyles = styled.section`
 
       h6 {
         margin: 0;
-        font-family: "Whyte Light", sans-serif;
+        font-family: "Whyte Book", sans-serif;
         font-size: 10px;
         letter-spacing: 1px;
         text-align: center;

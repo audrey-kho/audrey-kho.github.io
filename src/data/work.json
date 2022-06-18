@@ -1,13 +1,22 @@
 {
   "experience": [
     {
+      "name": "Braze",
+      "link": "https://www.washington.edu/",
+      "role": "Growth Engineering Intern",
+      "description": [
+        ""
+      ],
+      "time": "06/22&ndash;<br/>"
+    },
+    {
       "name": "University of Washington",
       "link": "https://www.washington.edu/",
       "role": "Undergraduate Teaching Assistant (INFO 340)",
       "description": [
         ""
       ],
-      "time": "03/22&ndash;<br/>"
+      "time": "03&ndash;<br/>06/22"
     },
     {
       "name": "UW Center for an Informed Public",
@@ -16,7 +25,7 @@
       "description": [
         ""
       ],
-      "time": "10/21&ndash;<br/>"
+      "time": "10/21&ndash;<br/>03/22"
     },
     {
       "name": "Ionic",
@@ -30,7 +39,7 @@
     {
       "name": "UW School of Medicine",
       "link": "https://www.uwmedicine.org/",
-      "role": "Software Developer",
+      "role": "Volunteer Software Developer",
       "description": [
         "Volunteered to build pages for the UW SOM service learning website with Next.js and React.",
         "Helped provide a more straightforward onboarding process for student volunteers."

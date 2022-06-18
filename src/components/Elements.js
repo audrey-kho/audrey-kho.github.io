@@ -8,7 +8,7 @@ export const SectionTitle = (...props) => {
     <SectionTitleStyles>
       <Link to={href} smooth={true} offset={-92}>
         {children}&nbsp;
-        <ArrowForwardSharp color={"#d8dbdb"} width="10px" height="10px" />
+        <ArrowForwardSharp color={"#485A3D"} width="10px" height="10px" />
       </Link>
     </SectionTitleStyles>
   );

@@ -1,4 +1,4 @@
-export default function LinkArrow({width, height, stroke = 1.8, color = "#d8dbdb", position = -5.5}) {
+export default function LinkArrow({width, height, stroke = 1.8, color = "#485A3D", position = -5.5}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

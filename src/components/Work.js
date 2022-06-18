@@ -136,7 +136,7 @@ const WorkStyles = styled.section`
       }
 
       .work__role {
-        font-family: "Whyte Light", sans-serif;
+        font-family: "Whyte Book", sans-serif;
         font-size: 14px;
         font-weight: 100;
         margin: 0;
@@ -158,7 +158,7 @@ const WorkStyles = styled.section`
       }
 
       .timeframe {
-        font-family: "Whyte Light", sans-serif;
+        font-family: "Whyte Book", sans-serif;
         font-size: 14px;
         font-weight: 100;
         margin: 0;
@@ -173,7 +173,7 @@ const WorkStyles = styled.section`
         list-style: none;
 
         li {
-          font-family: "Whyte Light", sans-serif;
+          font-family: "Whyte Book", sans-serif;
           font-size: 16px;
           letter-spacing: 1px;
 
@@ -211,7 +211,7 @@ const WorkStyles = styled.section`
       }
 
       span {
-        font-family: "Whyte Light", sans-serif;
+        font-family: "Whyte Book", sans-serif;
         font-size: 12px;
         margin: 0;
         text-transform: uppercase;
@@ -229,7 +229,7 @@ const WorkStyles = styled.section`
 
     .project {
       flex: 1 1 360px;
-      border: solid 0.5px #d8dbdb;
+      border: solid 0.5px #485A3D;
       border-radius: 12px;
       transition: 0.3s all;
       margin-right: 20px;
@@ -264,20 +264,20 @@ const WorkStyles = styled.section`
 
         li {
           display: inline;
-          font-family: "Whyte Light", sans-serif;
+          font-family: "Whyte Book", sans-serif;
           font-size: 12px;
           letter-spacing: 1px;
           margin-right: 8px;
           margin-bottom: 8px;
           padding: 4px 11px 3px;
           text-transform: uppercase;
-          border: solid 0.2px #d8dbdb;
+          border: solid 0.2px #485A3D;
           border-radius: 22px;
         }
       }
 
       &:hover {
-        box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 6px 28px rgba(0, 0, 0, 0.15);
         transform: translateY(-2px);
       }
     }
