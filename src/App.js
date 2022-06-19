@@ -279,7 +279,7 @@ const NavStyles = styled.nav`
       top: 48px;
       right: 0;
       padding: 12px 18px;
-      background: rgba(206, 218, 210, 0.7);
+      background: rgba(219, 233, 221, 0.7);
       border: solid rgba(0, 0, 0, 0.2) 0.5px;
       border-radius: 8px;
       animation: ${dropdown} 0.2s ease;
