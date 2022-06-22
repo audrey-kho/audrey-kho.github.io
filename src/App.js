@@ -320,12 +320,12 @@ const NavStyles = styled.nav`
 
 const FooterStyles = styled.footer`
   font-family: "Whyte Light", sans-serif;
-  font-weight: 100;
   position: relative;
   padding: 24px;
   display: flex;
-  font-weight: 500;
   justify-content: space-between;
+  max-width: 1380px;
+  margin: 0 auto;
 
   a {
     position: relative;
