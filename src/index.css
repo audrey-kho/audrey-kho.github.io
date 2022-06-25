@@ -25,13 +25,13 @@
 
 html {
   box-sizing: border-box !important;
-  background: #DBE9DD;
+  background: #e9f3ea;
 }
 
 body {
   position: relative;
   height: 100%;
-  background-color: #DBE9DD;
+  background-color: #e9f3ea;
   /* background-image: linear-gradient(#0c1831, #438e91); */
   min-height: 80em;
   font-family: "Whyte", sans-serif;
