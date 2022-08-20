@@ -31,7 +31,7 @@ html {
 body {
   position: relative;
   height: 100%;
-  background-color: #e9f3ea;
+  /* background-color: #e0e9f7; */
   /* background-image: linear-gradient(#0c1831, #438e91); */
   min-height: 80em;
   font-family: "Whyte", sans-serif;
@@ -40,7 +40,8 @@ body {
 }
 
 p {
-  font-family: "Whyte Book", sans-serif;
+  font-family: "Whyte", sans-serif;
+  font-weight: 500;
 }
 
 a {

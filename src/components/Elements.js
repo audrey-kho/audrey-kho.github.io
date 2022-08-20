@@ -37,8 +37,8 @@ const SectionTitleStyles = styled.p`
   }
 `;
 
-export const SectionHeading = styled.h5`
-  font-family: 'Whyte Book', sans-serif;
+export const SectionHeading = styled.h2`
+  font-family: 'Whyte', sans-serif;
   margin: 0 0 14px;
   font-size: 14px;
 `

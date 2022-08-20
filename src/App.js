@@ -6,18 +6,12 @@ import clsx from "clsx";
 import { Link } from "react-scroll";
 import { initializeApp } from 'firebase/app';
 import { Suspense } from "react";
+import dayjs from "dayjs";
 
 const About = React.lazy(() => import("./components/About"));
 const Work = React.lazy(() => import("./components/Work"));
 const Contact = React.lazy(() => import("./components/Contact"));
 
-/*
-Old colors:
-- hyperlink purple: #8aa5ff
-- bg blue: 242629
-*/
-
-// TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDe1AnnQzKoIb2kmpig5FYj60h6isSFK8c",
   authDomain: "audrey-kho.firebaseapp.com",
@@ -50,7 +44,7 @@ export default function App() {
       <div style={{width: "100%", height: "80em", background: "#e9f3ea"}}></div>
     }>
       <NavStyles>
-        <h2>AUDREY KHO</h2>
+        <h1>AUDREY KHO</h1>
         <div className="scroll-links">
           <Link to={"about"} smooth={true} offset={-132}>
             ABOUT
@@ -188,8 +182,8 @@ export default function App() {
       <Work />
       <Contact firebaseConfig={app}/>
       <FooterStyles>
-        <h5>&copy; AUDREY KHO 2022</h5>
-        <h5>Huge thanks to <a href='https://www.jtiutan.com/' target='_blank' rel='noreferrer'>Jill</a> &amp; <a href='https://maxinekho.com/' target='_blank' rel='noreferrer'>Max</a> for the design help!</h5>
+        <p>&copy; AUDREY KHO {dayjs().year()}</p>
+        <p>Huge thanks to <a href='https://www.jtiutan.com/' target='_blank' rel='noreferrer'>Jill</a> &amp; <a href='https://maxinekho.com/' target='_blank' rel='noreferrer'>Max</a> for the design help!</p>
       </FooterStyles>
     </Suspense>
   );
@@ -220,7 +214,7 @@ const NavStyles = styled.nav`
   backdrop-filter: blur(2.5px);
   z-index: 999;
 
-  h2 {
+  h1 {
     font-size: 16px;
     margin: 24px 0;
   }
@@ -319,7 +313,8 @@ const NavStyles = styled.nav`
 `;
 
 const FooterStyles = styled.footer`
-  font-family: "Whyte Light", sans-serif;
+  font-family: "Whyte", sans-serif;
+  font-size: 14px;
   position: relative;
   padding: 24px;
   display: flex;

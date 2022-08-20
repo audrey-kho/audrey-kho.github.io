@@ -22,12 +22,12 @@ export default function About() {
       <AboutStyles id="about">
         <SectionTitle href="about">ABOUT</SectionTitle>
         <MainSection>
-          <SectionHeading>HELLO! MY NAME IS</SectionHeading>
-          <h1>Audrey</h1>
+          {/* <p style={{"margin": "0 0 14px", "fontSize": "14px", "fontWeight": "600"}}>HEY THERE, I'M</p> */}
+          <h1><span>Hey, I'm</span> Audrey!</h1>
           <ul className="details__list">
             <li>
               <CodeSlashOutline color="#485A3D" width="20px" height="20px" />
-              <p>I'm a Seattle-based software developer who enjoys building dynamic web applications.</p>
+              <p>I'm a Seattle-based software developer who is passionate about frontend development and UX design.</p>
             </li>
             <li>
               <SchoolOutline color="#485A3D" width="20px" height="20px" />
@@ -113,12 +113,14 @@ const AboutStyles = styled.section`
   align-items: flex-start;
 
   h1 {
-    margin: 0;
-  }
-
-  h1 {
-    font-size: 74px;
+    font-size: 72px;
     letter-spacing: 3px;
+    margin: -4px 0 0;
+    line-height: 68px;
+
+    span {
+      color: #A0B295;
+    }
 
     @media (max-width: 768px) {
       font-size: 54px;

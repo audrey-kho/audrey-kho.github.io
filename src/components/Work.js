@@ -25,7 +25,7 @@ export default function Work() {
                       rel="noreferrer"
                     >
                       <span className="project__type">{type}</span>
-                      <h3>{name.toUpperCase()}</h3>
+                      <h2>{name.toUpperCase()}</h2>
                       <p dangerouslySetInnerHTML={{ __html: description }} />
                       <ul className="tech__list">
                         {technologies.map((t) => {
@@ -40,7 +40,7 @@ export default function Work() {
                   return (
                     <a className="project__inner" href={link}>
                       <span className="project__type">{type}</span>
-                      <h3>{name.toUpperCase()}</h3>
+                      <h2>{name.toUpperCase()}</h2>
                       <p dangerouslySetInnerHTML={{ __html: description }} />
                       <ul className="tech__list">
                         {technologies.map((t) => {
@@ -206,7 +206,7 @@ const WorkStyles = styled.section`
       height: 88%;
       opacity: 1;
 
-      h3 {
+      h2 {
         margin: 10px 0;
       }
 
