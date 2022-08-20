@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components";
 import React, { useState, useEffect, useRef } from "react";
 import clsx from "clsx";
 import { Link } from "react-scroll";
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from "firebase/app";
 import { Suspense } from "react";
 import dayjs from "dayjs";
 
@@ -20,7 +20,7 @@ const firebaseConfig = {
   storageBucket: "audrey-kho.appspot.com",
   messagingSenderId: "306777134790",
   appId: "1:306777134790:web:024444a1e5d426846369c7",
-  measurementId: "G-1WMJFHDP7Q"
+  measurementId: "G-1WMJFHDP7Q",
 };
 
 const app = initializeApp(firebaseConfig);
@@ -40,9 +40,13 @@ export default function App() {
   }, [open]);
 
   return (
-    <Suspense fallback={
-      <div style={{width: "100%", height: "80em", background: "#e9f3ea"}}></div>
-    }>
+    <Suspense
+      fallback={
+        <div
+          style={{ width: "100%", height: "80em", background: "#e9f3ea" }}
+        ></div>
+      }
+    >
       <NavStyles>
         <h1>AUDREY KHO</h1>
         <div className="scroll-links">
@@ -102,7 +106,6 @@ export default function App() {
               setOpen(!open);
             }}
           />
-
           <div className={clsx({ "mobile-dropdown": true, hidden: !open })}>
             <Link
               to={"about"}
@@ -117,7 +120,7 @@ export default function App() {
             <Link
               to={"work"}
               smooth={true}
-              offset={-132}
+              offset={-98}
               onClick={() => {
                 setOpen(false);
               }}
@@ -134,56 +137,25 @@ export default function App() {
             >
               CONTACT
             </Link>
-            <hr />
-            <a
-              href="https://drive.google.com/file/d/1K4P0W8m9sU6cNN-XS0x6gC4wB7RACUpC/view"
-              target="_blank"
-              rel="noreferrer"
-              onClick={() => {
-                setOpen(false);
-              }}
-            >
-              RESUME
-            </a>
-            <a
-              href="mailto:audreyckho@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-              onClick={() => {
-                setOpen(false);
-              }}
-            >
-              E-MAIL
-            </a>
-            <a
-              href="https://www.linkedin.com/in/audrey-kho/"
-              target="_blank"
-              rel="noreferrer"
-              onClick={() => {
-                setOpen(false);
-              }}
-            >
-              LINKEDIN
-            </a>
-            <a
-              href="https://github.com/audrey-kho"
-              target="_blank"
-              rel="noreferrer"
-              onClick={() => {
-                setOpen(false);
-              }}
-            >
-              GITHUB
-            </a>
           </div>
         </button>
       </NavStyles>
       <About />
       <Work />
-      <Contact firebaseConfig={app}/>
+      <Contact firebaseConfig={app} />
       <FooterStyles>
         <p>&copy; AUDREY KHO {dayjs().year()}</p>
-        <p>Huge thanks to <a href='https://www.jtiutan.com/' target='_blank' rel='noreferrer'>Jill</a> &amp; <a href='https://maxinekho.com/' target='_blank' rel='noreferrer'>Max</a> for the design help!</p>
+        <p>
+          Thanks to{" "}
+          <a href="https://www.jtiutan.com/" target="_blank" rel="noreferrer">
+            Jill
+          </a>{" "}
+          &amp;{" "}
+          <a href="https://maxinekho.com/" target="_blank" rel="noreferrer">
+            Max
+          </a>{" "}
+          for the design help!
+        </p>
       </FooterStyles>
     </Suspense>
   );
@@ -205,8 +177,8 @@ const NavStyles = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  padding: 0 18px;
+  margin: -10px auto;
+  padding: 0 24px;
   max-width: 1380px;
   position: sticky;
   top: 0;
@@ -217,6 +189,10 @@ const NavStyles = styled.nav`
   h1 {
     font-size: 16px;
     margin: 24px 0;
+
+    @media (max-width: 850px) {
+      display: none;
+    }
   }
 
   a {
@@ -238,18 +214,15 @@ const NavStyles = styled.nav`
   .main-menu {
     display: flex;
     align-items: center;
+    font-family: "Whyte Medium", sans-serif;
+    margin: 24px 0;
 
     > * + * {
       margin-left: 22px;
     }
-
-    @media (max-width: 850px) {
-      display: none;
-    }
   }
 
   .mobile-menu {
-    position: relative;
     display: none;
     background: none;
     border: none;
@@ -262,44 +235,6 @@ const NavStyles = styled.nav`
       padding: 4px 8px 2px;
     }
 
-    .mobile-dropdown {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      font-family: "Whyte", sans-serif;
-      letter-spacing: 1px;
-      line-height: 2.6em;
-      position: absolute;
-      top: 48px;
-      right: 0;
-      padding: 12px 18px;
-      background: rgba(230, 242, 231, .85);
-      border: solid rgba(0, 0, 0, 0.2) 0.5px;
-      border-radius: 8px;
-      animation: ${dropdown} 0.2s ease;
-
-      a {
-        margin: 4px 6px;
-        padding: 2px;
-        font-size: 18px;
-        cursor: pointer !important;
-      }
-
-      hr {
-        border: 0;
-        display: block;
-        width: 100%;
-        background-color: #485A3D;
-        opacity: 0.4;
-        margin: 8px 0;
-        height: 0.6px;
-      }
-
-      &.hidden {
-        display: none;
-      }
-    }
-
     &:hover,
     &:active,
     &:focus {
@@ -308,6 +243,45 @@ const NavStyles = styled.nav`
 
     @media (max-width: 850px) {
       display: block;
+    }
+  }
+
+  .mobile-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: "Whyte Medium", sans-serif;
+    letter-spacing: 1px;
+    line-height: 2.6em;
+    padding: 16px 24px;
+    position: absolute;
+    top: 48px;
+    right: 0;
+    // width: 100px;
+    background: rgba(230, 242, 231, 0.85);
+    border: solid rgba(0, 0, 0, 0.2) 0.5px;
+    border-radius: 8px;
+    animation: ${dropdown} 0.2s ease;
+
+    a {
+      margin: 4px 2px;
+      padding: 4px;
+      font-size: 18px;
+      cursor: pointer !important;
+    }
+
+    hr {
+      border: 0;
+      display: block;
+      width: 100%;
+      background-color: #485a3d;
+      opacity: 0.4;
+      margin: 8px 0;
+      height: 0.6px;
+    }
+
+    &.hidden {
+      display: none;
     }
   }
 `;

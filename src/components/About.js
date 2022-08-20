@@ -22,7 +22,6 @@ export default function About() {
       <AboutStyles id="about">
         <SectionTitle href="about">ABOUT</SectionTitle>
         <MainSection>
-          {/* <p style={{"margin": "0 0 14px", "fontSize": "14px", "fontWeight": "600"}}>HEY THERE, I'M</p> */}
           <h1><span>Hey, I'm</span> Audrey!</h1>
           <ul className="details__list">
             <li>
@@ -36,7 +35,7 @@ export default function About() {
                 <a href="https://ischool.uw.edu/" target="_blank" rel="noreferrer">
                   Informatics
                 </a>
-                &nbsp;with a focus in Software Development &amp; Human-Computer Interaction at the{" "}
+                &nbsp;with a focus in software development, HCI, and cybersecurity at the{" "}
                 <a href="https://www.washington.edu/" target="_blank" rel="noreferrer">
                   University of Washington
                 </a>.
@@ -45,7 +44,7 @@ export default function About() {
             <li>
               <HeartOutline color="#485A3D" width="20px" height="20px" />
               <p>
-                I love to cook and bake in my free time and I'm always craving for ramen &amp;{" "}
+                I love to cook and bake in my free time and I'm always craving for coconut water &amp;{" "}
                 <a
                   href="https://vanleeuwenicecream.com/product/vanilla-bean-ice-cream/"
                   target="_blank"
@@ -113,17 +112,17 @@ const AboutStyles = styled.section`
   align-items: flex-start;
 
   h1 {
-    font-size: 72px;
-    letter-spacing: 3px;
-    margin: -4px 0 0;
-    line-height: 68px;
+    font-size: 68px;
+    letter-spacing: 2px;
+    margin: -6px 0 0;
+    line-height: 70px;
 
     span {
-      color: #A0B295;
+      color: #A3B994;
     }
 
-    @media (max-width: 768px) {
-      font-size: 54px;
+    @media (max-width: 820px) {
+      font-size: 56px;
     }
   }
 
