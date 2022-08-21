@@ -278,7 +278,7 @@ const WorkStyles = styled.section`
       }
 
       &:hover {
-        box-shadow: 0 6px 28px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 6px 24px rgba(10, 20, 10, 0.12);
         transform: translateY(-2px);
       }
     }
