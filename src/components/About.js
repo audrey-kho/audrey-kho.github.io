@@ -80,23 +80,23 @@ export default function About() {
           <ul className="skills__list">
             <li>
               <Java title="Java" width="36" height="36" />
-              <h6>Java</h6>
+              <span>Java</span>
             </li>
             <li>
               <Html5 title="HTML" width="36" height="36" />
-              <h6>HTML</h6>
+              <span>HTML</span>
             </li>
             <li>
               <CssThree title="CSS" width="36" height="36" />
-              <h6>CSS</h6>
+              <span>CSS</span>
             </li>
             <li>
               <Javascript title="JavaScript" width="36" height="36" />
-              <h6>JavaScript</h6>
+              <span>JavaScript</span>
             </li>
             <li>
               <ReactJs title="React.js" width="36" height="36" />
-              <h6>React.js</h6>
+              <span>React.js</span>
             </li>
             <li>
               <Styledcomponents
@@ -104,23 +104,23 @@ export default function About() {
                 width="36"
                 height="36"
               />
-              <h6>styled-components</h6>
+              <span>styled-components</span>
             </li>
             <li>
               <Nodedotjs title="Node.js" width="36" height="36" />
-              <h6>Node.js</h6>
+              <span>Node.js</span>
             </li>
             <li>
               <Express title="Express" width="36" height="36" />
-              <h6>Express</h6>
+              <span>Express</span>
             </li>
             <li>
               <Mongodb title="MongoDB" width="36" height="36" />
-              <h6>MongoDB</h6>
+              <span>MongoDB</span>
             </li>
             <li>
               <Figma title="Figma" width="36" height="36" />
-              <h6>Figma</h6>
+              <span>Figma</span>
             </li>
           </ul>
         </MainSection>
@@ -148,12 +148,14 @@ const AboutStyles = styled.section`
       color: #a3b994;
     }
 
-    &:hover + .headshot {
-      display: block;
-    }
-
     @media (max-width: 820px) {
       font-size: 56px;
+    }
+
+    @media (min-width: 768px) {
+      &:hover + .headshot {
+        display: block;
+      }
     }
   }
 
@@ -233,7 +235,7 @@ const AboutStyles = styled.section`
         margin: 0 auto;
       }
 
-      h6 {
+      span {
         margin: 0;
         font-family: "Whyte Book", sans-serif;
         font-size: 10px;

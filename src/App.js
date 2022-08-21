@@ -252,7 +252,7 @@ const NavStyles = styled.nav`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    font-family: "Whyte Medium", sans-serif;
+    font-family: "Whyte", sans-serif;
     letter-spacing: 1px;
     line-height: 2.6em;
     padding: 18px;
@@ -266,9 +266,9 @@ const NavStyles = styled.nav`
 
     a {
       margin: 8px 2px;
-      padding: 4px;
+      padding: 2px 6px;
       font-size: 18px;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       cursor: pointer !important;
     }
 
