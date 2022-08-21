@@ -3,7 +3,7 @@
     {
       "name": "Braze",
       "link": "https://www.braze.com/",
-      "role": "Growth Engineering Intern",
+      "role": "Software Engineering Intern, Growth",
       "description": [
         ""
       ],
@@ -49,6 +49,13 @@
   ],
   "projects": [
     {
+      "name": "Broadway Lottery Notification Bot",
+      "link": "/",
+      "type": "Personal Project - [Coming Soon]",
+      "description": "A bot that notifies me when a lottery opens for any of the Broadway musicals I'm hoping to watch",
+      "technologies": ["Python", "Selenium"]
+    },
+    {
       "name": "UW Course Review Forum",
       "link": "https://info441-final-project.azurewebsites.net/",
       "type": "Class Project",
@@ -59,7 +66,7 @@
       "name": "HuskyReads",
       "link": "https://github.com/Husky-Coding-Project/huskyreads",
       "type": "Club Project",
-      "description": "A full stack book cataloguing web application inspired by GoodReads (a project of the Husky Coding Club)",
+      "description": "A full stack book tracking web application, inspired by GoodReads (a project of the Husky Coding Club)",
       "technologies": ["React", "JavaScript", "Axios", "CSS", "Figma"]
     },
     {

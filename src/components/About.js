@@ -22,36 +22,57 @@ export default function About() {
       <AboutStyles id="about">
         <SectionTitle href="about">ABOUT</SectionTitle>
         <MainSection>
-          <h1><span>Hey, I'm</span> Audrey!</h1>
+          <h1>
+            <span>Hey, I'm</span> Audrey{" "}
+          </h1>
+          <img
+            className="headshot"
+            src="/img/audrey.png"
+            alt="audrey in a garden"
+          />
           <ul className="details__list">
             <li>
               <CodeSlashOutline color="#485A3D" width="20px" height="20px" />
-              <p>I'm a Seattle-based software developer who is passionate about frontend development and UX design.</p>
+              <p>
+                I'm a Seattle-based software developer who is passionate about
+                frontend development and design.
+              </p>
             </li>
             <li>
               <SchoolOutline color="#485A3D" width="20px" height="20px" />
               <p>
                 I'm majoring in{" "}
-                <a href="https://ischool.uw.edu/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://ischool.uw.edu/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Informatics
                 </a>
-                &nbsp;with a focus in software development, HCI, and cybersecurity at the{" "}
-                <a href="https://www.washington.edu/" target="_blank" rel="noreferrer">
+                &nbsp;with a focus in software development, HCI, and
+                cybersecurity at the{" "}
+                <a
+                  href="https://www.washington.edu/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   University of Washington
-                </a>.
+                </a>
+                .
               </p>
             </li>
             <li>
               <HeartOutline color="#485A3D" width="20px" height="20px" />
               <p>
-                I love to cook and bake in my free time and I'm always craving for coconut water &amp;{" "}
+                I'm always craving for coconut water &amp;{" "}
                 <a
                   href="https://vanleeuwenicecream.com/product/vanilla-bean-ice-cream/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   vanilla-flavored
-                </a> desserts!
+                </a>{" "}
+                desserts. I also love to cook and bake in my free time!
               </p>
             </li>
           </ul>
@@ -78,7 +99,11 @@ export default function About() {
               <h6>React.js</h6>
             </li>
             <li>
-              <Styledcomponents title="styled-components" width="36" height="36" />
+              <Styledcomponents
+                title="styled-components"
+                width="36"
+                height="36"
+              />
               <h6>styled-components</h6>
             </li>
             <li>
@@ -110,19 +135,37 @@ const AboutStyles = styled.section`
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  position: relative;
 
   h1 {
     font-size: 68px;
     letter-spacing: 2px;
     margin: -6px 0 0;
     line-height: 68px;
+    cursor: default;
 
     span {
-      color: #A3B994;
+      color: #a3b994;
+    }
+
+    &:hover + .headshot {
+      display: block;
     }
 
     @media (max-width: 820px) {
       font-size: 56px;
+    }
+  }
+
+  .headshot {
+    display: none;
+
+    @media (min-width: 768px) {
+      position: absolute;
+      top: -98px;
+      right: 24.5%;
+      width: 180px;
+      opacity: 0.9;
     }
   }
 

@@ -218,7 +218,7 @@ const WorkStyles = styled.section`
       }
     }
 
-    .project:nth-child(2), .project:nth-child(3) {
+    .project:first-child, .project:nth-child(3), .project:nth-child(4) {
       &::before {
         position: absolute;
         top: 16px;
