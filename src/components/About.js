@@ -115,7 +115,7 @@ const AboutStyles = styled.section`
     font-size: 68px;
     letter-spacing: 2px;
     margin: -6px 0 0;
-    line-height: 70px;
+    line-height: 68px;
 
     span {
       color: #A3B994;

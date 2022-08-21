@@ -196,7 +196,7 @@ const NavStyles = styled.nav`
   }
 
   a {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .scroll-links {
@@ -215,6 +215,7 @@ const NavStyles = styled.nav`
     display: flex;
     align-items: center;
     font-family: "Whyte Medium", sans-serif;
+
     margin: 24px 0;
 
     > * + * {
@@ -223,6 +224,7 @@ const NavStyles = styled.nav`
   }
 
   .mobile-menu {
+    position: relative;
     display: none;
     background: none;
     border: none;
@@ -253,20 +255,20 @@ const NavStyles = styled.nav`
     font-family: "Whyte Medium", sans-serif;
     letter-spacing: 1px;
     line-height: 2.6em;
-    padding: 16px 24px;
+    padding: 18px;
     position: absolute;
     top: 48px;
     right: 0;
-    // width: 100px;
     background: rgba(230, 242, 231, 0.85);
     border: solid rgba(0, 0, 0, 0.2) 0.5px;
     border-radius: 8px;
     animation: ${dropdown} 0.2s ease;
 
     a {
-      margin: 4px 2px;
+      margin: 8px 2px;
       padding: 4px;
       font-size: 18px;
+      letter-spacing: 2px;
       cursor: pointer !important;
     }
 
