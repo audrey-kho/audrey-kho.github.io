@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.161429dd.chunk.css",
-    "main.js": "/static/js/main.7fa24530.chunk.js",
-    "main.js.map": "/static/js/main.7fa24530.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8f7eb958.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8f7eb958.js.map",
+    "main.js": "/static/js/main.5360512e.chunk.js",
+    "main.js.map": "/static/js/main.5360512e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a0d041a4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a0d041a4.js.map",
     "static/js/2.a1166bc2.chunk.js": "/static/js/2.a1166bc2.chunk.js",
     "static/js/2.a1166bc2.chunk.js.map": "/static/js/2.a1166bc2.chunk.js.map",
-    "static/js/3.bea25575.chunk.js": "/static/js/3.bea25575.chunk.js",
-    "static/js/3.bea25575.chunk.js.map": "/static/js/3.bea25575.chunk.js.map",
-    "static/js/4.6fc7f711.chunk.js": "/static/js/4.6fc7f711.chunk.js",
-    "static/js/4.6fc7f711.chunk.js.map": "/static/js/4.6fc7f711.chunk.js.map",
-    "static/js/5.c47b4d1b.chunk.js": "/static/js/5.c47b4d1b.chunk.js",
-    "static/js/5.c47b4d1b.chunk.js.map": "/static/js/5.c47b4d1b.chunk.js.map",
-    "static/js/6.80c52cc5.chunk.js": "/static/js/6.80c52cc5.chunk.js",
-    "static/js/6.80c52cc5.chunk.js.map": "/static/js/6.80c52cc5.chunk.js.map",
+    "static/js/3.454cc514.chunk.js": "/static/js/3.454cc514.chunk.js",
+    "static/js/3.454cc514.chunk.js.map": "/static/js/3.454cc514.chunk.js.map",
+    "static/js/4.d8f6c6ef.chunk.js": "/static/js/4.d8f6c6ef.chunk.js",
+    "static/js/4.d8f6c6ef.chunk.js.map": "/static/js/4.d8f6c6ef.chunk.js.map",
+    "static/js/5.88d347dc.chunk.js": "/static/js/5.88d347dc.chunk.js",
+    "static/js/5.88d347dc.chunk.js.map": "/static/js/5.88d347dc.chunk.js.map",
+    "static/js/6.031c2bc8.chunk.js": "/static/js/6.031c2bc8.chunk.js",
+    "static/js/6.031c2bc8.chunk.js.map": "/static/js/6.031c2bc8.chunk.js.map",
     "static/js/7.2536a479.chunk.js": "/static/js/7.2536a479.chunk.js",
     "static/js/7.2536a479.chunk.js.map": "/static/js/7.2536a479.chunk.js.map",
     "index.html": "/index.html",
@@ -24,9 +24,9 @@
     "static/media/index.css": "/static/media/Whyte-Regular.e79fa214.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.8f7eb958.js",
+    "static/js/runtime-main.a0d041a4.js",
     "static/js/2.a1166bc2.chunk.js",
     "static/css/main.161429dd.chunk.css",
-    "static/js/main.7fa24530.chunk.js"
+    "static/js/main.5360512e.chunk.js"
   ]
 }
