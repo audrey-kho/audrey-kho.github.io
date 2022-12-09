@@ -7,7 +7,7 @@
       "description": [
         ""
       ],
-      "time": "06/22&ndash;<br/>"
+      "time": "06&ndash;<br/>09/22"
     },
     {
       "name": "University of Washington",
@@ -50,7 +50,7 @@
   "projects": [
     {
       "name": "Broadway Lottery Notification Bot",
-      "link": "/",
+      "link": "",
       "type": "Personal Project - [Coming Soon]",
       "description": "A bot that notifies me when a lottery opens for any of the Broadway musicals I'm hoping to watch",
       "technologies": ["Python", "Selenium"]
@@ -60,7 +60,7 @@
       "link": "https://info441-final-project.azurewebsites.net/",
       "type": "Class Project",
       "description": "A full stack forum web application for UW students to leave anonymous course reviews",
-      "technologies": ["React", "JavaScript", "Node.js", "Express.js", "CSS", "Azure", "Figma"]
+      "technologies": ["React", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB", "Azure", "Figma"]
     },
     {
       "name": "HuskyReads",
@@ -68,13 +68,6 @@
       "type": "Club Project",
       "description": "A full stack book tracking web application, inspired by GoodReads (a project of the Husky Coding Club)",
       "technologies": ["React", "JavaScript", "Axios", "CSS", "Figma"]
-    },
-    {
-      "name": "ReThink",
-      "link": "https://www.rethinkuw.org/",
-      "type": "Club Project",
-      "description": "A web platform that identifies and promotes small, sustainable businesses in Seattle",
-      "technologies": ["React", "JavaScript", "styled-components", "Firebase"]
     },
     {
       "name": "Ionic: Appflow Live Updates",

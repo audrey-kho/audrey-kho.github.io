@@ -79,6 +79,7 @@ export default function App() {
             href="mailto:audreyckho@gmail.com"
             target="_blank"
             rel="noreferrer"
+            aria-label="E-mail"
           >
             <Mail color="#485A3D" width="26px" height="24px" />
           </a>
@@ -86,6 +87,7 @@ export default function App() {
             href="https://www.linkedin.com/in/audrey-kho/"
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn external link"
           >
             <LogoLinkedin color="#485A3D" height="24px" />
           </a>
@@ -93,11 +95,12 @@ export default function App() {
             href="https://github.com/audrey-kho"
             target="_blank"
             rel="noreferrer"
+            aria-label="Github external link"
           >
             <LogoGithub color="#485A3D" width="24px" height="24px" />
           </a>
         </div>
-        <button className="mobile-menu" ref={ref}>
+        <button className="mobile-menu" ref={ref} aria-label="menu">
           <MenuOutline
             color="#485A3D"
             width="28px"

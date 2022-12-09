@@ -14,10 +14,13 @@ export default function Work() {
           <SectionHeading>SELECTED PROJECTS</SectionHeading>
           <ul className="project__list">
             {projects.map(({ name, link, type, description, technologies }) => {
-              let projectObj = undefined;
-              if (!link.startsWith("/")) {
-                projectObj = () => {
-                  return (
+              let tileClass = "project ";
+              if (link) {
+                tileClass += "clickable"
+              }
+              return (
+                <li className={tileClass} key={name}>
+                  {link ? (
                     <a
                       className="project__inner"
                       href={link}
@@ -33,12 +36,8 @@ export default function Work() {
                         })}
                       </ul>
                     </a>
-                  );
-                };
-              } else {
-                projectObj = () => {
-                  return (
-                    <a className="project__inner" href={link}>
+                  ) : (
+                    <div className="project__inner">
                       <span className="project__type">{type}</span>
                       <h2>{name.toUpperCase()}</h2>
                       <p dangerouslySetInnerHTML={{ __html: description }} />
@@ -47,13 +46,8 @@ export default function Work() {
                           return <li key={name + "-" + t}>{t}</li>;
                         })}
                       </ul>
-                    </a>
-                  );
-                };
-              }
-              return (
-                <li className="project" key={name}>
-                  {projectObj()}
+                    </div>
+                  )}
                 </li>
               );
             })}
@@ -80,7 +74,7 @@ export default function Work() {
                           <LinkArrow width={34} height={34} color={"#889c80"} />
                         </h2>
                       </a>
-                      <h6 className="work__role">{role}</h6>
+                      <h3 className="work__role">{role}</h3>
                       {/* <ul className="desc__list">
                       {description.map((d) => {
                         return <li className="list__item" key={d} dangerouslySetInnerHTML={{ __html: d }} />;
@@ -136,7 +130,7 @@ const WorkStyles = styled.section`
       }
 
       .work__role {
-        font-family: "Whyte Book", sans-serif;
+        font-family: "Whyte", sans-serif;
         font-size: 14px;
         font-weight: 100;
         margin: 0;
@@ -212,13 +206,15 @@ const WorkStyles = styled.section`
 
       span {
         font-family: "Whyte Book", sans-serif;
-        font-size: 12px;
+        font-size: 12.5px;
         margin: 0;
         text-transform: uppercase;
       }
     }
 
-    .project:first-child, .project:nth-child(3), .project:nth-child(4) {
+    .project:first-child,
+    .project:nth-child(3),
+    .project:nth-child(4) {
       &::before {
         position: absolute;
         top: 16px;
@@ -230,7 +226,7 @@ const WorkStyles = styled.section`
 
     .project {
       flex: 1 1 360px;
-      border: solid 0.5px #485A3D;
+      border: solid 0.5px #485a3d;
       border-radius: 12px;
       transition: 0.3s all;
       margin-right: 20px;
@@ -272,14 +268,19 @@ const WorkStyles = styled.section`
           margin-bottom: 8px;
           padding: 4px 11px 3px;
           text-transform: uppercase;
-          border: solid 0.2px #485A3D;
+          border: solid 0.2px #485a3d;
           border-radius: 22px;
         }
       }
 
       &:hover {
-        box-shadow: 0 6px 24px rgba(10, 20, 10, 0.12);
+        cursor: default;
+      }
+
+      &.clickable:hover {
+        box-shadow: 0 8px 12px rgba(10, 20, 10, 0.08);
         transform: translateY(-2px);
+        cursor: pointer;
       }
     }
   }

@@ -1,7 +1,9 @@
-import { CodeSlashOutline, HeartOutline, SchoolOutline } from "react-ionicons";
+import React from "react";
 import styled from "styled-components";
+import { CodeSlashOutline, HeartOutline, SchoolOutline } from "react-ionicons";
 import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
+// import gsap from "gsap";
 
 import {
   CssThree,
@@ -17,6 +19,12 @@ import {
 } from "@icons-pack/react-simple-icons";
 
 export default function About() {
+  // let cursor = useRef(null);
+  // let posX = 0;
+  // let posY = 0;
+  // let mouseX = 0;
+  // let mouseY = 0;
+
   return (
     <ResponsiveContainer>
       <AboutStyles id="about">
@@ -25,11 +33,12 @@ export default function About() {
           <h1>
             <span>Hey, I'm</span> Audrey{" "}
           </h1>
-          <img
+          <div
             className="headshot"
-            src="/img/audrey.png"
-            alt="audrey in a garden"
-          />
+            // ref={(el) => {
+            //   cursor = el;
+            // }}
+          ></div>
           <ul className="details__list">
             <li>
               <CodeSlashOutline color="#485A3D" width="20px" height="20px" />
@@ -80,23 +89,23 @@ export default function About() {
           <ul className="skills__list">
             <li>
               <Java title="Java" width="36" height="36" />
-              <span>Java</span>
+              <h3>Java</h3>
             </li>
             <li>
               <Html5 title="HTML" width="36" height="36" />
-              <span>HTML</span>
+              <h3>HTML</h3>
             </li>
             <li>
               <CssThree title="CSS" width="36" height="36" />
-              <span>CSS</span>
+              <h3>CSS</h3>
             </li>
             <li>
               <Javascript title="JavaScript" width="36" height="36" />
-              <span>JavaScript</span>
+              <h3>JavaScript</h3>
             </li>
             <li>
               <ReactJs title="React.js" width="36" height="36" />
-              <span>React.js</span>
+              <h3>React.js</h3>
             </li>
             <li>
               <Styledcomponents
@@ -104,23 +113,23 @@ export default function About() {
                 width="36"
                 height="36"
               />
-              <span>styled-components</span>
+              <h3>styled-components</h3>
             </li>
             <li>
               <Nodedotjs title="Node.js" width="36" height="36" />
-              <span>Node.js</span>
+              <h3>Node.js</h3>
             </li>
             <li>
               <Express title="Express" width="36" height="36" />
-              <span>Express</span>
+              <h3>Express</h3>
             </li>
             <li>
               <Mongodb title="MongoDB" width="36" height="36" />
-              <span>MongoDB</span>
+              <h3>MongoDB</h3>
             </li>
             <li>
               <Figma title="Figma" width="36" height="36" />
-              <span>Figma</span>
+              <h3>Figma</h3>
             </li>
           </ul>
         </MainSection>
@@ -142,7 +151,6 @@ const AboutStyles = styled.section`
     letter-spacing: 2px;
     margin: -6px 0 0;
     line-height: 68px;
-    cursor: default;
 
     span {
       color: #a3b994;
@@ -164,10 +172,12 @@ const AboutStyles = styled.section`
 
     @media (min-width: 768px) {
       position: absolute;
-      top: -98px;
-      right: 24.5%;
-      width: 180px;
+      top: 0;
+      right: 0;
+      width: 138px;
       opacity: 0.9;
+      background: url(img/audrey.png) no-repeat 50% 50%;
+      background-size: cover;
     }
   }
 
@@ -232,17 +242,17 @@ const AboutStyles = styled.section`
 
       svg {
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 12px;
       }
 
-      span {
+      h3 {
         margin: 0;
-        font-family: "Whyte Book", sans-serif;
+        font-family: "Whyte Medium", sans-serif;
+        font-weight: 400;
         font-size: 10px;
         letter-spacing: 1px;
         text-align: center;
         text-transform: uppercase;
-        margin-top: 12px;
       }
     }
   }
