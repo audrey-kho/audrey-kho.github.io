@@ -1,26 +1,26 @@
 @font-face {
   font-family: Whyte Book;
-  src: url("./assets/fonts/Whyte-Book.ttf") format("truetype");
+  src: url("./assets/fonts/FFF-AcidGrotesk-Regular-TRIAL.otf") format("opentype");
 }
 
 @font-face {
   font-family: Whyte;
-  src: url("./assets/fonts/Whyte-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/FFF-AcidGrotesk-Normal-TRIAL.otf") format("opentype");
 }
 
 @font-face {
   font-family: Whyte Medium;
-  src: url("./assets/fonts/Whyte-Medium.ttf") format("truetype");
+  src: url("./assets/fonts/FFF-AcidGrotesk-Medium-TRIAL.otf") format("opentype");
 }
 
 @font-face {
   font-family: Whyte Bold;
-  src: url("./assets/fonts/Whyte-Black.otf") format("opentype");
+  src: url("./assets/fonts/FFF-AcidGrotesk-Bold-TRIAL.otf") format("opentype");
 }
 
 @font-face {
   font-family: Whyte Light;
-  src: url("./assets/fonts/Whyte-Light.ttf") format("truetype");
+  src: url("./assets/fonts/FFF-AcidGrotesk-UltraLight-TRIAL.otf") format("opentype");
 }
 
 html {
@@ -36,13 +36,15 @@ body {
   min-height: 80em;
   font-family: "Whyte", sans-serif;
   color: #485A3D !important;
-  letter-spacing: 2px !important;
+  letter-spacing: 1px !important;
   /* margin: -32px 0; */
 }
 
 p {
   font-family: "Whyte", sans-serif;
   font-weight: 500;
+  line-height: 1.5em;
+  font-size: 1em;
 }
 
 a {

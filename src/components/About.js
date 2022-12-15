@@ -31,7 +31,7 @@ export default function About() {
         <SectionTitle href="about">ABOUT</SectionTitle>
         <MainSection>
           <h1>
-            <span>Hey, I'm</span> Audrey{" "}
+            <span>Hey, I'm</span> Audrey
           </h1>
           <div
             className="headshot"
@@ -43,23 +43,22 @@ export default function About() {
             <li>
               <CodeSlashOutline color="#485A3D" width="20px" height="20px" />
               <p>
-                I'm a Seattle-based software developer who is passionate about
-                frontend development and design.
+                I'm a Seattle-based software developer passionate about
+                creating rich, memorable experiences on the web.
               </p>
             </li>
             <li>
               <SchoolOutline color="#485A3D" width="20px" height="20px" />
               <p>
-                I'm majoring in{" "}
+                I'm an{" "}
                 <a
                   href="https://ischool.uw.edu/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Informatics
-                </a>
-                &nbsp;with a focus in software development, HCI, and
-                cybersecurity at the{" "}
+                </a>{" "}
+                major studying software development and HCI at the{" "}
                 <a
                   href="https://www.washington.edu/"
                   target="_blank"
@@ -148,7 +147,7 @@ const AboutStyles = styled.section`
 
   h1 {
     font-size: 68px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     margin: -6px 0 0;
     line-height: 68px;
 
@@ -197,7 +196,7 @@ const AboutStyles = styled.section`
       display: flex;
       align-items: flex-start;
       max-width: 315px;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
       margin: 12px 0 20px;
       padding: 0;
       line-height: 1.5;
@@ -250,7 +249,7 @@ const AboutStyles = styled.section`
         font-family: "Whyte Medium", sans-serif;
         font-weight: 400;
         font-size: 10px;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         text-align: center;
         text-transform: uppercase;
       }

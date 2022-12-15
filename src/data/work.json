@@ -12,7 +12,7 @@
     {
       "name": "University of Washington",
       "link": "https://www.washington.edu/",
-      "role": "Undergraduate Teaching Assistant (INFO 340)",
+      "role": "Undergrad Teaching Assistant (INFO 340: Client-side Dev)",
       "description": [
         ""
       ],
@@ -44,7 +44,7 @@
         "Volunteered to build pages for the UW SOM service learning website with Next.js and React.",
         "Helped provide a more straightforward onboarding process for student volunteers."
       ],
-      "time": "02&ndash;06/21<br/>"
+      "time": "02&ndash;<br/>06/21"
     }
   ],
   "projects": [

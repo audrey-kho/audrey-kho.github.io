@@ -31,10 +31,6 @@ export default function Contact({ firebaseConfig }) {
         <SectionTitle href="contact">CONTACT</SectionTitle>
         <MainSection>
           <SectionHeading>SAY HELLO!</SectionHeading>
-          <p style={{ fontSize: "0.85em" }}>
-            Feel free to leave a message here and I'll send back a reply as soon
-            as I can!
-          </p>
           <form
             autoComplete="on"
             onSubmit={(e) => {
@@ -115,18 +111,18 @@ const ContactStyles = styled.section`
   .short-input input {
     max-width: 600px;
     height: 42px;
-    padding: 2px 8px;
+    padding: 2px 12px 1px;
   }
 
   textarea {
     width: 98.5% !important;
     height: 108px;
-    padding: 8px;
+    padding: 12px;
   }
 
   .short-input input,
   textarea {
-    font-family: "Whyte Book", sans-serif;
+    font-family: "Whyte", sans-serif;
     background: rgba(255, 255, 255, 0.1);
     outline: none;
     border: #485A3D solid 1px;
@@ -134,7 +130,7 @@ const ContactStyles = styled.section`
     margin-bottom: 16px;
     color: #485A3D;
     font-size: 0.85em;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     width: inherit;
 
     &::placeholder {
@@ -155,7 +151,7 @@ const ContactStyles = styled.section`
     border: none;
     border-radius: 5px;
     margin: 1.5em 0;
-    padding: 7px 28px;
+    padding: 7px 28px 2.5px;
     max-width: 240px;
     transition: all 0.3s;
 

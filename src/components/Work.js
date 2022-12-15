@@ -156,7 +156,7 @@ const WorkStyles = styled.section`
         font-size: 14px;
         font-weight: 100;
         margin: 0;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         width: 54px;
         font-style: normal;
       }
@@ -169,7 +169,7 @@ const WorkStyles = styled.section`
         li {
           font-family: "Whyte Book", sans-serif;
           font-size: 16px;
-          letter-spacing: 1px;
+          letter-spacing: 2px;
 
           a {
             background-image: linear-gradient(#889c80, #889c80);
@@ -213,8 +213,7 @@ const WorkStyles = styled.section`
     }
 
     .project:first-child,
-    .project:nth-child(3),
-    .project:nth-child(4) {
+    .project:nth-child(3) {
       &::before {
         position: absolute;
         top: 16px;
@@ -239,7 +238,7 @@ const WorkStyles = styled.section`
       }
 
       p {
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
 
         a {
           position: relative;
@@ -266,7 +265,7 @@ const WorkStyles = styled.section`
           letter-spacing: 1px;
           margin-right: 8px;
           margin-bottom: 8px;
-          padding: 4px 11px 3px;
+          padding: 5px 11px 2px;
           text-transform: uppercase;
           border: solid 0.2px #485a3d;
           border-radius: 22px;
