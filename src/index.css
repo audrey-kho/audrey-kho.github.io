@@ -1,26 +1,31 @@
 @font-face {
-  font-family: Whyte Book;
-  src: url("./assets/fonts/FFF-AcidGrotesk-Regular-TRIAL.otf") format("opentype");
+  font-family: Book;
+   src: url('./assets/fonts/ABCWhyte-Book-Trial.woff2') format('woff2'),
+  url('./assets/fonts/ABCWhyte-Book-Trial.otf') format('opentype');
 }
 
 @font-face {
-  font-family: Whyte;
-  src: url("./assets/fonts/FFF-AcidGrotesk-Normal-TRIAL.otf") format("opentype");
+  font-family: Normal;
+   src: url('./assets/fonts/ABCWhyte-Regular-Trial.woff2') format('woff2'),
+  url('./assets/fonts/ABCWhyte-Regular-Trial.otf') format('opentype');
 }
 
 @font-face {
-  font-family: Whyte Medium;
-  src: url("./assets/fonts/FFF-AcidGrotesk-Medium-TRIAL.otf") format("opentype");
+  font-family: Medium;
+   src: url('./assets/fonts/ABCWhyte-Medium-Trial.woff2') format('woff2'),
+  url('./assets/fonts/ABCWhyte-Medium-Trial.otf') format('opentype');
 }
 
 @font-face {
-  font-family: Whyte Bold;
-  src: url("./assets/fonts/FFF-AcidGrotesk-Bold-TRIAL.otf") format("opentype");
+  font-family: Bold;
+   src: url('./assets/fonts/ABCWhyte-Bold-Trial.woff2') format('woff2'),
+  url('./assets/fonts/ABCWhyte-Bold-Trial.otf') format('opentype');
 }
 
 @font-face {
-  font-family: Whyte Light;
-  src: url("./assets/fonts/FFF-AcidGrotesk-UltraLight-TRIAL.otf") format("opentype");
+  font-family: Light;
+   src: url('./assets/fonts/ABCWhyte-Light-Trial.woff2') format('woff2'),
+  url('./assets/fonts/ABCWhyte-Light-Trial.otf') format('opentype');
 }
 
 html {
@@ -34,14 +39,14 @@ body {
   /* background-color: #e0e9f7; */
   /* background-image: linear-gradient(#0c1831, #438e91); */
   min-height: 80em;
-  font-family: "Whyte", sans-serif;
+  font-family: "Normal", sans-serif;
   color: #485A3D !important;
   letter-spacing: 1px !important;
   /* margin: -32px 0; */
 }
 
 p {
-  font-family: "Whyte", sans-serif;
+  font-family: "Normal", sans-serif;
   font-weight: 500;
   line-height: 1.5em;
   font-size: 1em;

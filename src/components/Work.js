@@ -16,7 +16,7 @@ export default function Work() {
             {projects.map(({ name, link, type, description, technologies }) => {
               let tileClass = "project ";
               if (link) {
-                tileClass += "clickable"
+                tileClass += "clickable";
               }
               return (
                 <li className={tileClass} key={name}>
@@ -52,39 +52,20 @@ export default function Work() {
               );
             })}
           </ul>
-          <SectionHeading>EXPERIENCE</SectionHeading>
+          <SectionHeading>PREVIOUSLY AT</SectionHeading>
           <ul className="work__list">
-            {experience.map(
-              ({ name, link, role, description, time }, index) => {
-                return (
-                  <li key={name}>
-                    <em
-                      className="timeframe"
-                      dangerouslySetInnerHTML={{ __html: time }}
-                    />
-                    <div>
-                      <a
-                        className="company__name"
-                        href={link}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <h2>
-                          {name.toUpperCase()}
-                          <LinkArrow width={34} height={34} color={"#889c80"} />
-                        </h2>
-                      </a>
-                      <h3 className="work__role">{role}</h3>
-                      {/* <ul className="desc__list">
-                      {description.map((d) => {
-                        return <li className="list__item" key={d} dangerouslySetInnerHTML={{ __html: d }} />;
-                      })}
-                    </ul> */}
-                    </div>
-                  </li>
-                );
-              }
-            )}
+            {experience.map((exp) => {
+              return (
+                <li key={exp.name} className="work__item">
+                  <a href={exp.link} target="_blank" rel="noreferrer">
+                    {exp.name}
+                    <LinkArrow width={18} height={18} position={-2.5} />
+                  </a>
+                  &nbsp;
+                  <br /> <span>{exp.role}</span>
+                </li>
+              );
+            })}
           </ul>
         </MainSection>
       </WorkStyles>
@@ -96,96 +77,10 @@ const WorkStyles = styled.section`
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin: 160px 0 120px;
+  margin: 160px 0;
 
   ul {
     margin: 28px 0 72px;
-  }
-
-  .work__list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-
-    > li + li {
-      margin-top: 38px;
-    }
-
-    > li {
-      display: flex;
-
-      h2 {
-        display: inline-block;
-        font-size: 29px;
-        letter-spacing: 3px;
-        margin: -7px 0 4px;
-
-        svg {
-          margin-bottom: -5px;
-          margin-left: -3px;
-          transition: 0.3s all;
-        }
-      }
-
-      .work__role {
-        font-family: "Whyte", sans-serif;
-        font-size: 14px;
-        font-weight: 100;
-        margin: 0;
-        text-transform: uppercase;
-      }
-
-      .company__name {
-        padding: 2px;
-
-        &:hover svg {
-          transform: translate(1px, -1px);
-        }
-      }
-
-      div {
-        position: relative;
-        width: 100%;
-        margin-left: 16px;
-      }
-
-      .timeframe {
-        font-family: "Whyte Book", sans-serif;
-        font-size: 14px;
-        font-weight: 100;
-        margin: 0;
-        letter-spacing: 2px;
-        width: 54px;
-        font-style: normal;
-      }
-
-      .desc__list {
-        margin: 9px 0;
-        padding-left: 24px;
-        list-style: none;
-
-        li {
-          font-family: "Whyte Book", sans-serif;
-          font-size: 16px;
-          letter-spacing: 2px;
-
-          a {
-            background-image: linear-gradient(#889c80, #889c80);
-            background-size: 1px 1px;
-            background-repeat: repeat-x;
-            background-position: 0 92%;
-          }
-
-          &::before {
-            position: absolute;
-            content: "-";
-            left: 1px;
-          }
-        }
-      }
-    }
   }
 
   .project__list {
@@ -205,7 +100,7 @@ const WorkStyles = styled.section`
       }
 
       span {
-        font-family: "Whyte Book", sans-serif;
+        font-family: "Book", sans-serif;
         font-size: 12.5px;
         margin: 0;
         text-transform: uppercase;
@@ -238,7 +133,7 @@ const WorkStyles = styled.section`
       }
 
       p {
-        letter-spacing: 1.5px;
+        letter-spacing: 0.5px;
 
         a {
           position: relative;
@@ -260,12 +155,12 @@ const WorkStyles = styled.section`
 
         li {
           display: inline;
-          font-family: "Whyte Book", sans-serif;
+          font-family: "Book", sans-serif;
           font-size: 12px;
           letter-spacing: 1px;
           margin-right: 8px;
           margin-bottom: 8px;
-          padding: 5px 11px 2px;
+          padding: 5px 11px 4px;
           text-transform: uppercase;
           border: solid 0.2px #485a3d;
           border-radius: 22px;
@@ -280,6 +175,48 @@ const WorkStyles = styled.section`
         box-shadow: 0 8px 12px rgba(10, 20, 10, 0.08);
         transform: translateY(-2px);
         cursor: pointer;
+      }
+    }
+  }
+
+  .work__list {
+    list-style: none;
+    /* margin: 0; */
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 1.12em;
+
+    .work__item {
+      margin: 8px 0;
+
+      a {
+        font-family: Medium;
+
+        svg {
+          transition: 0.3s all;
+        }
+
+        &:hover svg {
+          transform: translate(1px, -1px);
+        }
+      }
+
+      span {
+        text-transform: capitalize;
+        color: #88AD71;
+        letter-spacing: 0.5px;
+      }
+
+      @media (min-width: 500px) {
+        br {
+          display: none;
+        }
+      }
+
+      @media (max-width: 500px) {
+        br {
+          display: block;
+        }
       }
     }
   }

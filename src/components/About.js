@@ -147,12 +147,12 @@ const AboutStyles = styled.section`
 
   h1 {
     font-size: 68px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     margin: -6px 0 0;
     line-height: 68px;
 
     span {
-      color: #a3b994;
+      color: #9FBD8C;
     }
 
     @media (max-width: 820px) {
@@ -196,7 +196,7 @@ const AboutStyles = styled.section`
       display: flex;
       align-items: flex-start;
       max-width: 315px;
-      letter-spacing: 1.5px;
+      letter-spacing: 0.5px;
       margin: 12px 0 20px;
       padding: 0;
       line-height: 1.5;
@@ -246,10 +246,10 @@ const AboutStyles = styled.section`
 
       h3 {
         margin: 0;
-        font-family: "Whyte Medium", sans-serif;
+        font-family: "Medium", sans-serif;
         font-weight: 400;
-        font-size: 10px;
-        letter-spacing: 2px;
+        font-size: 11px;
+        letter-spacing: 1px;
         text-align: center;
         text-transform: uppercase;
       }

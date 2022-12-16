@@ -217,7 +217,7 @@ const NavStyles = styled.nav`
   .main-menu {
     display: flex;
     align-items: center;
-    font-family: "Whyte Medium", sans-serif;
+    font-family: "Medium", sans-serif;
 
     margin: 24px 0;
 
@@ -255,7 +255,7 @@ const NavStyles = styled.nav`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    font-family: "Whyte", sans-serif;
+    font-family: "Normal", sans-serif;
     letter-spacing: 1px;
     line-height: 2.6em;
     padding: 18px;
@@ -292,7 +292,7 @@ const NavStyles = styled.nav`
 `;
 
 const FooterStyles = styled.footer`
-  font-family: "Whyte", sans-serif;
+  font-family: "Normal", sans-serif;
   font-size: 14px;
   position: relative;
   padding: 24px;

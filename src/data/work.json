@@ -3,7 +3,7 @@
     {
       "name": "Braze",
       "link": "https://www.braze.com/",
-      "role": "Software Engineering Intern, Growth",
+      "role": "Growth Engineering Team",
       "description": [
         ""
       ],
@@ -12,7 +12,7 @@
     {
       "name": "University of Washington",
       "link": "https://www.washington.edu/",
-      "role": "Undergrad Teaching Assistant (INFO 340: Client-side Dev)",
+      "role": "Teaching Assistant",
       "description": [
         ""
       ],
@@ -21,7 +21,7 @@
     {
       "name": "UW Center for an Informed Public",
       "link": "https://www.cip.uw.edu/research/#projects",
-      "role": "Frontend Developer",
+      "role": "Loki's Loop Project",
       "description": [
         ""
       ],
@@ -30,7 +30,7 @@
     {
       "name": "Ionic",
       "link": "https://ionic.io/",
-      "role": "Frontend Engineering Intern",
+      "role": "Web Team",
       "description": [
         "Migrated pages from the Ionic Framework site to Next.js at&nbsp;<a href='http://ionic.io' target='_blank' rel='noreferrer'>ionic.io</a>."
       ],
@@ -39,7 +39,7 @@
     {
       "name": "UW School of Medicine",
       "link": "https://www.uwmedicine.org/",
-      "role": "Volunteer Software Developer",
+      "role": "Service Learning Website",
       "description": [
         "Volunteered to build pages for the UW SOM service learning website with Next.js and React.",
         "Helped provide a more straightforward onboarding process for student volunteers."
@@ -51,7 +51,7 @@
     {
       "name": "Broadway Lottery Notification Bot",
       "link": "",
-      "type": "Personal Project - [Coming Soon]",
+      "type": "Personal Project - Coming Soon",
       "description": "A bot that notifies me when a lottery opens for any of the Broadway musicals I'm hoping to watch",
       "technologies": ["Python", "Selenium"]
     },
@@ -67,7 +67,7 @@
       "link": "https://github.com/Husky-Coding-Project/huskyreads",
       "type": "Club Project",
       "description": "A full stack book tracking web application, inspired by GoodReads (a project of the Husky Coding Club)",
-      "technologies": ["React", "JavaScript", "Axios", "CSS", "Figma"]
+      "technologies": ["React", "CSS", "JavaScript", "Node.js", "MySQL", "Docker", "Figma"]
     },
     {
       "name": "Ionic: Appflow Live Updates",

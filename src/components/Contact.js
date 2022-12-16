@@ -122,7 +122,7 @@ const ContactStyles = styled.section`
 
   .short-input input,
   textarea {
-    font-family: "Whyte", sans-serif;
+    font-family: "Normal", sans-serif;
     background: rgba(255, 255, 255, 0.1);
     outline: none;
     border: #485A3D solid 1px;
@@ -140,7 +140,7 @@ const ContactStyles = styled.section`
 
   button[type="submit"] {
     --webkit-appearance: none;
-    font-family: "Whyte Medium", sans-serif;
+    font-family: "Medium", sans-serif;
     display: inline;
     height: 46px;
     color: #e9f3ea;

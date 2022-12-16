@@ -19,7 +19,7 @@ const SectionTitleStyles = styled.p`
   position: sticky;
   top: 80px;
   margin: 1px 0 0 !important;
-  font-family: "Whyte", sans-serif;
+  font-family: "Normal", sans-serif;
   font-size: 11px;
   font-weight: 600;
   min-width: 120px;
@@ -38,9 +38,10 @@ const SectionTitleStyles = styled.p`
 `;
 
 export const SectionHeading = styled.h2`
-  font-family: 'Whyte', sans-serif;
+  font-family: 'Normal', sans-serif;
   margin: 0 0 14px;
   font-size: 14px;
+  letter-spacing: 1.5px;
 `
 
 // provides spacing between main content and the clickable section title
