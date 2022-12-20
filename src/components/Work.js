@@ -172,7 +172,7 @@ const WorkStyles = styled.section`
       }
 
       &.clickable:hover {
-        box-shadow: 0 8px 12px rgba(10, 20, 10, 0.08);
+        box-shadow: 0 6px 14px rgba(136, 156, 128, 0.15);
         transform: translateY(-2px);
         cursor: pointer;
       }

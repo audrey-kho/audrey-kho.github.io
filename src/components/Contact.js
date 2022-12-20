@@ -151,7 +151,7 @@ const ContactStyles = styled.section`
     border: none;
     border-radius: 5px;
     margin: 1.5em 0;
-    padding: 7px 28px 2.5px;
+    padding: 7px 28px 5px;
     max-width: 240px;
     transition: all 0.3s;
 

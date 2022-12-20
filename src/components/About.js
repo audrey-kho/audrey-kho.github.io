@@ -3,27 +3,21 @@ import styled from "styled-components";
 import { CodeSlashOutline, HeartOutline, SchoolOutline } from "react-ionicons";
 import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
-// import gsap from "gsap";
 
 import {
-  CssThree,
-  Express,
-  Figma,
-  Html5,
-  Java,
-  Javascript,
-  Mongodb,
-  Nodedotjs,
-  ReactJs,
-  Styledcomponents,
-} from "@icons-pack/react-simple-icons";
+  SiCss3,
+  SiExpress,
+  SiFigma,
+  SiHtml5,
+  SiJava,
+  SiJavascript,
+  SiMongodb,
+  SiNodedotjs,
+  SiReact,
+  SiStyledcomponents,
+} from "react-icons/si";
 
 export default function About() {
-  // let cursor = useRef(null);
-  // let posX = 0;
-  // let posY = 0;
-  // let mouseX = 0;
-  // let mouseY = 0;
 
   return (
     <ResponsiveContainer>
@@ -35,16 +29,13 @@ export default function About() {
           </h1>
           <div
             className="headshot"
-            // ref={(el) => {
-            //   cursor = el;
-            // }}
           ></div>
           <ul className="details__list">
             <li>
               <CodeSlashOutline color="#485A3D" width="20px" height="20px" />
               <p>
-                I'm a Seattle-based software developer passionate about
-                creating rich, memorable experiences on the web.
+                I'm a Seattle-based software developer passionate about creating
+                rich, memorable experiences on the web.
               </p>
             </li>
             <li>
@@ -58,7 +49,8 @@ export default function About() {
                 >
                   Informatics
                 </a>{" "}
-                major studying software development and HCI at the{" "}
+                major studying software development, HCI, and cybersecurity at
+                the{" "}
                 <a
                   href="https://www.washington.edu/"
                   target="_blank"
@@ -87,47 +79,64 @@ export default function About() {
           <SectionHeading>RECENT LANGUAGES &amp; TECHNOLOGIES:</SectionHeading>
           <ul className="skills__list">
             <li>
-              <Java title="Java" width="36" height="36" />
+              <SiJava title="Java" style={{ width: "36px", height: "36px" }} />
               <h3>Java</h3>
             </li>
             <li>
-              <Html5 title="HTML" width="36" height="36" />
+              <SiHtml5 title="HTML" style={{ width: "36px", height: "36px" }} />
               <h3>HTML</h3>
             </li>
             <li>
-              <CssThree title="CSS" width="36" height="36" />
+              <SiCss3 title="CSS" style={{ width: "36px", height: "36px" }} />
               <h3>CSS</h3>
             </li>
             <li>
-              <Javascript title="JavaScript" width="36" height="36" />
+              <SiJavascript
+                title="JavaScript"
+                style={{ width: "36px", height: "36px" }}
+              />
               <h3>JavaScript</h3>
             </li>
             <li>
-              <ReactJs title="React.js" width="36" height="36" />
+              <SiReact
+                title="React.js"
+                style={{ width: "36px", height: "36px" }}
+              />
               <h3>React.js</h3>
             </li>
             <li>
-              <Styledcomponents
+              <SiStyledcomponents
                 title="styled-components"
-                width="36"
-                height="36"
+                style={{ width: "36px", height: "36px" }}
               />
               <h3>styled-components</h3>
             </li>
             <li>
-              <Nodedotjs title="Node.js" width="36" height="36" />
+              <SiNodedotjs
+                title="Node.js"
+                style={{ width: "36px", height: "36px" }}
+              />
               <h3>Node.js</h3>
             </li>
             <li>
-              <Express title="Express" width="36" height="36" />
+              <SiExpress
+                title="Express"
+                style={{ width: "36px", height: "36px" }}
+              />
               <h3>Express</h3>
             </li>
             <li>
-              <Mongodb title="MongoDB" width="36" height="36" />
+              <SiMongodb
+                title="MongoDB"
+                style={{ width: "36px", height: "36px" }}
+              />
               <h3>MongoDB</h3>
             </li>
             <li>
-              <Figma title="Figma" width="36" height="36" />
+              <SiFigma
+                title="Figma"
+                style={{ width: "36px", height: "36px" }}
+              />
               <h3>Figma</h3>
             </li>
           </ul>
@@ -152,7 +161,7 @@ const AboutStyles = styled.section`
     line-height: 68px;
 
     span {
-      color: #9FBD8C;
+      color: #9fbd8c;
     }
 
     @media (max-width: 820px) {

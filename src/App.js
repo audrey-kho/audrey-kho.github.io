@@ -310,4 +310,8 @@ const FooterStyles = styled.footer`
     background-repeat: repeat-x;
     background-position: 0 92%;
   }
+
+  p + p {
+    margin-left: 16px;
+  }
 `;
