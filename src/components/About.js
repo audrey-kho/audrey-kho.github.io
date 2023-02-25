@@ -5,20 +5,18 @@ import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
 
 import {
+  SiC,
+  SiCplusplus,
   SiCss3,
-  SiExpress,
   SiFigma,
-  SiHtml5,
   SiJava,
-  SiJavascript,
-  SiMongodb,
-  SiNodedotjs,
+  SiMiro,
   SiReact,
   SiStyledcomponents,
+  SiSvelte,
 } from "react-icons/si";
 
 export default function About() {
-
   return (
     <ResponsiveContainer>
       <AboutStyles id="about">
@@ -27,9 +25,7 @@ export default function About() {
           <h1>
             <span>Hey, I'm</span> Audrey
           </h1>
-          <div
-            className="headshot"
-          ></div>
+          <div className="headshot"></div>
           <ul className="details__list">
             <li>
               <CodeSlashOutline color="#485A3D" width="20px" height="20px" />
@@ -76,26 +72,28 @@ export default function About() {
               </p>
             </li>
           </ul>
-          <SectionHeading>RECENT LANGUAGES &amp; TECHNOLOGIES:</SectionHeading>
+          <SectionHeading>RECENT TECHNOLOGIES:</SectionHeading>
           <ul className="skills__list">
             <li>
-              <SiJava title="Java" style={{ width: "36px", height: "36px" }} />
-              <h3>Java</h3>
-            </li>
-            <li>
-              <SiHtml5 title="HTML" style={{ width: "36px", height: "36px" }} />
-              <h3>HTML</h3>
-            </li>
-            <li>
-              <SiCss3 title="CSS" style={{ width: "36px", height: "36px" }} />
-              <h3>CSS</h3>
-            </li>
-            <li>
-              <SiJavascript
-                title="JavaScript"
+              <SiCplusplus
+                title="C++"
                 style={{ width: "36px", height: "36px" }}
               />
-              <h3>JavaScript</h3>
+              <h3>C++</h3>
+            </li>
+            <li>
+              <SiC
+                title="C"
+                style={{ width: "36px", height: "36px" }}
+              />
+              <h3>C</h3>
+            </li>
+            <li>
+              <SiJava
+                title="Java"
+                style={{ width: "36px", height: "36px" }}
+              />
+              <h3>Java</h3>
             </li>
             <li>
               <SiReact
@@ -105,6 +103,13 @@ export default function About() {
               <h3>React.js</h3>
             </li>
             <li>
+              <SiSvelte
+                title="Svelte.js"
+                style={{ width: "36px", height: "36px" }}
+              />
+              <h3>Svelte.js</h3>
+            </li>
+            <li>
               <SiStyledcomponents
                 title="styled-components"
                 style={{ width: "36px", height: "36px" }}
@@ -112,25 +117,11 @@ export default function About() {
               <h3>styled-components</h3>
             </li>
             <li>
-              <SiNodedotjs
-                title="Node.js"
+              <SiCss3
+                title="CSS"
                 style={{ width: "36px", height: "36px" }}
               />
-              <h3>Node.js</h3>
-            </li>
-            <li>
-              <SiExpress
-                title="Express"
-                style={{ width: "36px", height: "36px" }}
-              />
-              <h3>Express</h3>
-            </li>
-            <li>
-              <SiMongodb
-                title="MongoDB"
-                style={{ width: "36px", height: "36px" }}
-              />
-              <h3>MongoDB</h3>
+              <h3>CSS</h3>
             </li>
             <li>
               <SiFigma
@@ -138,6 +129,13 @@ export default function About() {
                 style={{ width: "36px", height: "36px" }}
               />
               <h3>Figma</h3>
+            </li>
+            <li>
+              <SiMiro
+                title="Miro"
+                style={{ width: "36px", height: "36px" }}
+              />
+              <h3>Miro</h3>
             </li>
           </ul>
         </MainSection>

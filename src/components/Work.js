@@ -160,7 +160,7 @@ const WorkStyles = styled.section`
           letter-spacing: 1px;
           margin-right: 8px;
           margin-bottom: 8px;
-          padding: 5px 11px 4px;
+          padding: 4px 12px 3px;
           text-transform: uppercase;
           border: solid 0.2px #485a3d;
           border-radius: 22px;
