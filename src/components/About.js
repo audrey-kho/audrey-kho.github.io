@@ -72,7 +72,7 @@ export default function About() {
               </p>
             </li>
           </ul>
-          <SectionHeading>RECENT TECHNOLOGIES:</SectionHeading>
+          <SectionHeading>RECENT WORKED WITH</SectionHeading>
           <ul className="skills__list">
             <li>
               <SiCplusplus

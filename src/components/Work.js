@@ -4,7 +4,7 @@ import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
 
 export default function Work() {
-  const { experience, projects } = require("../data/work.json");
+  const { prev_experience, curr_experience, projects } = require("../data/work.json");
 
   return (
     <ResponsiveContainer>
@@ -52,9 +52,24 @@ export default function Work() {
               );
             })}
           </ul>
+          <SectionHeading>CURRENTLY</SectionHeading>
+          <ul className="work__list">
+            {curr_experience.map((exp) => {
+              return (
+                <li key={exp.name} className="work__item">
+                  <a href={exp.link} target="_blank" rel="noreferrer">
+                    {exp.name}
+                    <LinkArrow width={18} height={18} position={-2.5} />
+                  </a>
+                  &nbsp;
+                  <br /> <span>{exp.role}</span>
+                </li>
+              );
+            })}
+          </ul>
           <SectionHeading>PREVIOUSLY AT</SectionHeading>
           <ul className="work__list">
-            {experience.map((exp) => {
+            {prev_experience.map((exp) => {
               return (
                 <li key={exp.name} className="work__item">
                   <a href={exp.link} target="_blank" rel="noreferrer">
@@ -108,7 +123,7 @@ const WorkStyles = styled.section`
     }
 
     .project:first-child,
-    .project:nth-child(3) {
+    .project:nth-child(2) {
       &::before {
         position: absolute;
         top: 16px;
