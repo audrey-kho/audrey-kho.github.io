@@ -196,7 +196,6 @@ const WorkStyles = styled.section`
 
   .work__list {
     list-style: none;
-    /* margin: 0; */
     padding: 0;
     text-transform: uppercase;
     font-size: 1.12em;
@@ -217,7 +216,6 @@ const WorkStyles = styled.section`
       }
 
       span {
-        text-transform: capitalize;
         color: #88AD71;
         letter-spacing: 0.5px;
       }
