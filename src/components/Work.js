@@ -218,6 +218,7 @@ const WorkStyles = styled.section`
       span {
         color: #88AD71;
         letter-spacing: 0.5px;
+        text-transform: none;
       }
 
       @media (min-width: 500px) {

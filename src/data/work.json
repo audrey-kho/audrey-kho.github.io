@@ -76,11 +76,11 @@
       "technologies": ["Python", "Selenium"]
     },
     {
-      "name": "SMASH Startup Platform",
-      "link": "https://github.com/smash-technology",
+      "name": "Smash Learning Platform",
+      "link": "https://smash-learn.web.app/",
       "type": "Capstone Project",
-      "description": "A competitive project-based learning platform for non-traditional tech learners",
-      "technologies": ["React", "CSS", "JavaScript", "Figma"]
+      "description": "A project-based tech learning and networking platform for learners with non-traditional backgrounds (in collaboration with the Smash startup)",
+      "technologies": ["Next.js", "NextAuth", "React", "CSS", "Tailwind CSS", "JavaScript", "Vercel", "Figma"]
     },
     {
       "name": "File Search Engine",
