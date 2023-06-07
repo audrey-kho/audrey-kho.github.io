@@ -123,7 +123,8 @@ const WorkStyles = styled.section`
     }
 
     .project:first-child,
-    .project:nth-child(2) {
+    .project:nth-child(2),
+    .project:nth-child(3) {
       &::before {
         position: absolute;
         top: 16px;

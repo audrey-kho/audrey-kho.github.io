@@ -11,7 +11,9 @@ import {
   SiFigma,
   SiJava,
   SiMiro,
+  SiNextdotjs,
   SiReact,
+  SiRuby,
   SiStyledcomponents,
   SiSvelte,
 } from "react-icons/si";
@@ -74,26 +76,12 @@ export default function About() {
           </ul>
           <SectionHeading>RECENT TECHNOLOGIES</SectionHeading>
           <ul className="skills__list">
-            <li>
-              <SiCplusplus
-                title="C++"
+          <li>
+              <SiRuby
+                title="Ruby"
                 style={{ width: "36px", height: "36px" }}
               />
-              <h3>C++</h3>
-            </li>
-            <li>
-              <SiC
-                title="C"
-                style={{ width: "36px", height: "36px" }}
-              />
-              <h3>C</h3>
-            </li>
-            <li>
-              <SiJava
-                title="Java"
-                style={{ width: "36px", height: "36px" }}
-              />
-              <h3>Java</h3>
+              <h3>Ruby</h3>
             </li>
             <li>
               <SiReact
@@ -103,11 +91,25 @@ export default function About() {
               <h3>React.js</h3>
             </li>
             <li>
+              <SiNextdotjs
+                title="Next.js"
+                style={{ width: "36px", height: "36px" }}
+              />
+              <h3>Next.js</h3>
+            </li>
+            <li>
               <SiSvelte
                 title="Svelte.js"
                 style={{ width: "36px", height: "36px" }}
               />
               <h3>Svelte.js</h3>
+            </li>
+            <li>
+              <SiCss3
+                title="CSS"
+                style={{ width: "36px", height: "36px" }}
+              />
+              <h3>CSS</h3>
             </li>
             <li>
               <SiStyledcomponents
@@ -117,11 +119,18 @@ export default function About() {
               <h3>styled-components</h3>
             </li>
             <li>
-              <SiCss3
-                title="CSS"
+              <SiCplusplus
+                title="C++"
                 style={{ width: "36px", height: "36px" }}
               />
-              <h3>CSS</h3>
+              <h3>C++</h3>
+            </li>
+            <li>
+              <SiJava
+                title="Java"
+                style={{ width: "36px", height: "36px" }}
+              />
+              <h3>Java</h3>
             </li>
             <li>
               <SiFigma

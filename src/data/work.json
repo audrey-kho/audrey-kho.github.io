@@ -1,6 +1,15 @@
 {
   "prev_experience": [
     {
+      "name": "UW Information School",
+      "link": "https://ischool.uw.edu/",
+      "role": "Software Architecture (TA)",
+      "description": [
+        ""
+      ],
+      "time": "03/23&ndash;"
+    },
+    {
       "name": "Braze",
       "link": "https://www.braze.com/",
       "role": "Growth Engineering Team",
@@ -12,7 +21,7 @@
     {
       "name": "UW Information School",
       "link": "https://ischool.uw.edu/",
-      "role": "Client-side Development TA",
+      "role": "Client-side Web Development (TA)",
       "description": [
         ""
       ],
@@ -49,45 +58,45 @@
   ],
   "curr_experience": [
     {
+      "name": "Adobe",
+      "link": "https://www.adobe.com/",
+      "role": " ",
+      "description": [
+        ""
+      ],
+      "time": "06/23&ndash;"
+    },
+    {
       "name": "UW Paul G. Allen School of CS",
       "link": "https://www.cs.washington.edu/",
-      "role": "Research Assistant",
+      "role": "HCI Research",
       "description": [
         ""
       ],
       "time": "01/23&ndash;"
-    },
-    {
-      "name": "UW Information School",
-      "link": "https://ischool.uw.edu/",
-      "role": "Software Architecture TA",
-      "description": [
-        ""
-      ],
-      "time": "03/23&ndash;"
     }
   ],
   "projects": [
     {
-      "name": "Broadway Lottery Notification Bot",
-      "link": "",
-      "type": "Personal Project - Coming Soon",
-      "description": "A bot that notifies me when a lottery opens for any of the Broadway musicals I'm hoping to watch",
-      "technologies": ["Python", "Selenium"]
-    },
-    {
-      "name": "Smash Learning Platform",
+      "name": "Smash Platform",
       "link": "https://smash-learn.web.app/",
-      "type": "Capstone Project",
-      "description": "A project-based tech learning and networking platform for learners with non-traditional backgrounds (in collaboration with the Smash startup)",
-      "technologies": ["Next.js", "NextAuth", "React", "CSS", "Tailwind CSS", "JavaScript", "Vercel", "Figma"]
+      "type": "Capstone Project (Startup Sponsored)",
+      "description": "A project-based tech skill + career development platform for learners with non-traditional backgrounds",
+      "technologies": ["Next.js", "React", "CSS", "Tailwind CSS", "JavaScript", "Vercel", "Figma"]
     },
     {
-      "name": "File Search Engine",
+      "name": "Intro to Programming Tutorial Prototype",
       "link": "",
-      "type": "Class Project",
-      "description": "A client and server-side implementation of a file search engine that communicates over an HTTP/1.1 TCP connection",
-      "technologies": ["C", "C++", "POSIX Library"]
+      "type": "Research Project",
+      "description": "A different and gentler approach to intro programming education for novice programmers",
+      "technologies": ["Svelte.js", "Python", "CSS", "Figma", "Notion"]
+    },
+    {
+      "name": "Nostalgia",
+      "link": "",
+      "type": "Graphics Class Project",
+      "description": "A 3D first-person mystery game about a boy who recalls lost memories and inevitably uncovers a dark truth about his family's past",
+      "technologies": ["Unity", "C#"]
     },
     {
       "name": "HuskyReads",

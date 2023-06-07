@@ -1,0 +1,15 @@
+{
+  "name": "File Search Engine",
+  "link": "",
+  "type": "Class Project",
+  "description": "A client and server-side implementation of a file search engine that communicates over an HTTP/1.1 TCP connection",
+  "technologies": ["C", "C++", "POSIX Library"]
+},
+
+{
+  "name": "Broadway Lottery Notification Bot",
+  "link": "",
+  "type": "Personal Project - Coming Soon",
+  "description": "A notification bot for open Broadway musical lotteries",
+  "technologies": ["Python", "Selenium"]
+},
