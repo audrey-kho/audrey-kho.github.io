@@ -5,17 +5,15 @@ import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
 
 import {
-  SiC,
-  SiCplusplus,
+  SiAdobexd,
   SiCss3,
+  SiExpress,
   SiFigma,
-  SiJava,
-  SiMiro,
-  SiNextdotjs,
+  SiLit,
+  SiMicrosoftazure,
+  SiNodedotjs,
   SiReact,
-  SiRuby,
-  SiStyledcomponents,
-  SiSvelte,
+  SiTypescript,
 } from "react-icons/si";
 
 export default function About() {
@@ -62,27 +60,20 @@ export default function About() {
             <li>
               <HeartOutline color="#485A3D" width="20px" height="20px" />
               <p>
-                I'm always craving for coconut water &amp;{" "}
+                I'm always craving for dried mangoes &amp;{" "}
                 <a
                   href="https://vanleeuwenicecream.com/product/vanilla-bean-ice-cream/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  vanilla-flavored
-                </a>{" "}
-                desserts. I also love to cook and bake in my free time!
+                  vanilla ice cream
+                </a>
+                . I also love to cook and bake in my free time!
               </p>
             </li>
           </ul>
           <SectionHeading>RECENT TECHNOLOGIES</SectionHeading>
           <ul className="skills__list">
-          <li>
-              <SiRuby
-                title="Ruby"
-                style={{ width: "36px", height: "36px" }}
-              />
-              <h3>Ruby</h3>
-            </li>
             <li>
               <SiReact
                 title="React.js"
@@ -91,46 +82,40 @@ export default function About() {
               <h3>React.js</h3>
             </li>
             <li>
-              <SiNextdotjs
-                title="Next.js"
-                style={{ width: "36px", height: "36px" }}
-              />
-              <h3>Next.js</h3>
+              <SiLit title="Lit.js" style={{ width: "36px", height: "36px" }} />
+              <h3>Lit.js</h3>
             </li>
             <li>
-              <SiSvelte
-                title="Svelte.js"
+              <SiTypescript
+                title="Typescript"
                 style={{ width: "36px", height: "36px" }}
               />
-              <h3>Svelte.js</h3>
+              <h3>Typescript</h3>
             </li>
             <li>
-              <SiCss3
-                title="CSS"
-                style={{ width: "36px", height: "36px" }}
-              />
+              <SiCss3 title="CSS" style={{ width: "36px", height: "36px" }} />
               <h3>CSS</h3>
             </li>
             <li>
-              <SiStyledcomponents
-                title="styled-components"
+              <SiNodedotjs
+                title="Node.js"
                 style={{ width: "36px", height: "36px" }}
               />
-              <h3>styled-components</h3>
+              <h3>Node.js</h3>
             </li>
             <li>
-              <SiCplusplus
-                title="C++"
+              <SiExpress
+                title="Express"
                 style={{ width: "36px", height: "36px" }}
               />
-              <h3>C++</h3>
+              <h3>Express</h3>
             </li>
             <li>
-              <SiJava
-                title="Java"
+              <SiMicrosoftazure
+                title="Azure"
                 style={{ width: "36px", height: "36px" }}
               />
-              <h3>Java</h3>
+              <h3>Azure</h3>
             </li>
             <li>
               <SiFigma
@@ -140,11 +125,11 @@ export default function About() {
               <h3>Figma</h3>
             </li>
             <li>
-              <SiMiro
-                title="Miro"
+              <SiAdobexd
+                title="Adobe XD"
                 style={{ width: "36px", height: "36px" }}
               />
-              <h3>Miro</h3>
+              <h3>Adobe XD</h3>
             </li>
           </ul>
         </MainSection>

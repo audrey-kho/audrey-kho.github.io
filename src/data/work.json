@@ -60,7 +60,7 @@
     {
       "name": "Adobe",
       "link": "https://www.adobe.com/",
-      "role": " ",
+      "role": "Adobe Express Infrastructure",
       "description": [
         ""
       ],
@@ -93,7 +93,7 @@
     },
     {
       "name": "Nostalgia",
-      "link": "",
+      "link": "https://github.com/aviboddu/Nostalgia",
       "type": "Graphics Class Project",
       "description": "A 3D first-person mystery game about a boy who recalls lost memories and inevitably uncovers a dark truth about his family's past",
       "technologies": ["Unity", "C#"]
