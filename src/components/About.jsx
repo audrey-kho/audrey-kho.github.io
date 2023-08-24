@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { CodeSlashOutline, HeartOutline, SchoolOutline } from "react-ionicons";
 import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
 
@@ -15,6 +14,11 @@ import {
   SiReact,
   SiTypescript,
 } from "react-icons/si";
+import {
+  IoCodeSlashOutline,
+  IoHeartOutline,
+  IoSchoolOutline,
+} from "react-icons/io5";
 
 export default function About() {
   return (
@@ -28,14 +32,14 @@ export default function About() {
           <div className="headshot"></div>
           <ul className="details__list">
             <li>
-              <CodeSlashOutline color="#485A3D" width="20px" height="20px" />
+              <IoCodeSlashOutline color="#485A3D" size={20} />
               <p>
                 I'm a Seattle-based software developer passionate about creating
                 rich, memorable experiences on the web.
               </p>
             </li>
             <li>
-              <SchoolOutline color="#485A3D" width="20px" height="20px" />
+              <IoSchoolOutline color="#485A3D" size={20} />
               <p>
                 I'm an{" "}
                 <a
@@ -58,7 +62,7 @@ export default function About() {
               </p>
             </li>
             <li>
-              <HeartOutline color="#485A3D" width="20px" height="20px" />
+              <IoHeartOutline color="#485A3D" size={20} />
               <p>
                 I'm always craving for dried mangoes &amp;{" "}
                 <a
@@ -204,7 +208,8 @@ const AboutStyles = styled.section`
       padding: 0;
       line-height: 1.5;
 
-      span {
+      svg {
+        min-width: 20px;
         margin-right: 16px;
       }
 

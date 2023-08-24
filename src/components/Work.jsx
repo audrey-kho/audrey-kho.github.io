@@ -2,14 +2,9 @@ import styled from "styled-components";
 import LinkArrow from "../assets/LinkArrow";
 import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
+import { prev_experience, curr_experience, projects } from "../data/work.json";
 
 export default function Work() {
-  const {
-    prev_experience,
-    curr_experience,
-    projects,
-  } = require("../data/work.json");
-
   return (
     <ResponsiveContainer>
       <WorkStyles id="work">

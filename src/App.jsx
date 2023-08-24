@@ -1,5 +1,10 @@
 import LinkArrow from "./assets/LinkArrow";
-import { Mail, LogoLinkedin, LogoGithub, MenuOutline } from "react-ionicons";
+import {
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoMail,
+  IoMenuOutline,
+} from "react-icons/io5";
 import styled, { keyframes } from "styled-components";
 import React, { useState, useEffect, useRef } from "react";
 import clsx from "clsx";
@@ -81,7 +86,7 @@ export default function App() {
             rel="noreferrer"
             aria-label="E-mail"
           >
-            <Mail color="#485A3D" width="26px" height="24px" />
+            <IoMail color="#485A3D" size={24} />
           </a>
           <a
             href="https://www.linkedin.com/in/audrey-kho/"
@@ -89,7 +94,7 @@ export default function App() {
             rel="noreferrer"
             aria-label="LinkedIn external link"
           >
-            <LogoLinkedin color="#485A3D" height="24px" />
+            <IoLogoLinkedin color="#485A3D" size={24} />
           </a>
           <a
             href="https://github.com/audrey-kho"
@@ -97,11 +102,11 @@ export default function App() {
             rel="noreferrer"
             aria-label="Github external link"
           >
-            <LogoGithub color="#485A3D" width="24px" height="24px" />
+            <IoLogoGithub color="#485A3D" size={24} />
           </a>
         </div>
         <button className="mobile-menu" ref={ref} aria-label="menu">
-          <MenuOutline
+          <IoMenuOutline
             color="#485A3D"
             width="28px"
             height="28px"

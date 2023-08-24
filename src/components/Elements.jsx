@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { ArrowForwardSharp } from "react-ionicons";
 import { Link } from "react-scroll";
+import { IoArrowForwardSharp } from "react-icons/io5";
 
 export const SectionTitle = (...props) => {
   const { href, children } = props[0];
@@ -8,7 +8,7 @@ export const SectionTitle = (...props) => {
     <SectionTitleStyles>
       <Link to={href} smooth={true} offset={-92}>
         {children}&nbsp;
-        <ArrowForwardSharp color={"#485A3D"} width="10px" height="10px" />
+        <IoArrowForwardSharp color={"#485A3D"} width="10px" height="10px" />
       </Link>
     </SectionTitleStyles>
   );
