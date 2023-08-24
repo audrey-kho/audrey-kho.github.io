@@ -35,7 +35,11 @@ export default function Contact({ firebaseConfig }) {
             autoComplete="on"
             onSubmit={(e) => {
               e.preventDefault();
-              writeUserData(nameInput.current.value, emailInput.current.value, msgInput.current.value);
+              writeUserData(
+                nameInput.current.value,
+                emailInput.current.value,
+                msgInput.current.value
+              );
               nameInput.current.value = "";
               emailInput.current.value = "";
               msgInput.current.value = "";
@@ -122,13 +126,13 @@ const ContactStyles = styled.section`
 
   .short-input input,
   textarea {
-    font-family: "Normal", sans-serif;
+    font-family: "DM Sans", sans-serif;
     background: rgba(255, 255, 255, 0.1);
     outline: none;
-    border: #485A3D solid 1px;
+    border: #485a3d solid 1px;
     border-radius: 5px;
     margin-bottom: 16px;
-    color: #485A3D;
+    color: #485a3d;
     font-size: 0.85em;
     letter-spacing: 1.5px;
     width: inherit;
@@ -140,13 +144,14 @@ const ContactStyles = styled.section`
 
   button[type="submit"] {
     --webkit-appearance: none;
-    font-family: "Medium", sans-serif;
+    font-family: "DM Mono", monospace;
+    font-weight: 600;
     display: inline;
     height: 46px;
     color: #e9f3ea;
-    font-size: 0.82em;
+    font-size: 0.88em;
     letter-spacing: 2px;
-    background: #485A3D;
+    background: #485a3d;
     outline: none;
     border: none;
     border-radius: 5px;

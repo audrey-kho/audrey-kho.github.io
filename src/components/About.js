@@ -147,8 +147,10 @@ const AboutStyles = styled.section`
   position: relative;
 
   h1 {
-    font-size: 68px;
-    letter-spacing: 2px;
+    font-family: "DM Mono", monospace;
+    font-weight: 600;
+    font-size: 70px;
+    letter-spacing: 0px;
     margin: -6px 0 0;
     line-height: 68px;
 
@@ -247,10 +249,10 @@ const AboutStyles = styled.section`
 
       h3 {
         margin: 0;
-        font-family: "Medium", sans-serif;
-        font-weight: 400;
+        font-family: "DM Mono", monospace;
+        font-weight: 300;
         font-size: 11px;
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
         text-align: center;
         text-transform: uppercase;
       }

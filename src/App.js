@@ -190,7 +190,10 @@ const NavStyles = styled.nav`
   z-index: 999;
 
   h1 {
-    font-size: 16px;
+    font-family: "DM Mono", monospace;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 2px;
     margin: 24px 0;
 
     @media (max-width: 850px) {
@@ -199,7 +202,8 @@ const NavStyles = styled.nav`
   }
 
   a {
-    font-size: 14px;
+    font-family: "DM Mono", monospace;
+    font-size: 16px;
   }
 
   .scroll-links {
@@ -217,7 +221,8 @@ const NavStyles = styled.nav`
   .main-menu {
     display: flex;
     align-items: center;
-    font-family: "Medium", sans-serif;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
 
     margin: 24px 0;
 
@@ -255,7 +260,7 @@ const NavStyles = styled.nav`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    font-family: "Normal", sans-serif;
+    font-family: "DM Sans", sans-serif;
     letter-spacing: 1px;
     line-height: 2.6em;
     padding: 18px;
@@ -292,7 +297,7 @@ const NavStyles = styled.nav`
 `;
 
 const FooterStyles = styled.footer`
-  font-family: "Normal", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 14px;
   position: relative;
   padding: 24px;

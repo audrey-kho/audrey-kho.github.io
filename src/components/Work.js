@@ -4,7 +4,11 @@ import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
 
 export default function Work() {
-  const { prev_experience, curr_experience, projects } = require("../data/work.json");
+  const {
+    prev_experience,
+    curr_experience,
+    projects,
+  } = require("../data/work.json");
 
   return (
     <ResponsiveContainer>
@@ -111,12 +115,14 @@ const WorkStyles = styled.section`
       opacity: 1;
 
       h2 {
+        font-family: "DM Mono", monospace;
         margin: 10px 0;
       }
 
       span {
-        font-family: "Book", sans-serif;
-        font-size: 12.5px;
+        font-family: "DM Mono", monospace;
+        font-weight: 300;
+        font-size: 13px;
         margin: 0;
         text-transform: uppercase;
       }
@@ -169,8 +175,9 @@ const WorkStyles = styled.section`
 
         li {
           display: inline;
-          font-family: "Book", sans-serif;
+          font-family: "DM Mono", monospace;
           font-size: 12px;
+          font-weight: 300;
           letter-spacing: 1px;
           margin-right: 8px;
           margin-bottom: 8px;
@@ -203,7 +210,8 @@ const WorkStyles = styled.section`
       margin: 8px 0;
 
       a {
-        font-family: Medium;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
 
         svg {
           transition: 0.3s all;
@@ -215,7 +223,7 @@ const WorkStyles = styled.section`
       }
 
       span {
-        color: #88AD71;
+        color: #88ad71;
         letter-spacing: 0.5px;
         text-transform: none;
       }
