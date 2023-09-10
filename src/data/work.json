@@ -88,7 +88,7 @@
       "name": "Intro to Programming Tutorial Prototype",
       "link": "",
       "type": "Research Project",
-      "description": "A different and gentler approach to intro programming education for novice programmers",
+      "description": "A gentler approach to intro programming education for novice programmers",
       "technologies": ["Svelte.js", "Python", "CSS", "Figma", "Notion"]
     },
     {

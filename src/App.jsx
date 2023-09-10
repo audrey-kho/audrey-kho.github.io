@@ -73,8 +73,8 @@ export default function App() {
           >
             RESUME
             <LinkArrow
-              width={16}
-              height={16}
+              width={18}
+              height={18}
               stroke={2}
               color="#889c80"
               position={-3.2}
@@ -84,32 +84,34 @@ export default function App() {
             href="mailto:audreyckho@gmail.com"
             target="_blank"
             rel="noreferrer"
-            aria-label="E-mail"
+            title="Email"
+            aria-label="Email"
           >
-            <IoMail color="#485A3D" size={24} />
+            <IoMail color="#485A3D" size={22} />
           </a>
           <a
             href="https://www.linkedin.com/in/audrey-kho/"
             target="_blank"
             rel="noreferrer"
+            title="Linkedin"
             aria-label="LinkedIn external link"
           >
-            <IoLogoLinkedin color="#485A3D" size={24} />
+            <IoLogoLinkedin color="#485A3D" size={22} />
           </a>
           <a
             href="https://github.com/audrey-kho"
             target="_blank"
             rel="noreferrer"
+            title="Github"
             aria-label="Github external link"
           >
-            <IoLogoGithub color="#485A3D" size={24} />
+            <IoLogoGithub color="#485A3D" size={22} />
           </a>
         </div>
         <button className="mobile-menu" ref={ref} aria-label="menu">
           <IoMenuOutline
             color="#485A3D"
-            width="28px"
-            height="28px"
+            size={22}
             onClick={() => {
               setOpen(!open);
             }}
@@ -319,6 +321,10 @@ const FooterStyles = styled.footer`
     background-size: 1px 1px;
     background-repeat: repeat-x;
     background-position: 0 92%;
+  }
+
+  p:first-child {
+    font-family: "DM Mono", monospace;
   }
 
   p + p {
