@@ -66,7 +66,7 @@ export default function Work() {
               );
             })}
           </ul>
-          <SectionHeading>PREVIOUSLY AT</SectionHeading>
+          <SectionHeading>PREVIOUSLY</SectionHeading>
           <ul className="work__list">
             {prev_experience.map((exp) => {
               return (
@@ -205,7 +205,7 @@ const WorkStyles = styled.section`
       margin: 8px 0;
 
       a {
-        font-family: "DM Sans", sans-serif;
+        font-family: "DM Mono", monospace;
         font-weight: 600;
 
         svg {

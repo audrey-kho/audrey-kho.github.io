@@ -1,13 +1,13 @@
 {
   "prev_experience": [
     {
-      "name": "UW Information School",
-      "link": "https://ischool.uw.edu/",
-      "role": "Software Architecture (TA)",
+      "name": "UW Paul G. Allen School of CS",
+      "link": "https://www.cs.washington.edu/",
+      "role": "HCI Research",
       "description": [
         ""
       ],
-      "time": "03/23&ndash;"
+      "time": "01/23&ndash;"
     },
     {
       "name": "Braze",
@@ -60,20 +60,20 @@
     {
       "name": "Adobe",
       "link": "https://www.adobe.com/",
-      "role": "Adobe Express Infrastructure",
+      "role": "Adobe Express Internal Tooling",
       "description": [
         ""
       ],
       "time": "06/23&ndash;"
     },
     {
-      "name": "UW Paul G. Allen School of CS",
-      "link": "https://www.cs.washington.edu/",
-      "role": "HCI Research",
+      "name": "UW Information School",
+      "link": "https://ischool.uw.edu/",
+      "role": "Software Architecture (TA)",
       "description": [
         ""
       ],
-      "time": "01/23&ndash;"
+      "time": "03/23&ndash;"
     }
   ],
   "projects": [
@@ -92,11 +92,11 @@
       "technologies": ["Svelte.js", "Python", "CSS", "Figma", "Notion"]
     },
     {
-      "name": "Nostalgia",
-      "link": "https://github.com/aviboddu/Nostalgia",
-      "type": "Graphics Class Project",
-      "description": "A 3D first-person mystery game about a boy who recalls lost memories and inevitably uncovers a dark truth about his family's past",
-      "technologies": ["Unity", "C#"]
+      "name": "Book-it Repertory Theatre Brand Redesign",
+      "link": "https://www.figma.com/proto/qgK1fd6cgPAkubsrAdJTsR/HCDE-308?page-id=593%3A249&type=design&node-id=593-250&viewport=496%2C2317%2C0.23&t=odjm8KMEqOXCUyMr-1&scaling=contain&starting-point-node-id=593%3A250&mode=design",
+      "type": "Brand Design Project",
+      "description": "A brand book for Book-it Repertory Theatre, a Seattle-based theatre company that adapts literature into plays",
+      "technologies": ["Figma", "Adobe Illustrator"]
     },
     {
       "name": "HuskyReads",

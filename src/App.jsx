@@ -199,7 +199,7 @@ const NavStyles = styled.nav`
   h1 {
     font-family: "DM Mono", monospace;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 2px;
     margin: 24px 0;
 
@@ -210,7 +210,7 @@ const NavStyles = styled.nav`
 
   a {
     font-family: "DM Mono", monospace;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .scroll-links {
