@@ -48,7 +48,7 @@ export default function App() {
     <Suspense
       fallback={
         <div
-          style={{ width: "100%", height: "80em", background: "#e9f3ea" }}
+          style={{ width: "100%", height: "80em", background: "#edfff0" }}
         ></div>
       }
     >
@@ -67,7 +67,7 @@ export default function App() {
         </div>
         <div className="main-menu">
           <a
-            href="https://drive.google.com/file/d/1K4P0W8m9sU6cNN-XS0x6gC4wB7RACUpC/view"
+            href="https://drive.google.com/file/d/1-JF2WSOuqUwHrdpLrSdkgU3t0b14Nb0T/view"
             target="_blank"
             rel="noreferrer"
           >
