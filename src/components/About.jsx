@@ -34,37 +34,20 @@ export default function About() {
             <li>
               <IoCodeSlashOutline color="#485A3D" size={20} />
               <p>
-                I'm a Seattle-based software developer passionate about creating
-                rich, memorable experiences on the web.
+                I'm a Seattle-based software developer passionate about creating rich,
+                memorable experiences on the web.
               </p>
             </li>
             <li>
               <IoSchoolOutline color="#485A3D" size={20} />
               <p>
-                I'm an{" "}
-                <a
-                  href="https://ischool.uw.edu/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Informatics
-                </a>{" "}
-                major studying software development, HCI, and cybersecurity at
-                the{" "}
-                <a
-                  href="https://www.washington.edu/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  University of Washington
-                </a>
-                .
+                I'm studying Informatics and minoring in Data Science at the University of Washington.
               </p>
             </li>
             <li>
               <IoHeartOutline color="#485A3D" size={20} />
               <p>
-                I'm always craving for dried mangoes &amp;{" "}
+                I'm always craving matcha lattes &amp;{" "}
                 <a
                   href="https://vanleeuwenicecream.com/product/vanilla-bean-ice-cream/"
                   target="_blank"

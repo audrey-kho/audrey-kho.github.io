@@ -126,7 +126,7 @@ const ContactStyles = styled.section`
 
   .short-input input,
   textarea {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Hanken Grotesk", sans-serif;
     background: rgba(255, 255, 255, 0.1);
     outline: none;
     border: #485a3d solid 1px;
@@ -134,7 +134,7 @@ const ContactStyles = styled.section`
     margin-bottom: 16px;
     color: #485a3d;
     font-size: 0.85em;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     width: inherit;
 
     &::placeholder {

@@ -67,7 +67,7 @@ export default function App() {
         </div>
         <div className="main-menu">
           <a
-            href="https://drive.google.com/file/d/1-JF2WSOuqUwHrdpLrSdkgU3t0b14Nb0T/view"
+            href="https://drive.google.com/file/d/144oWgspBYWexmZz6pBhaR1B9InhXNv7V/view"
             target="_blank"
             rel="noreferrer"
           >
@@ -228,7 +228,7 @@ const NavStyles = styled.nav`
   .main-menu {
     display: flex;
     align-items: center;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Hanken Grotesk", sans-serif;
     font-weight: 600;
 
     margin: 24px 0;
@@ -267,7 +267,7 @@ const NavStyles = styled.nav`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Hanken Grotesk", sans-serif;
     letter-spacing: 1px;
     line-height: 2.6em;
     padding: 18px;
@@ -304,7 +304,7 @@ const NavStyles = styled.nav`
 `;
 
 const FooterStyles = styled.footer`
-  font-family: "DM Sans", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   font-size: 14px;
   position: relative;
   padding: 24px;
