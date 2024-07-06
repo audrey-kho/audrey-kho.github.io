@@ -8,16 +8,16 @@ import {
   SiCss3,
   SiExpress,
   SiFigma,
-  SiLit,
-  SiMicrosoftazure,
+  SiJavascript,
+  SiJest,
   SiNodedotjs,
+  SiNotion,
   SiReact,
-  SiTypescript,
 } from "react-icons/si";
 import {
   IoCodeSlashOutline,
+  IoFlaskOutline,
   IoHeartOutline,
-  IoSchoolOutline,
 } from "react-icons/io5";
 
 export default function About() {
@@ -29,19 +29,18 @@ export default function About() {
           <h1>
             <span>Hey, I'm</span> Audrey
           </h1>
-          <div className="headshot"></div>
           <ul className="details__list">
             <li>
               <IoCodeSlashOutline color="#485A3D" size={20} />
               <p>
-                I'm a Seattle-based software developer passionate about creating rich,
+                I'm a SF-based software developer passionate about creating rich,
                 memorable experiences on the web.
               </p>
             </li>
             <li>
-              <IoSchoolOutline color="#485A3D" size={20} />
+              <IoFlaskOutline color="#485A3D" size={20} />
               <p>
-                I'm studying Informatics and minoring in Data Science at the University of Washington.
+                I'm working on experimentation and genAI products for enterprise customers at Adobe.
               </p>
             </li>
             <li>
@@ -69,15 +68,15 @@ export default function About() {
               <h3>React.js</h3>
             </li>
             <li>
-              <SiLit title="Lit.js" style={{ width: "36px", height: "36px" }} />
-              <h3>Lit.js</h3>
+              <SiJest title="Jest" style={{ width: "36px", height: "36px" }} />
+              <h3>Jest</h3>
             </li>
             <li>
-              <SiTypescript
-                title="Typescript"
+              <SiJavascript
+                title="JavaScript"
                 style={{ width: "36px", height: "36px" }}
               />
-              <h3>Typescript</h3>
+              <h3>JavaScript</h3>
             </li>
             <li>
               <SiCss3 title="CSS" style={{ width: "36px", height: "36px" }} />
@@ -98,11 +97,11 @@ export default function About() {
               <h3>Express</h3>
             </li>
             <li>
-              <SiMicrosoftazure
-                title="Azure"
+              <SiNotion
+                title="Notion"
                 style={{ width: "36px", height: "36px" }}
               />
-              <h3>Azure</h3>
+              <h3>Notion</h3>
             </li>
             <li>
               <SiFigma
@@ -147,26 +146,6 @@ const AboutStyles = styled.section`
 
     @media (max-width: 820px) {
       font-size: 56px;
-    }
-
-    @media (min-width: 768px) {
-      &:hover + .headshot {
-        display: block;
-      }
-    }
-  }
-
-  .headshot {
-    display: none;
-
-    @media (min-width: 768px) {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 138px;
-      opacity: 0.9;
-      background: url(img/audrey.png) no-repeat 50% 50%;
-      background-size: cover;
     }
   }
 
