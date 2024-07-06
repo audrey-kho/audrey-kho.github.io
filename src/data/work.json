@@ -1,79 +1,51 @@
 {
   "prev_experience": [
     {
+      "name": "UW Information School",
+      "link": "https://ischool.uw.edu/",
+      "role": "Software Architecture TA"
+    },
+    {
+      "name": "Adobe",
+      "link": "https://www.adobe.com/",
+      "role": "Adobe Express Internal Tooling"
+    },
+    {
       "name": "UW Paul G. Allen School of CS",
       "link": "https://www.cs.washington.edu/",
-      "role": "HCI Research",
-      "description": [
-        ""
-      ],
-      "time": "01/23&ndash;"
+      "role": "HCI Research"
     },
     {
       "name": "Braze",
       "link": "https://www.braze.com/",
-      "role": "Growth Engineering Team",
-      "description": [
-        ""
-      ],
-      "time": "06&ndash;<br/>09/22"
+      "role": "Growth Engineering Team"
     },
     {
       "name": "UW Information School",
       "link": "https://ischool.uw.edu/",
-      "role": "Client-side Web Development (TA)",
-      "description": [
-        ""
-      ],
-      "time": "03&ndash;<br/>06/22"
+      "role": "Client-side Web Development TA"
     },
     {
       "name": "UW Center for an Informed Public",
       "link": "https://www.cip.uw.edu/research/#projects",
-      "role": "Loki's Loop Project",
-      "description": [
-        ""
-      ],
-      "time": "10/21&ndash;<br/>03/22"
+      "role": "Loki's Loop Project"
     },
     {
       "name": "Ionic",
       "link": "https://ionic.io/",
-      "role": "Web Team",
-      "description": [
-        "Migrated pages from the Ionic Framework site to Next.js at&nbsp;<a href='http://ionic.io' target='_blank' rel='noreferrer'>ionic.io</a>."
-      ],
-      "time": "06&ndash;<br/>09/21"
+      "role": "Web Team"
     },
     {
       "name": "UW School of Medicine",
       "link": "https://www.uwmedicine.org/",
-      "role": "Service Learning Website",
-      "description": [
-        "Volunteered to build pages for the UW SOM service learning website with Next.js and React.",
-        "Helped provide a more straightforward onboarding process for student volunteers."
-      ],
-      "time": "02&ndash;<br/>06/21"
+      "role": "Service Learning Website"
     }
   ],
   "curr_experience": [
     {
-      "name": "Adobe",
-      "link": "https://www.adobe.com/",
-      "role": "Adobe Express Internal Tooling",
-      "description": [
-        ""
-      ],
-      "time": "06/23&ndash;"
-    },
-    {
-      "name": "UW Information School",
-      "link": "https://ischool.uw.edu/",
-      "role": "Software Architecture (TA)",
-      "description": [
-        ""
-      ],
-      "time": "03/23&ndash;"
+      "name": "TBD",
+      "link": "/",
+      "role": ""
     }
   ],
   "projects": [
@@ -82,7 +54,15 @@
       "link": "https://smash-learn.web.app/",
       "type": "Capstone Project (Startup Sponsored)",
       "description": "A project-based tech skill + career development platform for learners with non-traditional backgrounds",
-      "technologies": ["Next.js", "React", "CSS", "Tailwind CSS", "JavaScript", "Vercel", "Figma"]
+      "technologies": [
+        "Next.js",
+        "React",
+        "CSS",
+        "Tailwind CSS",
+        "JavaScript",
+        "Vercel",
+        "Figma"
+      ]
     },
     {
       "name": "Intro to Programming Tutorial Prototype",
@@ -103,7 +83,15 @@
       "link": "https://github.com/Husky-Coding-Project/huskyreads",
       "type": "Club Project",
       "description": "A full stack book tracking web application, inspired by GoodReads (a project of the Husky Coding Club)",
-      "technologies": ["React", "CSS", "JavaScript", "Node.js", "MySQL", "Docker", "Figma"]
+      "technologies": [
+        "React",
+        "CSS",
+        "JavaScript",
+        "Node.js",
+        "MySQL",
+        "Docker",
+        "Figma"
+      ]
     }
   ]
 }
