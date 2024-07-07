@@ -68,8 +68,8 @@ export default function About() {
               <h3>React.js</h3>
             </li>
             <li>
-              <SiJest title="Jest" style={{ width: "36px", height: "36px" }} />
-              <h3>Jest</h3>
+              <SiCss3 title="CSS" style={{ width: "36px", height: "36px" }} />
+              <h3>CSS</h3>
             </li>
             <li>
               <SiJavascript
@@ -79,8 +79,8 @@ export default function About() {
               <h3>JavaScript</h3>
             </li>
             <li>
-              <SiCss3 title="CSS" style={{ width: "36px", height: "36px" }} />
-              <h3>CSS</h3>
+              <SiJest title="Jest" style={{ width: "36px", height: "36px" }} />
+              <h3>Jest</h3>
             </li>
             <li>
               <SiNodedotjs
@@ -172,7 +172,8 @@ const AboutStyles = styled.section`
 
       svg {
         min-width: 20px;
-        margin-right: 16px;
+        margin-top: 2px;
+        margin-right: 12px;
       }
 
       p {
