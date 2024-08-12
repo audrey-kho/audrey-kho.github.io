@@ -239,7 +239,6 @@ const NavStyles = styled.nav`
   }
 
   .mobile-menu {
-    position: relative;
     display: none;
     background: none;
     border: none;
@@ -274,7 +273,7 @@ const NavStyles = styled.nav`
     position: absolute;
     top: 48px;
     right: 0;
-    background: rgba(230, 242, 231, 0.85);
+    background: #edfff0;
     border: solid rgba(0, 0, 0, 0.2) 0.5px;
     border-radius: 8px;
     animation: ${dropdown} 0.2s ease;
@@ -287,16 +286,6 @@ const NavStyles = styled.nav`
       cursor: pointer !important;
     }
 
-    hr {
-      border: 0;
-      display: block;
-      width: 100%;
-      background-color: #485a3d;
-      opacity: 0.4;
-      margin: 8px 0;
-      height: 0.6px;
-    }
-
     &.hidden {
       display: none;
     }
@@ -306,7 +295,6 @@ const NavStyles = styled.nav`
 const FooterStyles = styled.footer`
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 14px;
-  position: relative;
   padding: 24px;
   display: flex;
   justify-content: space-between;
