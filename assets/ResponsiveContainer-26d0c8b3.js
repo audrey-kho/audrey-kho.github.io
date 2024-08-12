@@ -1,4 +1,4 @@
-import{j as t,N as e,O as s,p as i}from"./index-Dtkgam79.js";const m=(...n)=>{const{href:o,children:a}=n[0];return t.jsx(p,{children:t.jsxs(e,{to:o,smooth:!0,offset:-92,children:[a," ",t.jsx(s,{color:"#485A3D",width:"10px",height:"10px"})]})})},p=i.p`
+import{j as t,N as e,O as s,u as i}from"./index-d8179271.js";const m=(...n)=>{const{href:o,children:a}=n[0];return t.jsx(r,{children:t.jsxs(e,{to:o,smooth:!0,offset:-92,children:[a," ",t.jsx(s,{color:"#485A3D",width:"10px",height:"10px"})]})})},r=i.p`
   display: flex;
   position: sticky;
   top: 80px;
@@ -26,7 +26,7 @@ import{j as t,N as e,O as s,p as i}from"./index-Dtkgam79.js";const m=(...n)=>{co
   font-weight: 500;
   margin: 0 0 14px;
   letter-spacing: 1.5px;
-`,d=n=>t.jsx(r,{children:n.children}),r=i.section`
+`,d=n=>t.jsx(p,{children:n.children}),p=i.section`
   margin-left: 60px;
   width: 100%;
 
