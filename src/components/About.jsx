@@ -16,8 +16,8 @@ import {
 } from "react-icons/si";
 import {
   IoCodeSlashOutline,
-  IoFlaskOutline,
   IoHeartOutline,
+  IoSparklesOutline,
 } from "react-icons/io5";
 
 export default function About() {
@@ -38,9 +38,9 @@ export default function About() {
               </p>
             </li>
             <li>
-              <IoFlaskOutline color="#485A3D" size={20} />
+              <IoSparklesOutline color="#485A3D" size={20} />
               <p>
-                I'm working on experimentation and genAI products for enterprise customers at Adobe.
+                I'm working on an AI-powered software solution for enterprise customers at Adobe.
               </p>
             </li>
             <li>

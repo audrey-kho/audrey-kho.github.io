@@ -1,32 +1,3 @@
-@font-face {
-  font-family: Hatton Bold;
-  src: url("./assets/fonts/PPHatton-BoldItalic.otf") format("opentype");
-}
-
-@font-face {
-  font-family: Hatton;
-  src: url("./assets/fonts/PPHatton-MediumItalic.otf") format("opentype");
-}
-
-/*
-@font-face {
-  font-family: Medium;
-   src: url('./assets/fonts/ABCWhyte-Medium-Trial.woff2') format('woff2'),
-  url('./assets/fonts/ABCWhyte-Medium-Trial.otf') format('opentype');
-}
-
-@font-face {
-  font-family: Bold;
-   src: url('./assets/fonts/ABCWhyte-Bold-Trial.woff2') format('woff2'),
-  url('./assets/fonts/ABCWhyte-Bold-Trial.otf') format('opentype');
-}
-
-@font-face {
-  font-family: Light;
-   src: url('./assets/fonts/ABCWhyte-Light-Trial.woff2') format('woff2'),
-  url('./assets/fonts/ABCWhyte-Light-Trial.otf') format('opentype');
-} */
-
 html {
   box-sizing: border-box !important;
   background: #edfff0;

@@ -239,6 +239,7 @@ const NavStyles = styled.nav`
   }
 
   .mobile-menu {
+    position: relative;
     display: none;
     background: none;
     border: none;
@@ -293,6 +294,7 @@ const NavStyles = styled.nav`
 `;
 
 const FooterStyles = styled.footer`
+  position: relative;
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 14px;
   padding: 24px;
