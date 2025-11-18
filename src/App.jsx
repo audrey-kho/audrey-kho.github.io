@@ -1,323 +1,267 @@
-import LinkArrow from "./assets/LinkArrow";
+import styled, { keyframes } from 'styled-components';
 import {
+  IoMailOutline,
+  IoDocumentTextOutline,
   IoLogoGithub,
   IoLogoLinkedin,
-  IoMail,
-  IoMenuOutline,
-} from "react-icons/io5";
-import styled, { keyframes } from "styled-components";
-import React, { useState, useEffect, useRef } from "react";
-import clsx from "clsx";
-import { Link } from "react-scroll";
-import { initializeApp } from "firebase/app";
-import { Suspense } from "react";
-import dayjs from "dayjs";
-
-const About = React.lazy(() => import("./components/About"));
-const Work = React.lazy(() => import("./components/Work"));
-const Contact = React.lazy(() => import("./components/Contact"));
-
-const firebaseConfig = {
-  apiKey: "AIzaSyDe1AnnQzKoIb2kmpig5FYj60h6isSFK8c",
-  authDomain: "audrey-kho.firebaseapp.com",
-  databaseURL: "https://audrey-kho-default-rtdb.firebaseio.com",
-  projectId: "audrey-kho",
-  storageBucket: "audrey-kho.appspot.com",
-  messagingSenderId: "306777134790",
-  appId: "1:306777134790:web:024444a1e5d426846369c7",
-  measurementId: "G-1WMJFHDP7Q",
-};
-
-const app = initializeApp(firebaseConfig);
+  IoLogoInstagram,
+} from 'react-icons/io5';
 
 export default function App() {
-  const [open, setOpen] = useState(false);
-  const ref = useRef(null);
-
-  useEffect(() => {
-    const checkIfClickedOutside = (e) => {
-      if (open && ref.current && !ref.current.contains(e.target)) {
-        setOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", checkIfClickedOutside);
-  }, [open]);
-
   return (
-    <Suspense
-      fallback={
-        <div
-          style={{ width: "100%", height: "80em", background: "#edfff0" }}
-        ></div>
-      }
-    >
-      <NavStyles>
-        <h1>AUDREY KHO</h1>
-        <div className="scroll-links">
-          <Link to={"about"} smooth={true} offset={-132}>
-            ABOUT
-          </Link>
-          <Link to={"work"} smooth={true} offset={-132}>
-            WORK
-          </Link>
-          <Link to={"contact"} smooth={true} offset={-132}>
-            CONTACT
-          </Link>
-        </div>
-        <div className="main-menu">
-          <a
-            href="https://drive.google.com/file/d/144oWgspBYWexmZz6pBhaR1B9InhXNv7V/view"
-            target="_blank"
-            rel="noreferrer"
-          >
-            RESUME
-            <LinkArrow
-              width={18}
-              height={18}
-              stroke={2}
-              color="#889c80"
-              position={-3.2}
-            />
-          </a>
-          <a
-            href="mailto:audreyckho@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-            title="Email"
-            aria-label="Email"
-          >
-            <IoMail color="#485A3D" size={22} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/audrey-kho/"
-            target="_blank"
-            rel="noreferrer"
-            title="Linkedin"
-            aria-label="LinkedIn external link"
-          >
-            <IoLogoLinkedin color="#485A3D" size={22} />
-          </a>
-          <a
-            href="https://github.com/audrey-kho"
-            target="_blank"
-            rel="noreferrer"
-            title="Github"
-            aria-label="Github external link"
-          >
-            <IoLogoGithub color="#485A3D" size={22} />
-          </a>
-        </div>
-        <button className="mobile-menu" ref={ref} aria-label="menu">
-          <IoMenuOutline
-            color="#485A3D"
-            size={22}
-            onClick={() => {
-              setOpen(!open);
-            }}
-          />
-          <div className={clsx({ "mobile-dropdown": true, hidden: !open })}>
-            <Link
-              to={"about"}
-              smooth={true}
-              offset={-132}
-              onClick={() => {
-                setOpen(false);
-              }}
+    <Container>
+      <Header>
+        <Name>AUDREY KHO</Name>
+        <Links>
+          <LinkWrapper>
+            <a href='mailto:audreyckho@gmail.com' aria-label='Email'>
+              <IoMailOutline size={20} />
+            </a>
+            <Tooltip>Email</Tooltip>
+          </LinkWrapper>
+          <LinkWrapper>
+            <a
+              href='https://drive.google.com/file/d/144oWgspBYWexmZz6pBhaR1B9InhXNv7V/view'
+              target='_blank'
+              rel='noreferrer'
+              aria-label='Resume'
             >
-              ABOUT
-            </Link>
-            <Link
-              to={"work"}
-              smooth={true}
-              offset={-98}
-              onClick={() => {
-                setOpen(false);
-              }}
-            >
-              WORK
-            </Link>
-            <Link
-              to={"contact"}
-              smooth={true}
-              offset={-132}
-              onClick={() => {
-                setOpen(false);
-              }}
-            >
-              CONTACT
-            </Link>
-          </div>
-        </button>
-      </NavStyles>
-      <About />
-      <Work />
-      <Contact firebaseConfig={app} />
-      <FooterStyles>
-        <p>&copy; AUDREY KHO {dayjs().year()}</p>
-        <p>
-          Thanks to{" "}
-          <a href="https://www.jtiutan.com/" target="_blank" rel="noreferrer">
-            Jill
-          </a>{" "}
-          &amp;{" "}
-          <a href="https://maxinekho.com/" target="_blank" rel="noreferrer">
-            Max
-          </a>{" "}
-          for the design help!
-        </p>
-      </FooterStyles>
-    </Suspense>
+              <IoDocumentTextOutline size={20} />
+            </a>
+            <Tooltip>Resume</Tooltip>
+          </LinkWrapper>
+        </Links>
+      </Header>
+
+      <Section>
+        <Content>
+          <Bio>
+            Audrey is a software engineer based in San Francisco, CA. She is
+            passionate about creating memorable experiences on the web.
+            <br />
+            <br />
+            She is currently building AI-powered content generation and A/B
+            testing apps for enterprise customers at{' '}
+            <a href='https://www.adobe.com/' target='_blank' rel='noreferrer'>
+              Adobe
+            </a>
+            .
+            <br />
+            <br />
+            Outside of work, she enjoys making pottery and looking for new pastries to
+            try in the city.
+          </Bio>
+        </Content>
+      </Section>
+
+      <Footer>
+        <p>&copy; {new Date().getFullYear()} AUDREY KHO</p>
+        <FooterLinks>
+          <a
+            href='https://www.linkedin.com/in/audrey-kho/'
+            target='_blank'
+            rel='noreferrer'
+            aria-label='LinkedIn'
+          >
+            <IoLogoLinkedin size={18} />
+          </a>
+          <a
+            href='https://github.com/audrey-kho'
+            target='_blank'
+            rel='noreferrer'
+            aria-label='GitHub'
+          >
+            <IoLogoGithub size={18} />
+          </a>
+          <a
+            href='https://www.instagram.com/_audreykho/'
+            target='_blank'
+            rel='noreferrer'
+            aria-label='Instagram'
+          >
+            <IoLogoInstagram size={18} />
+          </a>
+        </FooterLinks>
+      </Footer>
+    </Container>
   );
 }
 
-const dropdown = keyframes`
-  from {
-    transform: translateY(-6px);
-    opacity: 0.4;
-  }
+const Container = styled.div`
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+`;
 
-  to {
-    transform: translateY(0px);
+const Header = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+  padding-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(2.5px);
+    z-index: 999;
+    margin: -4rem -2rem 6rem -2rem;
+    padding: 1.5rem 2rem;
+  }
+`;
+
+const Name = styled.h1`
+  font-family: 'DM Mono', monospace;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 0;
+`;
+
+const slideDown = keyframes`
+  0% {
+    transform: translateX(-50%) translateY(-8px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
     opacity: 1;
   }
 `;
 
-const NavStyles = styled.nav`
+const Links = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: -10px auto;
-  padding: 0 24px;
-  max-width: 1380px;
-  position: sticky;
-  top: 0;
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(2.5px);
-  z-index: 999;
+  gap: 1.5rem;
+`;
 
-  h1 {
-    font-family: "DM Mono", monospace;
-    font-weight: 600;
-    font-size: 17px;
-    letter-spacing: 2px;
-    margin: 24px 0;
+const Tooltip = styled.span`
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  color: #3a3430;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 1000;
+  transform: translateX(-50%) translateY(0);
+  transition: opacity 0.2s, visibility 0.2s;
 
-    @media (max-width: 850px) {
-      display: none;
-    }
+  &::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.7);
   }
+`;
+
+const LinkWrapper = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   a {
-    font-family: "DM Mono", monospace;
-    font-size: 15px;
-  }
+    color: rgba(255, 255, 255, 0.7);
+    transition: opacity 0.2s;
 
-  .scroll-links {
-    margin-left: 8.2vw;
-
-    > * {
-      margin: 0 18px;
-    }
-
-    @media (max-width: 850px) {
-      display: none;
+    &:hover {
+      opacity: 0.7;
     }
   }
 
-  .main-menu {
-    display: flex;
-    align-items: center;
-    font-family: "Hanken Grotesk", sans-serif;
-    font-weight: 600;
-
-    margin: 24px 0;
-
-    > * + * {
-      margin-left: 22px;
-    }
+  &:hover ${Tooltip} {
+    opacity: 1;
+    visibility: visible;
+    animation: ${slideDown} 0.3s ease-out;
   }
+`;
 
-  .mobile-menu {
-    position: relative;
-    display: none;
-    background: none;
-    border: none;
-    padding: 0;
-    border-radius: 3px;
-    transition: 0.3s all;
-    backdrop-filter: blur(10px) !important;
+const Section = styled.section`
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 4rem;
 
-    svg {
-      padding: 4px 8px 2px;
-    }
-
-    &:hover,
-    &:active,
-    &:focus {
-      box-shadow: inset 0 0 3px rgba(95, 112, 83, 0.5);
-    }
-
-    @media (max-width: 850px) {
-      display: block;
-    }
-  }
-
-  .mobile-dropdown {
-    display: flex;
+  @media (max-width: 768px) {
     flex-direction: column;
-    align-items: flex-end;
-    font-family: "Hanken Grotesk", sans-serif;
-    letter-spacing: 1px;
-    line-height: 2.6em;
-    padding: 18px;
-    position: absolute;
-    top: 48px;
-    right: 0;
-    background: #edfff0;
-    border: solid rgba(0, 0, 0, 0.2) 0.5px;
-    border-radius: 8px;
-    animation: ${dropdown} 0.2s ease;
+    gap: 1.5rem;
+  }
+`;
 
-    a {
-      margin: 8px 2px;
-      padding: 2px 6px;
-      font-size: 18px;
-      letter-spacing: 1px;
-      cursor: pointer !important;
-    }
+const Content = styled.div`
+  flex: 1;
+`;
 
-    &.hidden {
-      display: none;
+const Bio = styled.p`
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+
+  a {
+    background-image: linear-gradient(to left,rgba(255, 255, 255, 0.35),rgba(255, 255, 255, 0.35));
+    background-repeat: repeat-x;
+    background-position: 0 90%;
+    background-size: 1px 1px;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.7;
     }
   }
 `;
 
-const FooterStyles = styled.footer`
-  position: relative;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 14px;
-  padding: 24px;
+const Footer = styled.footer`
+  margin-top: 24rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: space-between;
-  max-width: 1380px;
-  margin: 0 auto;
+  align-items: center;
+
+  p {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.35);
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-top: 8rem;
+  }
+`;
+
+const FooterLinks = styled.div`
+  display: flex;
+  gap: 1rem;
 
   a {
-    position: relative;
-    display: inline;
-    padding: 0;
-    background-image: linear-gradient(#889c80, #889c80);
-    background-size: 1px 1px;
-    background-repeat: repeat-x;
-    background-position: 0 92%;
-  }
+    color:rgba(255, 255, 255, 0.35);
+    transition: opacity 0.2s;
 
-  p:first-child {
-    font-family: "DM Mono", monospace;
-  }
-
-  p + p {
-    margin-left: 16px;
+    &:hover {
+      opacity: 0.7;
+    }
   }
 `;
