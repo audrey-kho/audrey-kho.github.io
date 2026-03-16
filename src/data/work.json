@@ -49,22 +49,22 @@
       "link": "https://business.adobe.com/products/experience-manager/sites/optimizer.html",
       "type": "",
       "featured": true,
-      "description": "AI-powered tool that automatically detects, suggests, and deploys website improvements across SEO, accessibility, engagement, and security — consolidating what typically requires multiple tools and teams into a single platform.",
-      "technologies": ["TypeScript", "React", "AEM", "Claude Code", "Cursor"]
+      "description": "Adobe Sites Optimizer is an AI-powered tool that automatically detects, suggests, and deploys website improvements across SEO, accessibility, engagement, and security. It consolidates what typically requires multiple tools and teams into a single platform.",
+      "technologies": ["TypeScript", "React", "Node.JS", "Langfuse", "Claude Code", "Cursor"]
     },
     {
       "name": "Generate Variations",
       "link": "https://business.adobe.com/products/experience-manager/sites/content-creation.html",
       "type": "",
       "description": "In-context GenAI feature in Adobe Experience Manager that enables customers to create content variations using custom prompts, brand guidelines, and audience context.",
-      "technologies": ["React", "TypeScript", "CSS", "AEM", "Adobe I/O", "Figma"]
+      "technologies": ["React", "TypeScript", "CSS", "Node.JS", "Adobe I/O", "Figma"]
     },
     {
       "name": "Contextual Experimentation",
       "link": "https://business.adobe.com/products/experience-manager/sites/site-performance.html",
       "type": "",
       "description": "Privacy-first A/B testing plugin for AEM. Built Adobe I/O actions to automate page publishing and variant promotion, and added monitoring to improve reliability and product decisions.",
-      "technologies": ["Adobe I/O", "Node.js", "AEM", "Splunk", "Grafana"]
+      "technologies": ["AEM", "Adobe I/O", "Javascript", "Node.js", "Splunk", "Grafana"]
     }
   ]
 }
