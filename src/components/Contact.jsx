@@ -82,7 +82,7 @@ const ContactStyles = styled.section`
   }
 
   section a {
-    background-image: linear-gradient(to left, #889c80, #889c80);
+    background-image: linear-gradient(to left, var(--accent), var(--accent));
     background-repeat: repeat-x;
     background-position: 0 92%;
     background-size: 1px 1px;
@@ -127,18 +127,18 @@ const ContactStyles = styled.section`
   .short-input input,
   textarea {
     font-family: "Hanken Grotesk", sans-serif;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--surface);
     outline: none;
-    border: #485a3d solid 1px;
+    border: var(--border) solid 1px;
     border-radius: 5px;
     margin-bottom: 16px;
-    color: #485a3d;
+    color: var(--text);
     font-size: 0.85em;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     width: inherit;
 
     &::placeholder {
-      color: #8fa381;
+      color: var(--placeholder);
     }
   }
 
@@ -148,22 +148,22 @@ const ContactStyles = styled.section`
     font-weight: 600;
     display: inline;
     height: 46px;
-    color: #e9f3ea;
+    color: var(--bg);
     font-size: 0.88em;
     letter-spacing: 2px;
-    background: #485a3d;
+    background: var(--text);
     outline: none;
     border: none;
     border-radius: 5px;
-    margin: 1.5em 0;
+    margin: 1.2em 0;
     padding: 7px 28px 5px;
-    max-width: 240px;
+    max-width: 200px;
     transition: all 0.3s;
 
     &:hover {
       cursor: pointer;
-      box-shadow: 0 3px 18px rgba(15, 22, 48, 0.18);
-      opacity: 0.8;
+      box-shadow: 0 3px 18px rgba(61, 59, 56, 0.2);
+      opacity: 0.85;
     }
 
     @media (max-width: 425px) {

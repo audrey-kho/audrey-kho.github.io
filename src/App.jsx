@@ -12,6 +12,7 @@ import { Link } from "react-scroll";
 import { initializeApp } from "firebase/app";
 import { Suspense } from "react";
 import dayjs from "dayjs";
+import { GlobalTheme, colors } from "./theme";
 
 const About = React.lazy(() => import("./components/About"));
 const Work = React.lazy(() => import("./components/Work"));
@@ -45,10 +46,12 @@ export default function App() {
   }, [open]);
 
   return (
+    <>
+    <GlobalTheme />
     <Suspense
       fallback={
         <div
-          style={{ width: "100%", height: "80em", background: "#edfff0" }}
+          style={{ width: "100%", height: "80em", background: colors.bg }}
         ></div>
       }
     >
@@ -76,7 +79,7 @@ export default function App() {
               width={18}
               height={18}
               stroke={2}
-              color="#889c80"
+              color={colors.accent}
               position={-3.2}
             />
           </a>
@@ -87,7 +90,7 @@ export default function App() {
             title="Email"
             aria-label="Email"
           >
-            <IoMail color="#485A3D" size={22} />
+            <IoMail color={colors.text} size={22} />
           </a>
           <a
             href="https://www.linkedin.com/in/audrey-kho/"
@@ -96,7 +99,7 @@ export default function App() {
             title="Linkedin"
             aria-label="LinkedIn external link"
           >
-            <IoLogoLinkedin color="#485A3D" size={22} />
+            <IoLogoLinkedin color={colors.text} size={22} />
           </a>
           <a
             href="https://github.com/audrey-kho"
@@ -105,12 +108,12 @@ export default function App() {
             title="Github"
             aria-label="Github external link"
           >
-            <IoLogoGithub color="#485A3D" size={22} />
+            <IoLogoGithub color={colors.text} size={22} />
           </a>
         </div>
         <button className="mobile-menu" ref={ref} aria-label="menu">
           <IoMenuOutline
-            color="#485A3D"
+            color={colors.text}
             size={22}
             onClick={() => {
               setOpen(!open);
@@ -168,6 +171,7 @@ export default function App() {
         </p>
       </FooterStyles>
     </Suspense>
+    </>
   );
 }
 
@@ -192,8 +196,8 @@ const NavStyles = styled.nav`
   max-width: 1380px;
   position: sticky;
   top: 0;
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(2.5px);
+  background: var(--nav-bg);
+  backdrop-filter: blur(8px);
   z-index: 999;
 
   h1 {
@@ -246,7 +250,6 @@ const NavStyles = styled.nav`
     padding: 0;
     border-radius: 3px;
     transition: 0.3s all;
-    backdrop-filter: blur(10px) !important;
 
     svg {
       padding: 4px 8px 2px;
@@ -255,7 +258,7 @@ const NavStyles = styled.nav`
     &:hover,
     &:active,
     &:focus {
-      box-shadow: inset 0 0 3px rgba(95, 112, 83, 0.5);
+      box-shadow: inset 0 0 3px var(--border);
     }
 
     @media (max-width: 850px) {
@@ -274,8 +277,8 @@ const NavStyles = styled.nav`
     position: absolute;
     top: 48px;
     right: 0;
-    background: #edfff0;
-    border: solid rgba(0, 0, 0, 0.2) 0.5px;
+    background: var(--bg);
+    border: solid var(--border) 0.5px;
     border-radius: 8px;
     animation: ${dropdown} 0.2s ease;
 
@@ -307,7 +310,7 @@ const FooterStyles = styled.footer`
     position: relative;
     display: inline;
     padding: 0;
-    background-image: linear-gradient(#889c80, #889c80);
+    background-image: linear-gradient(var(--accent), var(--accent));
     background-size: 1px 1px;
     background-repeat: repeat-x;
     background-position: 0 92%;

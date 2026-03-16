@@ -3,95 +3,68 @@
     {
       "name": "UW Information School",
       "link": "https://ischool.uw.edu/",
-      "role": "Software Architecture TA"
+      "role": "TA, Software Architecture"
     },
     {
       "name": "Adobe",
       "link": "https://www.adobe.com/",
-      "role": "Adobe Express Internal Tooling"
+      "role": "Software Engineer Intern, Adobe Express"
     },
     {
       "name": "UW Paul G. Allen School of CS",
       "link": "https://www.cs.washington.edu/",
-      "role": "HCI Research"
+      "role": "Research Assistant, Programming Education"
     },
     {
       "name": "Braze",
       "link": "https://www.braze.com/",
-      "role": "Growth Engineering Team"
+      "role": "Software Engineer Intern, Growth Engineering"
     },
     {
       "name": "UW Information School",
       "link": "https://ischool.uw.edu/",
-      "role": "Client-side Web Development TA"
+      "role": "TA, Client-side Web Dev"
     },
     {
       "name": "UW Center for an Informed Public",
       "link": "https://www.cip.uw.edu/research/#projects",
-      "role": "Loki's Loop Project"
+      "role": "Frontend Developer, Media Literacy Game"
     },
     {
       "name": "Ionic",
       "link": "https://ionic.io/",
-      "role": "Web Team"
-    },
-    {
-      "name": "UW School of Medicine",
-      "link": "https://www.uwmedicine.org/",
-      "role": "Service Learning Website"
+      "role": "Software Engineer Intern, Web Team"
     }
   ],
   "curr_experience": [
     {
       "name": "Adobe",
       "link": "https://www.adobe.com/",
-      "role": "AEM Experience Success + GenAI"
+      "role": "Software Engineer II, Adobe Experience Manager - Sites"
     }
   ],
   "projects": [
     {
-      "name": "Smash Platform",
-      "link": "https://smash-learn.web.app/",
-      "type": "Capstone Project (Startup Sponsored)",
-      "description": "A project-based tech skill + career development platform for learners with non-traditional backgrounds",
-      "technologies": [
-        "Next.js",
-        "React",
-        "CSS",
-        "Tailwind CSS",
-        "JavaScript",
-        "Vercel",
-        "Figma"
-      ]
+      "name": "Adobe Sites Optimizer",
+      "link": "https://business.adobe.com/products/experience-manager/sites/optimizer.html",
+      "type": "",
+      "featured": true,
+      "description": "AI-powered tool that automatically detects, suggests, and deploys website improvements across SEO, accessibility, engagement, and security — consolidating what typically requires multiple tools and teams into a single platform.",
+      "technologies": ["TypeScript", "React", "AEM", "Claude Code", "Cursor"]
     },
     {
-      "name": "Intro to Programming Tutorial Prototype",
-      "link": "",
-      "type": "Research Project",
-      "description": "A gentler approach to intro programming education for novice programmers",
-      "technologies": ["Svelte.js", "Python", "CSS", "Figma", "Notion"]
+      "name": "Generate Variations",
+      "link": "https://business.adobe.com/products/experience-manager/sites/content-creation.html",
+      "type": "",
+      "description": "In-context GenAI feature in Adobe Experience Manager that enables customers to create content variations using custom prompts, brand guidelines, and audience context.",
+      "technologies": ["React", "TypeScript", "CSS", "AEM", "Adobe I/O", "Figma"]
     },
     {
-      "name": "Book-it Repertory Theatre Brand Redesign",
-      "link": "https://www.figma.com/proto/qgK1fd6cgPAkubsrAdJTsR/HCDE-308?page-id=593%3A249&type=design&node-id=593-250&viewport=496%2C2317%2C0.23&t=odjm8KMEqOXCUyMr-1&scaling=contain&starting-point-node-id=593%3A250&mode=design",
-      "type": "Brand Design Project",
-      "description": "A brand book for Book-it Repertory Theatre, a Seattle-based theatre company that adapts literature into plays",
-      "technologies": ["Figma", "Adobe Illustrator"]
-    },
-    {
-      "name": "HuskyReads",
-      "link": "https://github.com/Husky-Coding-Project/huskyreads",
-      "type": "Club Project",
-      "description": "A full stack book tracking web application, inspired by GoodReads (a project of the Husky Coding Club)",
-      "technologies": [
-        "React",
-        "CSS",
-        "JavaScript",
-        "Node.js",
-        "MySQL",
-        "Docker",
-        "Figma"
-      ]
+      "name": "Contextual Experimentation",
+      "link": "https://business.adobe.com/products/experience-manager/sites/site-performance.html",
+      "type": "",
+      "description": "Privacy-first A/B testing plugin for AEM. Built Adobe I/O actions to automate page publishing and variant promotion, and added monitoring to improve reliability and product decisions.",
+      "technologies": ["Adobe I/O", "Node.js", "AEM", "Splunk", "Grafana"]
     }
   ]
 }

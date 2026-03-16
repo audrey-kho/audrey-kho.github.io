@@ -12,11 +12,10 @@ export default function Work() {
         <MainSection>
           <SectionHeading>SELECTED PROJECTS</SectionHeading>
           <ul className="project__list">
-            {projects.map(({ name, link, type, description, technologies }) => {
+            {projects.map(({ name, link, type, featured, description, technologies }) => {
               let tileClass = "project ";
-              if (link) {
-                tileClass += "clickable";
-              }
+              if (link) tileClass += "clickable ";
+              if (featured) tileClass += "featured";
               return (
                 <li className={tileClass} key={name}>
                   {link ? (
@@ -26,7 +25,7 @@ export default function Work() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <span className="project__type">{type}</span>
+                      {type && <span className="project__type">{type}</span>}
                       <h2>{name.toUpperCase()}</h2>
                       <p dangerouslySetInnerHTML={{ __html: description }} />
                       <ul className="tech__list">
@@ -37,7 +36,7 @@ export default function Work() {
                     </a>
                   ) : (
                     <div className="project__inner">
-                      <span className="project__type">{type}</span>
+                      {type && <span className="project__type">{type}</span>}
                       <h2>{name.toUpperCase()}</h2>
                       <p dangerouslySetInnerHTML={{ __html: description }} />
                       <ul className="tech__list">
@@ -103,7 +102,7 @@ const WorkStyles = styled.section`
     list-style: none;
     padding: 0;
 
-    .project__inner {
+.project__inner {
       display: block;
       padding: 18px 32px;
       height: 88%;
@@ -123,19 +122,13 @@ const WorkStyles = styled.section`
       }
     }
 
-    .project:nth-child(2) {
-      &::before {
-        position: absolute;
-        top: 16px;
-        right: 16px;
-        // content: url("data:image/svg+xml;base64,");
-        content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMjciIHZpZXdCb3g9IjAgMCAyMyAyNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjcwMzIgOC44MTU3NUwxNi4zMTU4IDE1LjI2NDNDMTUuMDIzIDE1LjU4MDcgMTMuMjk4OCAxNS43ODcyIDExLjM2OTggMTUuNzg3MkM5LjQ0MDgzIDE1Ljc4NzIgNy43MTgyOCAxNS41ODA3IDYuNDIzODMgMTUuMjY0M0w4LjAzNjM5IDguODE1NzVDOS4wNjAxMSA4Ljk0NjA0IDEwLjE4NTMgOS4wMTg4IDExLjM2OTggOS4wMTg4QzEyLjU1NDMgOS4wMTg4IDEzLjY3OTUgOC45NDYwNCAxNC43MDMyIDguODE1NzVaTTE0LjI4ODcgNy4xNjA4OEwxMy4wMTExIDIuMDQ3MzhDMTIuNTg0NyAwLjMzODM3MiAxMC4xNTQ5IDAuMzM4MzcyIDkuNzI4NDggMi4wNDczOEw4LjQ1MDk1IDcuMTU3NUM5LjMzOTMgNy4yNjc0OSAxMC4zMjQxIDcuMzI2NzEgMTEuMzY5OCA3LjMyNjcxQzEyLjQxNTUgNy4zMjY3MSAxMy40MDAzIDcuMjY1NzkgMTQuMjg4NyA3LjE2MDg4VjcuMTYwODhaTTIxLjcyNzEgMjEuNzM0OUMyMS45MDUyIDIxLjc3OSAyMi4wNjQxIDIxLjg3OTcgMjIuMTc5OSAyMi4wMjJDMjIuMjk1NyAyMi4xNjQyIDIyLjM2MjEgMjIuMzQwMiAyMi4zNjkyIDIyLjUyMzVDMjIuMzc2MiAyMi43MDY4IDIyLjMyMzYgMjIuODg3NCAyMi4yMTkgMjMuMDM4MkMyMi4xMTQ1IDIzLjE4ODkgMjEuOTYzOCAyMy4zMDE2IDIxLjc4OTcgMjMuMzU5M0wxMS42MzcyIDI2Ljc0MzVDMTEuNDYzNiAyNi44MDEzIDExLjI3NiAyNi44MDEzIDExLjEwMjUgMjYuNzQzNUwwLjk0OTkxMyAyMy4zNTkzQzAuNzc1NzgyIDIzLjMwMTYgMC42MjUxMDYgMjMuMTg4OSAwLjUyMDU4OSAyMy4wMzgyQzAuNDE2MDcyIDIyLjg4NzQgMC4zNjMzNzYgMjIuNzA2OCAwLjM3MDQ0IDIyLjUyMzVDMC4zNzc1MDQgMjIuMzQwMiAwLjQ0Mzk0NyAyMi4xNjQyIDAuNTU5NzU2IDIyLjAyMkMwLjY3NTU2NSAyMS44Nzk3IDAuODM0NDY4IDIxLjc3OSAxLjAxMjUyIDIxLjczNDlMNS4wNTgzMSAyMC43MjNMNi4wMTQzNCAxNi45MDM5QzcuNDcyOTMgMTcuMjYyNyA5LjMzNzYxIDE3LjQ3NzYgMTEuMzY5OCAxNy40Nzc2QzEzLjQwMiAxNy40Nzc2IDE1LjI2NjcgMTcuMjYyNyAxNi43MjUzIDE2LjkwMzlMMTcuNjgxMyAyMC43MjNMMjEuNzI3MSAyMS43MzQ5WiIgZmlsbD0iIzg4OUM4MCIvPgo8L3N2Zz4K");
-      }
+    .project.featured {
+      flex: 1 1 100%;
     }
 
     .project {
       flex: 1 1 360px;
-      border: solid 0.5px #485a3d;
+      border: solid 0.5px var(--border);
       border-radius: 12px;
       transition: 0.3s all;
       margin-right: 20px;
@@ -154,7 +147,7 @@ const WorkStyles = styled.section`
           position: relative;
           display: inline;
           padding: 0;
-          background-image: linear-gradient(#889c80, #889c80);
+          background-image: linear-gradient(var(--accent), var(--accent));
           background-size: 1px 1px;
           background-repeat: repeat-x;
           background-position: 0 92%;
@@ -178,7 +171,7 @@ const WorkStyles = styled.section`
           margin-bottom: 8px;
           padding: 4px 12px 3px;
           text-transform: uppercase;
-          border: solid 0.2px #485a3d;
+          border: solid 0.5px var(--border-strong);
           border-radius: 22px;
         }
       }
@@ -188,7 +181,7 @@ const WorkStyles = styled.section`
       }
 
       &.clickable:hover {
-        box-shadow: 0 6px 14px rgba(136, 156, 128, 0.15);
+        box-shadow: 0 6px 18px rgba(61, 59, 56, 0.1);
         transform: translateY(-2px);
         cursor: pointer;
       }
@@ -218,7 +211,7 @@ const WorkStyles = styled.section`
       }
 
       span {
-        color: #88ad71;
+        color: var(--text-secondary);
         letter-spacing: 0.5px;
         text-transform: none;
       }

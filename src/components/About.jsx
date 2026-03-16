@@ -2,22 +2,26 @@ import React from "react";
 import styled from "styled-components";
 import { MainSection, SectionTitle, SectionHeading } from "./Elements";
 import { ResponsiveContainer } from "./ResponsiveContainer";
+import { colors } from "../theme";
 
 import {
-  SiAdobexd,
-  SiCss3,
-  SiExpress,
+  SiAnthropic,
+  SiDocker,
   SiFigma,
   SiJavascript,
   SiJest,
+  SiNextdotjs,
   SiNodedotjs,
-  SiNotion,
+  SiOpenai,
+  SiPython,
   SiReact,
+  SiTypescript,
 } from "react-icons/si";
 import {
   IoCodeSlashOutline,
   IoHeartOutline,
   IoSparklesOutline,
+  IoStatsChartOutline,
 } from "react-icons/io5";
 
 export default function About() {
@@ -31,22 +35,24 @@ export default function About() {
           </h1>
           <ul className="details__list">
             <li>
-              <IoCodeSlashOutline color="#485A3D" size={20} />
+              <IoCodeSlashOutline color={colors.text} size={20} />
               <p>
-                I'm a SF-based software developer passionate about creating rich,
-                memorable experiences on the web.
+                SF-based software engineer focused on building rich, performant
+                experiences on the web.
               </p>
             </li>
             <li>
-              <IoSparklesOutline color="#485A3D" size={20} />
+              <IoSparklesOutline color={colors.text} size={20} />
               <p>
-                I'm working on an AI-powered software solution for enterprise customers at Adobe.
+                Currently building GenAI and experimentation tooling for
+                enterprise customers at Adobe Experience Cloud.
               </p>
             </li>
             <li>
-              <IoHeartOutline color="#485A3D" size={20} />
+              <IoHeartOutline color={colors.text} size={20} />
               <p>
-                I'm always craving matcha lattes &amp;{" "}
+                Outside of work, I'm usually cooking, baking, throwing clay on
+                a pottery wheel, or hunting down a good matcha latte and{" "}
                 <a
                   href="https://vanleeuwenicecream.com/product/vanilla-bean-ice-cream/"
                   target="_blank"
@@ -54,68 +60,51 @@ export default function About() {
                 >
                   vanilla ice cream
                 </a>
-                . I also love to cook and bake in my free time!
+                .
               </p>
             </li>
           </ul>
           <SectionHeading>RECENT TECHNOLOGIES</SectionHeading>
           <ul className="skills__list">
             <li>
-              <SiReact
-                title="React.js"
-                style={{ width: "36px", height: "36px" }}
-              />
+              <SiReact title="React.js" style={{ width: "28px", height: "28px" }} />
               <h3>React.js</h3>
             </li>
             <li>
-              <SiCss3 title="CSS" style={{ width: "36px", height: "36px" }} />
-              <h3>CSS</h3>
+              <SiTypescript title="TypeScript" style={{ width: "28px", height: "28px" }} />
+              <h3>TypeScript</h3>
             </li>
             <li>
-              <SiJavascript
-                title="JavaScript"
-                style={{ width: "36px", height: "36px" }}
-              />
+              <SiJavascript title="JavaScript" style={{ width: "28px", height: "28px" }} />
               <h3>JavaScript</h3>
             </li>
             <li>
-              <SiJest title="Jest" style={{ width: "36px", height: "36px" }} />
-              <h3>Jest</h3>
+              <SiNextdotjs title="Next.js" style={{ width: "28px", height: "28px" }} />
+              <h3>Next.js</h3>
             </li>
             <li>
-              <SiNodedotjs
-                title="Node.js"
-                style={{ width: "36px", height: "36px" }}
-              />
+              <SiNodedotjs title="Node.js" style={{ width: "28px", height: "28px" }} />
               <h3>Node.js</h3>
             </li>
             <li>
-              <SiExpress
-                title="Express"
-                style={{ width: "36px", height: "36px" }}
-              />
-              <h3>Express</h3>
+              <SiPython title="Python" style={{ width: "28px", height: "28px" }} />
+              <h3>Python</h3>
             </li>
             <li>
-              <SiNotion
-                title="Notion"
-                style={{ width: "36px", height: "36px" }}
-              />
-              <h3>Notion</h3>
-            </li>
-            <li>
-              <SiFigma
-                title="Figma"
-                style={{ width: "36px", height: "36px" }}
-              />
+              <SiFigma title="Figma" style={{ width: "28px", height: "28px" }} />
               <h3>Figma</h3>
             </li>
             <li>
-              <SiAdobexd
-                title="Adobe XD"
-                style={{ width: "36px", height: "36px" }}
-              />
-              <h3>Adobe XD</h3>
+              <SiOpenai title="ChatGPT" style={{ width: "28px", height: "28px" }} />
+              <h3>ChatGPT</h3>
+            </li>
+            <li>
+              <SiAnthropic title="Claude Code" style={{ width: "28px", height: "28px" }} />
+              <h3>Claude Code</h3>
+            </li>
+            <li>
+              <IoCodeSlashOutline title="Cursor" style={{ width: "28px", height: "28px" }} />
+              <h3>Cursor</h3>
             </li>
           </ul>
         </MainSection>
@@ -141,7 +130,7 @@ const AboutStyles = styled.section`
     line-height: 68px;
 
     span {
-      color: #9fbd8c;
+      color: var(--accent);
     }
 
     @media (max-width: 820px) {
@@ -168,7 +157,7 @@ const AboutStyles = styled.section`
       letter-spacing: 0.5px;
       margin: 12px 0 20px;
       padding: 0;
-      line-height: 1.5;
+      line-height: 1.6;
 
       svg {
         min-width: 20px;
@@ -182,7 +171,7 @@ const AboutStyles = styled.section`
 
       a {
         position: relative;
-        background-image: linear-gradient(to left, #889c80, #889c80);
+        background-image: linear-gradient(to left, var(--accent), var(--accent));
         background-repeat: repeat-x;
         background-position: 0 92%;
         background-size: 1px 1px;
@@ -208,7 +197,7 @@ const AboutStyles = styled.section`
 
     li {
       max-width: 78px;
-      margin: 12px 24px;
+      margin: 12px 18px;
 
       svg {
         display: block;
