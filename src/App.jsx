@@ -19,14 +19,14 @@ const Work = React.lazy(() => import("./components/Work"));
 const Contact = React.lazy(() => import("./components/Contact"));
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDe1AnnQzKoIb2kmpig5FYj60h6isSFK8c",
-  authDomain: "audrey-kho.firebaseapp.com",
-  databaseURL: "https://audrey-kho-default-rtdb.firebaseio.com",
-  projectId: "audrey-kho",
-  storageBucket: "audrey-kho.appspot.com",
-  messagingSenderId: "306777134790",
-  appId: "1:306777134790:web:024444a1e5d426846369c7",
-  measurementId: "G-1WMJFHDP7Q",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
